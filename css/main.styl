@@ -19,8 +19,8 @@ _sans = 'source_sans_pro', arial, sans-serif
 _mono = 'dejavu_sans_mono', consolas, courier new, monospace
 _condensed = 'dejavu_sanscondensed', arial narrow, sans-serif
 _medium = 17px
-_gray = #666
-_text = #515151
+_gray = #222
+_text = #000
 _margin = 40px
 
 body{
@@ -33,7 +33,7 @@ body{
   background: linear-gradient(to bottom,  #d1ffff 0%,#d0ed15 26%,#ffff45 52%,#ff8989 75%,#d1ffff 99%);
 }
 body
-  font 18px/24px _sans
+  font 20px/26px _sans
   color _text
 main
   width 60%
@@ -53,9 +53,11 @@ main
         font-weight bold
         font-size 16px
       .description
-        font-family _serif
-        font-style italic
+        //font-family _serif
+        //font-style italic
+        font-weight bold
         font-size 18px
+        text-transform uppercase
     .btnbox
       position absolute
       left 0
@@ -110,7 +112,7 @@ main
   .section-inner
     margin 1px auto 0 auto
     padding _margin
-    max-width 600px
+    max-width 650px
     p
       margin-bottom _margin
       &.highlight
@@ -124,6 +126,9 @@ main
         font-weight bold
         text-indent 0px
         font-style italic
+        a
+          color inherit
+          border-bottom 1px solid          
       a
         color black
         border none
@@ -131,6 +136,11 @@ main
           border-bottom 1px solid
     ul
       margin-bottom _margin
+      columns 2
+      -moz-columns 2
+      -webkit-columns 2
+      li
+        margin-bottom 5px
     figure
       margin-bottom _margin
       img

@@ -137,8 +137,8 @@ body {
   background: linear-gradient(to bottom, #d1ffff 0%, #d0ed15 26%, #ffff45 52%, #ff8989 75%, #d1ffff 99%);
 }
 body {
-  font: 18px/24px 'source_sans_pro', arial, sans-serif;
-  color: #515151;
+  font: 20px/26px 'source_sans_pro', arial, sans-serif;
+  color: #000;
 }
 main {
   width: 60%;
@@ -162,9 +162,9 @@ main header .bbox h1 {
   font-size: 16px;
 }
 main header .bbox .description {
-  font-family: 'dejavu_serif', times new roman, serif;
-  font-style: italic;
+  font-weight: bold;
   font-size: 18px;
+  text-transform: uppercase;
 }
 main header .btnbox {
   position: absolute;
@@ -178,7 +178,7 @@ main header .btnbox button {
   background: #fff;
   border: none;
   font-size: 17px;
-  color: #515151;
+  color: #000;
 }
 main header .btnbox button.copy {
   position: relative;
@@ -221,7 +221,7 @@ main header .btnbox button.about {
 .box .section-inner {
   margin: 1px auto 0 auto;
   padding: 40px;
-  max-width: 600px;
+  max-width: 650px;
 }
 .box .section-inner p {
   margin-bottom: 40px;
@@ -238,6 +238,10 @@ main header .btnbox button.about {
   text-indent: 0px;
   font-style: italic;
 }
+.box .section-inner p.highlight a {
+  color: inherit;
+  border-bottom: 1px solid;
+}
 .box .section-inner p a {
   color: #000;
   border: none;
@@ -247,6 +251,12 @@ main header .btnbox button.about {
 }
 .box .section-inner ul {
   margin-bottom: 40px;
+  columns: 2;
+  -moz-columns: 2;
+  -webkit-columns: 2;
+}
+.box .section-inner ul li {
+  margin-bottom: 5px;
 }
 .box .section-inner figure {
   margin-bottom: 40px;
@@ -258,7 +268,7 @@ main header .btnbox button.about {
 .box .section-inner figure figcaption {
   font-size: 13px;
   text-align: center;
-  color: #666;
+  color: #222;
   display: block;
   line-height: 1.2em;
 }
@@ -293,7 +303,7 @@ nav li a {
 }
 /* Misc */
 a {
-  color: #515151;
+  color: #000;
   text-decoration: none;
   border-bottom: 1px solid;
 }
