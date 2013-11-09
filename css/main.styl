@@ -19,8 +19,8 @@ _sans = 'source_sans_pro', arial, sans-serif
 _mono = 'dejavu_sans_mono', consolas, courier new, monospace
 _condensed = 'dejavu_sanscondensed', arial narrow, sans-serif
 _medium = 17px
-_gray = #222
-_text = #000
+_gray = #222222
+_text = #000000
 _margin = 40px
 
 body{
@@ -129,11 +129,11 @@ main
         a
           color inherit
           border-bottom 1px solid          
-      a
-        color black
-        border none
-        &:hover
-          border-bottom 1px solid
+    a
+      color black
+      &:hover
+        background #f5f5f5
+          
     ul
       margin-bottom _margin
       columns 2
@@ -152,6 +152,14 @@ main
         color _gray
         display block
         line-height 1.2em
+    dl
+      margin-bottom _margin      
+      dt
+        margin-bottom 5px
+        font-weight bold
+        &:before
+          content "● "
+          padding 0 5px 0 0
     .c2
       float left
       width 50%

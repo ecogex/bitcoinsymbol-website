@@ -242,12 +242,11 @@ main header .btnbox button.about {
   color: inherit;
   border-bottom: 1px solid;
 }
-.box .section-inner p a {
+.box .section-inner a {
   color: #000;
-  border: none;
 }
-.box .section-inner p a:hover {
-  border-bottom: 1px solid;
+.box .section-inner a:hover {
+  background: #f5f5f5;
 }
 .box .section-inner ul {
   margin-bottom: 40px;
@@ -271,6 +270,17 @@ main header .btnbox button.about {
   color: #222;
   display: block;
   line-height: 1.2em;
+}
+.box .section-inner dl {
+  margin-bottom: 40px;
+}
+.box .section-inner dl dt {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.box .section-inner dl dt:before {
+  content: "● ";
+  padding: 0 5px 0 0;
 }
 .box .section-inner .c2 {
   float: left;
