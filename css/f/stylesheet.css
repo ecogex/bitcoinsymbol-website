@@ -51,62 +51,7 @@
 
 }
 
-
-
-
-
-
-
-@font-face {
-    font-family: 'dejavu_serif';
-    src: url('dejavuserif-webfont.eot');
-    src: url('dejavuserif-webfont.eot?#iefix') format('embedded-opentype'),
-         url('dejavuserif-webfont.woff') format('woff'),
-         url('dejavuserif-webfont.ttf') format('truetype'),
-         url('dejavuserif-webfont.svg#dejavu_serifbook') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'dejavu_serif';
-    src: url('dejavuserif-bold-webfont.eot');
-    src: url('dejavuserif-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('dejavuserif-bold-webfont.woff') format('woff'),
-         url('dejavuserif-bold-webfont.ttf') format('truetype'),
-         url('dejavuserif-bold-webfont.svg#dejavu_serifbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'dejavu_serif';
-    src: url('dejavuserif-bolditalic-webfont.eot');
-    src: url('dejavuserif-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('dejavuserif-bolditalic-webfont.woff') format('woff'),
-         url('dejavuserif-bolditalic-webfont.ttf') format('truetype'),
-         url('dejavuserif-bolditalic-webfont.svg#dejavu_serifbold_italic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-
-}
-
-@font-face {
-    font-family: 'dejavu_serif';
-    src: url('dejavuserif-italic-webfont.eot');
-    src: url('dejavuserif-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('dejavuserif-italic-webfont.woff') format('woff'),
-         url('dejavuserif-italic-webfont.ttf') format('truetype'),
-         url('dejavuserif-italic-webfont.svg#dejavu_serifitalic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-
-}
-
-
-
+/*--------------------------------------*/
 
 
 @font-face {
@@ -159,5 +104,54 @@
 
 }
 
+/*--------------------------------------*/
 
 
+
+@font-face {
+    font-family: 'dejavu_sans_condensed';
+    src: url('dejavusanscondensed-webfont.eot');
+    src: url('dejavusanscondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dejavusanscondensed-webfont.woff') format('woff'),
+         url('dejavusanscondensed-webfont.ttf') format('truetype'),
+         url('dejavusanscondensed-webfont.svg#dejavu_sans_condensedbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dejavu_sans_condensed';
+    src: url('dejavusanscondensed-bold-webfont.eot');
+    src: url('dejavusanscondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dejavusanscondensed-bold-webfont.woff') format('woff'),
+         url('dejavusanscondensed-bold-webfont.ttf') format('truetype'),
+         url('dejavusanscondensed-bold-webfont.svg#dejavu_sans_condensedbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dejavu_sans_condensed';
+    src: url('dejavusanscondensed-boldoblique-webfont.eot');
+    src: url('dejavusanscondensed-boldoblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dejavusanscondensed-boldoblique-webfont.woff') format('woff'),
+         url('dejavusanscondensed-boldoblique-webfont.ttf') format('truetype'),
+         url('dejavusanscondensed-boldoblique-webfont.svg#dejavu_sans_condensedbold_oblique') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'dejavu_sans_condensed';
+    src: url('dejavusanscondensed-oblique-webfont.eot');
+    src: url('dejavusanscondensed-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dejavusanscondensed-oblique-webfont.woff') format('woff'),
+         url('dejavusanscondensed-oblique-webfont.ttf') format('truetype'),
+         url('dejavusanscondensed-oblique-webfont.svg#dejavu_sans_condensedoblique') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
