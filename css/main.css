@@ -151,6 +151,8 @@ main header {
 main header .bbox {
   background: #fff;
   margin: -1px 0 1px;
+  min-height: 80vh;
+  padding-top: 15vh;
 }
 main header .bbox h1 {
   font-family: 'dejavu_sans_mono', consolas, courier new, monospace;
@@ -174,6 +176,7 @@ main header .btnbox {
 main header .btnbox button {
   width: 50%;
   float: left;
+  height: 20vh;
   padding: 20px 5px;
   background: #fff;
   border: none;
@@ -220,7 +223,8 @@ main header .btnbox button.about {
 }
 .box .section-inner {
   margin: 1px auto 0 auto;
-  padding: 40px;
+  padding: 10vh 40px;
+  min-height: 100vh;
   max-width: 650px;
 }
 .box .section-inner p {
@@ -231,7 +235,7 @@ main header .btnbox button.about {
   line-height: 1.4em;
   color: #818181;
   display: block;
-  border: 1px solid #ccc;
+  border: 1px solid #818181;
   padding: 20px;
   font-size: 23px;
   font-weight: bold;
@@ -241,12 +245,6 @@ main header .btnbox button.about {
 .box .section-inner p.highlight a {
   color: inherit;
   border-bottom: 1px solid;
-}
-.box .section-inner a {
-  color: #000;
-}
-.box .section-inner a:hover {
-  background: #f5f5f5;
 }
 .box .section-inner ul {
   margin-bottom: 40px;
@@ -289,8 +287,19 @@ main header .btnbox button.about {
 .box h1 {
   font-family: 'source_sans_pro', arial, sans-serif;
   font-size: 35px;
-  margin: 60px 0;
+  margin: 0 0 60px 0;
   letter-spacing: 0.03em;
+}
+.box h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.box code {
+  font-family: 'dejavu_sans_mono', consolas, courier new, monospace;
+  font-size: 0.8em;
+  color: #818181;
+  border: 1px solid #eee;
+  padding: 0 2px;
 }
 nav {
   position: fixed;
@@ -298,17 +307,21 @@ nav {
   right: 0;
   width: 40%;
   float: left;
-  clear: both;
   margin: 0 -1px 0 0;
   font-family: 'dejavu_sanscondensed', arial narrow, sans-serif;
   font-size: 17px;
 }
 nav li {
-  padding-left: 100px;
   margin-bottom: 1px;
   background: #fff;
+  font-size: 1.2em;
 }
 nav li a {
+  padding-left: 100px;
+  height: 20vh;
+  padding-top: 8vh;
+  witdh: 100%;
+  display: block;
   border: none;
 }
 /* Misc */
@@ -316,4 +329,10 @@ a {
   color: #000;
   text-decoration: none;
   border-bottom: 1px solid;
+}
+a:active {
+  background: #f9f9f9;
+}
+:-moz-any-link:focus {
+  outline: none;
 }

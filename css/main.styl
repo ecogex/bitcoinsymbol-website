@@ -20,6 +20,7 @@ _mono = 'dejavu_sans_mono', consolas, courier new, monospace
 _condensed = 'dejavu_sanscondensed', arial narrow, sans-serif
 _medium = 17px
 _gray = #222222
+_lightgray = #818181
 _text = #000000
 _margin = 40px
 
@@ -44,6 +45,8 @@ main
     .bbox
       background white
       margin - gutter 0 gutter
+      min-height 80vh
+      padding-top 15vh
       h1
         font-family _mono
         color rgba(140,140,140, 1)
@@ -66,6 +69,7 @@ main
       button
         width 50%
         float left
+        height 20vh
         padding 20px 5px
         background white
         border none
@@ -111,16 +115,18 @@ main
   background white
   .section-inner
     margin 1px auto 0 auto
-    padding _margin
+    padding 10vh _margin
+    min-height 100vh
     max-width 650px
+    clearfix()
     p
       margin-bottom _margin
       &.highlight
         position relative
         line-height 1.4em
-        color #818181 
+        color _lightgray 
         display block
-        border 1px solid #ccc
+        border 1px solid _lightgray
         padding 20px        
         font-size 23px
         font-weight bold
@@ -128,12 +134,7 @@ main
         font-style italic
         a
           color inherit
-          border-bottom 1px solid          
-    a
-      color black
-      &:hover
-        background #f5f5f5
-          
+          border-bottom 1px solid 
     ul
       margin-bottom _margin
       columns 2
@@ -163,11 +164,23 @@ main
     .c2
       float left
       width 50%
+      &:nth-child(odd)
+        clearfix()
   h1
     font-family _sans
     font-size 35px
-    margin 60px 0
+    margin 0 0 60px 0
     letter-spacing 0.03em
+  h2
+    font-weight bold
+    margin-bottom 5px
+    clearfix()
+  code
+    font-family _mono
+    font-size .8em
+    color _lightgray
+    border 1px solid #eee
+    padding 0 2px
 
 // Navigation
 
@@ -177,16 +190,20 @@ nav
   right 0
   width 40%
   float left
-  clear both
   margin 0 -1px 0 0
   font-family _condensed
   font-size _medium
   clearfix()
   li
-    padding-left 100px
     margin-bottom 1px
     background white
+    font-size 1.2em
     a
+      padding-left 100px
+      height 20vh
+      padding-top 8vh
+      witdh 100%
+      display block
       border none
 
 /* Misc */
@@ -195,15 +212,8 @@ a
   color _text
   text-decoration none
   border-bottom 1px solid
-clearfix()
-  &:after
-    content ''
-    display block
-    clear both
-crispy()
-  image-rendering optimizeSpeed
-  image-rendering -moz-crisp-edges
-  image-rendering -o-crisp-edges
-  image-rendering -webkit-optimize-contrast
-  image-rendering optimize-contrast
-
+  &:active
+    background hsl(0, 0%, 97.5%)
+    
+:-moz-any-link:focus
+  outline none

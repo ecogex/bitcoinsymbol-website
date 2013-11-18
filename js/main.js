@@ -10,9 +10,9 @@ $(function(){
       var $window = $(window),
           $wh = $window.height()
       $fullh.css('minHeight', $wh);
-      $navitem.css({height : $wh/$navitem.length , paddingTop : Math.round($wh/12) });
-      $btns.css('height', Math.round($wh/6)-1);
-      $('header .bbox').css({ height :$wh/6*5 , paddingTop : Math.round($wh/9) });
+//      $navitem.css({height : $wh/$navitem.length , paddingTop : Math.round($wh/15) });
+//      $btns.css('height', Math.round($wh/6)-1);
+//      $('header .bbox').css({ height :$wh/6*5 , paddingTop : Math.round($wh/9) });
   })).resize();
 
   // Copy to clipboard
