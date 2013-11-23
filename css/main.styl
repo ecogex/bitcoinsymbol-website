@@ -17,7 +17,7 @@ gutter = 1px
 _serif = 'dejavu_serif', times new roman, serif
 _sans = 'source_sans_pro', arial, sans-serif
 _mono = 'dejavu_sans_mono', consolas, courier new, monospace
-_condensed = 'dejavu_sanscondensed', arial narrow, sans-serif
+_condensed = 'dejavu_sans_condensed', arial narrow, sans-serif
 _medium = 17px
 _gray = #222222
 _lightgray = #818181
@@ -118,7 +118,7 @@ main
     padding 10vh _margin
     min-height 100vh
     max-width 650px
-    clearfix()
+    overflow hidden
     p
       margin-bottom _margin
       &.highlight
@@ -161,11 +161,17 @@ main
         &:before
           content "● "
           padding 0 5px 0 0
+    .column-group
+      clear both
     .c2
       float left
       width 50%
-      &:nth-child(odd)
-        clearfix()
+    .c3
+      float left
+      width 33.3%
+      img
+        width 170px
+        height auto
   h1
     font-family _sans
     font-size 35px
@@ -174,7 +180,6 @@ main
   h2
     font-weight bold
     margin-bottom 5px
-    clearfix()
   code
     font-family _mono
     font-size .8em
@@ -206,6 +211,21 @@ nav
       display block
       border none
 
+/* Exceptions */
+
+#goodies
+  .smallimg
+    width 130px
+    height auto
+    margin 40px auto
+.tee-box
+  margin 40px
+.column-group.tee
+  background #deeaf2
+  padding 20px
+  overflow hidden
+  border-radius 5px
+
 /* Misc */
 
 a
@@ -215,5 +235,11 @@ a
   &:active
     background hsl(0, 0%, 97.5%)
     
+clearfix()
+  &:after
+    content ''
+    display block
+    clear both
+
 :-moz-any-link:focus
   outline none

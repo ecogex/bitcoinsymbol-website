@@ -194,7 +194,7 @@ main header .btnbox button.about {
   background-size: 22px;
 }
 .theb {
-  font-family: 'dejavu_sanscondensed', arial narrow, sans-serif;
+  font-family: 'dejavu_sans_condensed', arial narrow, sans-serif;
   border: solid 0.06em #000;
   font-size: 120px;
   font-weight: normal;
@@ -226,6 +226,7 @@ main header .btnbox button.about {
   padding: 10vh 40px;
   min-height: 100vh;
   max-width: 650px;
+  overflow: hidden;
 }
 .box .section-inner p {
   margin-bottom: 40px;
@@ -280,9 +281,20 @@ main header .btnbox button.about {
   content: "● ";
   padding: 0 5px 0 0;
 }
+.box .section-inner .column-group {
+  clear: both;
+}
 .box .section-inner .c2 {
   float: left;
   width: 50%;
+}
+.box .section-inner .c3 {
+  float: left;
+  width: 33.3%;
+}
+.box .section-inner .c3 img {
+  width: 170px;
+  height: auto;
 }
 .box h1 {
   font-family: 'source_sans_pro', arial, sans-serif;
@@ -308,7 +320,7 @@ nav {
   width: 40%;
   float: left;
   margin: 0 -1px 0 0;
-  font-family: 'dejavu_sanscondensed', arial narrow, sans-serif;
+  font-family: 'dejavu_sans_condensed', arial narrow, sans-serif;
   font-size: 17px;
 }
 nav li {
@@ -323,6 +335,21 @@ nav li a {
   witdh: 100%;
   display: block;
   border: none;
+}
+/* Exceptions */
+#goodies .smallimg {
+  width: 130px;
+  height: auto;
+  margin: 40px auto;
+}
+.tee-box {
+  margin: 40px;
+}
+.column-group.tee {
+  background: #deeaf2;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 5px;
 }
 /* Misc */
 a {
