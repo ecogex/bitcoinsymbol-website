@@ -12,7 +12,23 @@ table{border-collapse:collapse;border-spacing:0}
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+transition(properties, durations, timings)
+    -moz-transition-property properties
+    -o-transition-property properties
+    -webkit-transition-property properties
+    -ms-transition-property properties
+    transition-property properties
+    -moz-transition-duration durations
+    -o-transition-duration durations
+    -webkit-transition-duration durations
+    -ms-transition-duration durations
+    transition-duration durations
+    -moz-transition-timing-function timings
+    -o-transition-timing-function timings
+    -webkit-transition-timing-function timings
+    -ms-transition-timing-function timings
+    transition-timing-function timings
+    
 gutter = 1px
 _serif = 'dejavu_serif', times new roman, serif
 _sans = 'source_sans_pro', arial, sans-serif
@@ -174,9 +190,10 @@ main
         height auto
   h1
     font-family _sans
-    font-size 35px
+    font-size 2em
     margin 0 0 60px 0
     letter-spacing 0.03em
+    line-height 1em
   h2
     font-weight bold
     margin-bottom 5px
@@ -186,6 +203,23 @@ main
     color _lightgray
     border 1px solid #eee
     padding 0 2px
+
+.button, .coinbase-button
+  transition(background-color, 0.1s, ease-out)
+  width 100%
+  display block
+  padding 30px 20px
+  background #ebebeb
+  text-align center
+  margin 0 auto
+  font-size 25px
+  border-radius 60px
+  position relative
+  border 0
+  &:hover
+    background #d6e6e6
+  &:active
+    background #b7d1d1
 
 // Navigation
 
@@ -211,29 +245,30 @@ nav
       display block
       border none
 
-/* Exceptions */
+// Exceptions
 
 #goodies
   .smallimg
     width 130px
     height auto
     margin 40px auto
-.tee-box
-  margin 40px
-.column-group.tee
-  background #deeaf2
-  padding 20px
-  overflow hidden
-  border-radius 5px
 
-/* Misc */
+ul.fontlist
+  background #ededed
+  padding 10px
+  font-size medium
+
+// Misc
 
 a
   color _text
   text-decoration none
   border-bottom 1px solid
+  &:hover
+    border-color lightgray
   &:active
     background hsl(0, 0%, 97.5%)
+    border-color black    
     
 clearfix()
   &:after
@@ -243,3 +278,36 @@ clearfix()
 
 :-moz-any-link:focus
   outline none
+
+
+// Responsive
+
+@media only screen and (max-width: 1000px)
+  main
+    width 100%
+  nav
+    z-index 3
+    left 0
+    width 100%
+    li
+      font-size .8em
+      line-height 1.3em
+      float left
+      outline 1px solid _gray
+      text-align center
+      a
+        width 16.65vw
+        height 60px
+        padding 10px 0 0 0
+
+@media only screen and (max-width: 599px)
+  body
+    font-size 15px
+    line-height 18px
+  nav li
+    font-size .7em
+    a
+      width 50vw
+      height 35px
+  .box .section-inner
+    padding 120px 10px

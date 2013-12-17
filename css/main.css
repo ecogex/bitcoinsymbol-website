@@ -298,9 +298,10 @@ main header .btnbox button.about {
 }
 .box h1 {
   font-family: 'source_sans_pro', arial, sans-serif;
-  font-size: 35px;
+  font-size: 2em;
   margin: 0 0 60px 0;
   letter-spacing: 0.03em;
+  line-height: 1em;
 }
 .box h2 {
   font-weight: bold;
@@ -312,6 +313,42 @@ main header .btnbox button.about {
   color: #818181;
   border: 1px solid #eee;
   padding: 0 2px;
+}
+.button,
+.coinbase-button {
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  -ms-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  width: 100%;
+  display: block;
+  padding: 30px 20px;
+  background: #ebebeb;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 25px;
+  border-radius: 60px;
+  position: relative;
+  border: 0;
+}
+.button:hover,
+.coinbase-button:hover {
+  background: #d6e6e6;
+}
+.button:active,
+.coinbase-button:active {
+  background: #b7d1d1;
 }
 nav {
   position: fixed;
@@ -336,30 +373,66 @@ nav li a {
   display: block;
   border: none;
 }
-/* Exceptions */
 #goodies .smallimg {
   width: 130px;
   height: auto;
   margin: 40px auto;
 }
-.tee-box {
-  margin: 40px;
+ul.fontlist {
+  background: #ededed;
+  padding: 10px;
+  font-size: medium;
 }
-.column-group.tee {
-  background: #deeaf2;
-  padding: 20px;
-  overflow: hidden;
-  border-radius: 5px;
-}
-/* Misc */
 a {
   color: #000;
   text-decoration: none;
   border-bottom: 1px solid;
 }
+a:hover {
+  border-color: #d3d3d3;
+}
 a:active {
   background: #f9f9f9;
+  border-color: #000;
 }
 :-moz-any-link:focus {
   outline: none;
+}
+@media only screen and (max-width: 1000px) {
+  main {
+    width: 100%;
+  }
+  nav {
+    z-index: 3;
+    left: 0;
+    width: 100%;
+  }
+  nav li {
+    font-size: 0.8em;
+    line-height: 1.3em;
+    float: left;
+    outline: 1px solid #222;
+    text-align: center;
+  }
+  nav li a {
+    width: 16.65vw;
+    height: 60px;
+    padding: 10px 0 0 0;
+  }
+}
+@media only screen and (max-width: 599px) {
+  body {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  nav li {
+    font-size: 0.7em;
+  }
+  nav li a {
+    width: 50vw;
+    height: 35px;
+  }
+  .box .section-inner {
+    padding: 120px 10px;
+  }
 }
