@@ -23,6 +23,21 @@ $(function(){
     window.prompt ("Copy to clipboard: Ctrl+C, Enter", text);
   }
 
+  // zclip (Flash)
+  $('.theb').zclip({
+      path:'js/ZeroClipboard.swf',
+      copy:$('.theb').text()
+    });
+  });
+
+ $(".theb").zclip({
+    afterCopy:function(){
+      $(this).addClass('copied');
+      $(this).next('.check').show();
+    }
+  });
+
+  
   // Smoooth crolling
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
@@ -37,8 +52,13 @@ $(function(){
         }
       }
     });
-});
+  
+  // Popup
+  $(document).ready(function() {
+    $('figure a').magnificPopup({type:'image'});
+  });
 
 });
+
 
 
