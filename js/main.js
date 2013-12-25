@@ -32,8 +32,7 @@ $(function(){
 
  $(".theb").zclip({
     afterCopy:function(){
-      $(this).addClass('copied');
-      $(this).next('.check').show();
+      $('this').addClass('copied');
     }
   });
 
