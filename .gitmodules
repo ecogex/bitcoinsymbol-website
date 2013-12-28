@@ -1,0 +1,3 @@
+[submodule "bitcoinsymbol-pack"]
+	path = bitcoinsymbol-pack
+	url = https://github.com/ecogex/bitcoinsymbol-pack.git
