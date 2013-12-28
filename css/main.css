@@ -338,6 +338,7 @@ main header .btnbox button.about {
   text-align: center;
   margin: 0 auto;
   font-size: 25px;
+  line-height: 28px;
   border-radius: 60px;
   position: relative;
   border: 0;
@@ -423,7 +424,7 @@ a:active {
 @media only screen and (max-width: 599px) {
   body {
     font-size: 15px;
-    line-height: 18px;
+    line-height: 22px;
   }
   nav li {
     font-size: 0.7em;
@@ -434,5 +435,13 @@ a:active {
   }
   .box .section-inner {
     padding: 120px 10px;
+  }
+  .box .section-inner .c3 {
+    clear: both;
+    width: 100%;
+  }
+  .box .section-inner img {
+    width: 100%;
+    height: auto;
   }
 }
