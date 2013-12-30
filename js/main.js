@@ -10,9 +10,6 @@ $(function(){
       var $window = $(window),
           $wh = $window.height()
       $fullh.css('minHeight', $wh);
-//      $navitem.css({height : $wh/$navitem.length , paddingTop : Math.round($wh/15) });
-//      $btns.css('height', Math.round($wh/6)-1);
-//      $('header .bbox').css({ height :$wh/6*5 , paddingTop : Math.round($wh/9) });
   })).resize();
 
   // Copy to clipboard
@@ -30,7 +27,7 @@ $(function(){
     });
   });
 
- $(".theb").zclip({
+  $(".theb").zclip({
     afterCopy:function(){
       $('this').addClass('copied');
     }
@@ -54,7 +51,7 @@ $(function(){
   
   // Popup
   $(document).ready(function() {
-    $('figure a').magnificPopup({type:'image'});
+    $('.zoom').magnificPopup({type:'image'});
   });
 
 });
