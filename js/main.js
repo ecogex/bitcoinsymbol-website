@@ -23,16 +23,17 @@ $(function(){
   // zclip (Flash)
   $('.theb').zclip({
       path:'js/ZeroClipboard.swf',
-      copy:$('.theb').text()
+      copy:$('.theb').text(),
+      afterCopy:function(){
+        $(this).parent('.h1').prepend(copied);
+      }
     });
   });
 
-  $(".theb").zclip({
-    afterCopy:function(){
-      $('this').addClass('copied');
-    }
-  });
-
+  var copied = '<p class="copied">✓ Copied</p>';
+  $(".theb").click(function(){
+    $(this).parent('h1').prepend(copied);
+  })
   
   // Smoooth crolling
   $(function() {
