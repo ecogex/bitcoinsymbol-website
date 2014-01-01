@@ -13,11 +13,13 @@ $(function(){
   })).resize();
 
   // Copy to clipboard
+  var copied = '<p class="copied">✓ Copied</p>';
   $('.copy').click(function(){
     copyToClipboard('Ƀ');
   })
   function copyToClipboard (text) {
     window.prompt ("Copy to clipboard: Ctrl+C, Enter", text);
+    $('.theb').parent('h1').prepend(copied);
   }
 
   // zclip (Flash)
@@ -25,16 +27,11 @@ $(function(){
       path:'js/ZeroClipboard.swf',
       copy:$('.theb').text(),
       afterCopy:function(){
-        $(this).parent('.h1').prepend(copied);
+        $(this).parent('h1').prepend(copied);
       }
     });
   });
 
-  var copied = '<p class="copied">✓ Copied</p>';
-  $(".theb").click(function(){
-    $(this).parent('h1').prepend(copied);
-  })
-  
   // Smoooth crolling
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {

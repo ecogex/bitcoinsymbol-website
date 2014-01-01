@@ -162,6 +162,22 @@ main header .bbox h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
+  position: relative;
+}
+main header .bbox h1 .copied {
+  opacity: 0;
+  font-size: 15px;
+  color: #84e56b;
+  font-family: 'source_sans_pro', arial, sans-serif;
+  position: absolute;
+  -webkit-animation: myanim 2s;
+  -moz-animation: myanim 2s;
+  -o-animation: myanim 2s;
+  animation: myanim 2s;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  top: 0px;
 }
 main header .bbox .description {
   font-weight: bold;
@@ -283,6 +299,7 @@ main header .btnbox button.about {
 }
 .box .section-inner .column-group {
   clear: both;
+  overflow: hidden;
 }
 .box .section-inner .c2 {
   float: left;
@@ -334,7 +351,7 @@ main header .btnbox button.about {
   width: 100%;
   display: block;
   padding: 30px 20px;
-  background: #ebebeb;
+  background: #84e56b;
   text-align: center;
   margin: 0 auto;
   font-size: 25px;
@@ -345,7 +362,7 @@ main header .btnbox button.about {
 }
 .button:hover,
 .coinbase-button:hover {
-  background: #d6e6e6;
+  background: #abe68c;
 }
 .button:active,
 .coinbase-button:active {
@@ -383,6 +400,21 @@ ul.fontlist {
   background: #ededed;
   padding: 10px;
   font-size: medium;
+}
+.pack,
+#makeDonation {
+  border: 1px solid #818181;
+  margin-bottom: 40px;
+}
+.edit {
+  border: none;
+}
+.edit:before {
+  content: "✎";
+  font-size: 30px;
+  position: relative;
+  top: 7px;
+  left: -2px;
 }
 a {
   color: #000;
@@ -444,18 +476,6 @@ a:active {
     width: 100%;
     height: auto;
   }
-}
-.copied {
-  opacity: 0;
-  font-size: 10px;
-  color: #f00;
-  position: absolute;
-  -webkit-animation: myanim 1s;
-  -moz-animation: myanim 1s;
-  -o-animation: myanim 1s;
-  animation: myanim 1s;
-  left: 92px;
-  top: -20px;
 }
 @-webkit-keyframes myanim {
   0% {
