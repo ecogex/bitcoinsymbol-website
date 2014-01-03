@@ -361,18 +361,19 @@ main header .bbox .description {
   padding: 30px 20px;
   text-align: center;
   margin: 0 auto;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 28px;
-  border-radius: 60px;
   position: relative;
-  border: 0;
-  -webkit-animation: btns 50s infinite;
-  -moz-animation: btns 50s infinite;
-  -o-animation: btns 50s infinite;
-  animation: btns 50s infinite;
+  border: 1px solid;
+  background: #fff;
+  -webkit-animation: btns 80s infinite;
+  -moz-animation: btns 80s infinite;
+  -o-animation: btns 80s infinite;
+  animation: btns 80s infinite;
 }
 .button:hover,
 .coinbase-button:hover {
+  border: 1px solid;
   -webkit-animation: btns 1s infinite;
   -moz-animation: btns 1s infinite;
   -o-animation: btns 1s infinite;
@@ -380,7 +381,7 @@ main header .bbox .description {
 }
 .button:active,
 .coinbase-button:active {
-  background: #b7d1d1;
+  color: #000;
 }
 nav {
   position: fixed;
@@ -411,7 +412,7 @@ nav li a {
   margin: 40px auto;
 }
 .support-box {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 ul.fontlist {
   background: #ededed;
@@ -465,12 +466,16 @@ select {
 :-moz-any-link:focus {
   outline: none;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
   main {
     width: 100%;
   }
   main header .bbox.min {
     top: 80px;
+    left: 10px;
+  }
+  main .box .section-inner {
+    padding-top: 20vh;
   }
   nav {
     z-index: 3;
@@ -480,12 +485,12 @@ select {
   nav li {
     font-size: 0.8em;
     line-height: 1.3em;
-    float: left;
-    outline: 1px solid #222;
     text-align: center;
+    width: 16.3vw;
+    float: left;
   }
   nav li a {
-    width: 16.65vw;
+    outline: 1px solid #222;
     height: 60px;
     padding: 10px 0 0 0;
   }
@@ -517,6 +522,12 @@ select {
     width: 100%;
     height: auto;
   }
+}
+::selection {
+  background: #dedede;
+}
+::-moz-selection {
+  background: #dedede;
 }
 @-webkit-keyframes copy {
   0% {
@@ -562,53 +573,53 @@ select {
 }
 @-webkit-keyframes btns {
   0% {
-    background: #ffff91;
+    color: #ff003b;
   }
 
   33% {
-    background: #ffdced;
+    color: #1796b4;
   }
 
   66% {
-    background: #b2ffe7;
+    color: #12d938;
   }
 
   100% {
-    background: #ffff91;
+    color: #ff003b;
   }
 }
 @-moz-keyframes btns {
   0% {
-    background: #ffff91;
+    color: #ff003b;
   }
 
   33% {
-    background: #ffdced;
+    color: #1796b4;
   }
 
   66% {
-    background: #b2ffe7;
+    color: #12d938;
   }
 
   100% {
-    background: #ffff91;
+    color: #ff003b;
   }
 }
 @-o-keyframes btns {
   0% {
-    background: #ffff91;
+    color: #ff003b;
   }
 
   33% {
-    background: #ffdced;
+    color: #1796b4;
   }
 
   66% {
-    background: #b2ffe7;
+    color: #12d938;
   }
 
   100% {
-    background: #ffff91;
+    color: #ff003b;
   }
 }
 @-moz-keyframes copy {
@@ -683,86 +694,86 @@ select {
 }
 @-moz-keyframes btns {
   0% {
-    background: #ffff91;
+    color: #ff003b;
   }
 
   33% {
-    background: #ffdced;
+    color: #1796b4;
   }
 
   66% {
-    background: #b2ffe7;
+    color: #12d938;
   }
 
   100% {
-    background: #ffff91;
+    color: #ff003b;
   }
 }
 @-webkit-keyframes btns {
   0% {
-    background: #ffff91;
+    color: #ff003b;
   }
 
   33% {
-    background: #ffdced;
+    color: #1796b4;
   }
 
   66% {
-    background: #b2ffe7;
+    color: #12d938;
   }
 
   100% {
-    background: #ffff91;
+    color: #ff003b;
   }
 }
 @-o-keyframes btns {
   0% {
-    background: #ffff91;
+    color: #ff003b;
   }
 
   33% {
-    background: #ffdced;
+    color: #1796b4;
   }
 
   66% {
-    background: #b2ffe7;
+    color: #12d938;
   }
 
   100% {
-    background: #ffff91;
+    color: #ff003b;
   }
 }
 @-ms-keyframes btns {
   0% {
-    background: #ffff91;
+    color: #ff003b;
   }
 
   33% {
-    background: #ffdced;
+    color: #1796b4;
   }
 
   66% {
-    background: #b2ffe7;
+    color: #12d938;
   }
 
   100% {
-    background: #ffff91;
+    color: #ff003b;
   }
 }
 @keyframes btns {
   0% {
-    background: #ffff91;
+    color: #ff003b;
   }
 
   33% {
-    background: #ffdced;
+    color: #1796b4;
   }
 
   66% {
-    background: #b2ffe7;
+    color: #12d938;
   }
 
   100% {
-    background: #ffff91;
+    color: #ff003b;
   }
 }

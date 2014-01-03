@@ -220,22 +220,23 @@ main
   padding 30px 20px
   text-align center
   margin 0 auto
-  font-size 25px
-  line-height 28px
-  border-radius 60px
+  font-size 1.6em
+  line-height 1.2em
   position relative
-  border 0
-  -webkit-animation btns 50s infinite 
-  -moz-animation btns 50s infinite
-  -o-animation btns 50s infinite
-  animation btns 50s infinite
+  border 1px solid
+  background white
+  -webkit-animation btns 80s infinite 
+  -moz-animation btns 80s infinite
+  -o-animation btns 80s infinite
+  animation btns 80s infinite
   &:hover
+    border 1px solid
     -webkit-animation btns 1s infinite
     -moz-animation btns 1s infinite
     -o-animation btns 1s infinite
     animation btns 1s infinite
   &:active
-    background #b7d1d1
+    color _text
 
 // Navigation
 
@@ -269,7 +270,7 @@ nav
     height auto
     margin 40px auto
 .support-box
-  margin-top _margin
+  margin-top _margin *2
 
 ul.fontlist
   background #ededed
@@ -324,11 +325,14 @@ clearfix()
 
 // Responsive
 
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 900px)
   main
     width 100%
     header .bbox.min
       top 80px
+      left 10px
+    .box .section-inner
+      padding-top 20vh
   nav
     z-index 3
     left 0
@@ -336,11 +340,11 @@ clearfix()
     li
       font-size .8em
       line-height 1.3em
-      float left
-      outline 1px solid _gray
       text-align center
+      width 16.30vw
+      float left
       a
-        width 16.65vw
+        outline 1px solid _gray
         height 60px
         padding 10px 0 0 0
 
@@ -366,6 +370,9 @@ clearfix()
         width 100%
         height auto
 
+::selection {background:#dedede;}
+::-moz-selection {background:#dedede;}
+
 // Copy visual feedback
 @-webkit-keyframes copy {
   0%   { margin-top: 0; opacity:1;}
@@ -388,31 +395,29 @@ clearfix()
   100% { opacity: 0; }
 }
 
-
-
 // Buttuns
 @-webkit-keyframes btns {
-    0% { background: rgb(255, 255, 145); }
-    33% { background:  rgb(255, 220, 237); }
-    66% { background: rgb(178, 255, 231); }
-    100% { background: rgb(255, 255, 145); }
+    0% { color: rgb(255, 0, 59); }
+    33% { color: rgb(23, 150, 180); }
+    66% { color: rgb(18, 217, 56); }
+    100% { color: rgb(255, 0, 59); }
 }
 @-moz-keyframes btns {
-    0% { background: rgb(255, 255, 145); }
-    33% { background:  rgb(255, 220, 237); }
-    66% { background: rgb(178, 255, 231); }
-    100% { background: rgb(255, 255, 145); }
+    0% { color: rgb(255, 0, 59); }
+    33% { color: rgb(23, 150, 180); }
+    66% { color: rgb(18, 217, 56); }
+    100% { color: rgb(255, 0, 59); }
 }
 @-o-keyframes btns {
-    0% { background: rgb(255, 255, 145); }
-    33% { background:  rgb(255, 220, 237); }
-    66% { background: rgb(178, 255, 231); }
-    100% { background: rgb(255, 255, 145); }
+    0% { color: rgb(255, 0, 59); }
+    33% { color: rgb(23, 150, 180); }
+    66% { color: rgb(18, 217, 56); }
+    100% { color: rgb(255, 0, 59); }
 }
 @keyframes btns {
-    0% { background: rgb(255, 255, 145); }
-    33% { background:  rgb(255, 220, 237); }
-    66% { background: rgb(178, 255, 231); }
-    100% { background: rgb(255, 255, 145); }
+    0% { color: rgb(255, 0, 59); }
+    33% { color: rgb(23, 150, 180); }
+    66% { color: rgb(18, 217, 56); }
+    100% { color: rgb(255, 0, 59); }
 }
 
