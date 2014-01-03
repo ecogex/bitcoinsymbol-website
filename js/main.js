@@ -23,14 +23,16 @@ $(function(){
   }
 
   // zclip (Flash)
-  $('.theb').zclip({
+  function doZclip(){
+    $('.theb').zclip({
       path:'js/ZeroClipboard.swf',
       copy:$('.theb').text(),
       afterCopy:function(){
         $(this).parent('h1').prepend(copied);
       }
-    });
-  });
+    })
+  }
+  doZclip();
 
   // Smoooth crolling
   $(function() {
@@ -46,7 +48,19 @@ $(function(){
         }
       }
     });
+  });
   
+  // Header minimizing
+  $(window).scroll( function() {
+    var value = $(this).scrollTop();
+    if ( value > $window.height()-1 ){
+      $(".min").addClass('visible');
+    }else{
+      $(".min").removeClass('visible');
+    }
+  });
+  $(window).scroll();
+    
   // Popup
   $(document).ready(function() {
     $('.zoom').magnificPopup({type:'image'});

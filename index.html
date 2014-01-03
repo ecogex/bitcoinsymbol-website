@@ -20,10 +20,10 @@
       <ul>
         <li><a href="#why">Why Ƀ?</a></li>
         <li><a href="#customise">Customise</a></li>
-        <li><a href="#goodies">Download and Goodies</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#goodies">Goodies and Support</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#support">Support the project</a></li>
       </ul>
     </nav>
     <main>
@@ -32,9 +32,8 @@
           <h1><span class="theb">Ƀ</span></h1>
           <p class="description">Bitcoin deserves the right symbol.</p>
         </div>
-        <div class="btnbox">
-          <button data-clipboard-text="Copy Me!" class="copy">Copy Ƀ to clipboard</button>
-          <button class="about">Learn more about Ƀ</button>
+        <div class="bbox min">
+          <div class="theb">Ƀ</div>
         </div>
       </header>
       <section id="why" class="box fullh">
@@ -95,7 +94,7 @@
           <p>SVG-edit is an online SVG editor, easy to use to create or modify basic designs. As some of you may prefer to get your hands dirty with more features, more complete software can help you to design what you have in mind. The following are some popular SVG editors: <a href="www.inkscape.org">Inkscape</a> is free and open source, Adobe Illustrator is proprietary and expensive ;-)</p>
         </div>
       </section>
-      <section id="goodies" class="box">
+      <section id="download" class="box">
         <div class="section-inner">
           <h1>Everything you need is here</h1>
           <p><a class="button" href="https://github.com/ecogex/bitcoinsymbol-pack/archive/master.zip">Download the Ƀ graphic pack</a></p>
@@ -144,7 +143,11 @@
               <figcaption>3D white coin heap</figcaption>
             </figure>
           </div>
-
+        </div>
+      </section>
+      <section id="goodies" class="box">
+        <div class="section-inner">
+          <h1>T-shirt or donation, choose your way to contribute</h1>
           <div class="column-group tee">
             <h2>Goodies</h2>
             <figure>
@@ -156,14 +159,77 @@
               <a class="button" href="https://bitpay.com/cart/add?itemId=YLZKYjN6j9ySbKGDgeriRq">Buy the Ƀ T-shirt</a>
             </div>
           </div>
+          <div class="support-box" id="donate">
+            <h2>Donation</h2>
+            <p>We greatly appreciated each donation to this project. To show your love for Ƀ, use the form below.</p>
+            <form id="makeDonation" action="https://bitpay.com/checkout" method="post" onsubmit="return bp.validateMobileCheckoutForm($('#makeDonation'));">
+                <input name="action" type="hidden" value="checkout">
+                <fieldset>
+                  <ul>
+                    <li id="orderID" class="c2">
+                      <label>Email:</label>
+                        <input name="orderID" type="email" class="input input-xlarge" placeholder="Email address (optional)" maxlength=50 autocapitalize=off autocorrect=off><br>
+                    </li>
+                    <li id="price" class="c2">
+                      <label>Amount:</label>
+                        <input name="price" type="number" class="noscroll" value="10.00" placeholder="Amount" maxlength="10" min="0.01" step="0.01"  />
+                        <select name="currency" value="" >
+                          <option value="USD" selected="selected">USD</option>
+                          <option value="BTC">BTC</option>
+                          <option value="EUR">EUR</option>
+                          <option value="GBP">GBP</option>
+                          <option value="AUD">AUD</option>
+                          <option value="BGN">BGN</option>
+                          <option value="BRL">BRL</option>
+                          <option value="CAD">CAD</option>
+                          <option value="CHF">CHF</option>
+                          <option value="CNY">CNY</option>
+                          <option value="CZK">CZK</option>
+                          <option value="DKK">DKK</option>
+                          <option value="HKD">HKD</option>
+                          <option value="HRK">HRK</option>
+                          <option value="HUF">HUF</option>
+                          <option value="IDR">IDR</option>
+                          <option value="ILS">ILS</option>
+                          <option value="INR">INR</option>
+                          <option value="JPY">JPY</option>
+                          <option value="KRW">KRW</option>
+                          <option value="LTL">LTL</option>
+                          <option value="LVL">LVL</option>
+                          <option value="MXN">MXN</option>
+                          <option value="MYR">MYR</option>
+                          <option value="NOK">NOK</option>
+                          <option value="NZD">NZD</option>
+                          <option value="PHP">PHP</option>
+                          <option value="PLN">PLN</option>
+                          <option value="RON">RON</option>
+                          <option value="RUB">RUB</option>
+                          <option value="SEK">SEK</option>
+                          <option value="SGD">SGD</option>
+                          <option value="THB">THB</option>
+                          <option value="TRY">TRY</option>
+                          <option value="ZAR">ZAR</option>
+                        </select/>
+                    </li>
+                  </ul>
+                  <input type="hidden" name="data" value="sDY4ql1FmD/Il6LQymWrMC2en+e2LWyX8bGOSRMxkiIzEJqoBzuGy3EiBXEFxNYYGEE7M9OxkTEoI14sZ3biTgrreE9V0jY8QPhuV/g3QOhSRXnGyKhx/Ox1us1BXnxGO93bJBHBhqdfqjgLVNhXhR5CLTEN2243KBALSXlhAT7W5zI9uBxt0Z7RmxiRQfX3">
+                  <button class="button" name="submit">Donate</button>
+                </fieldset>
+              </form>
+          </div>
+          <p>Or send Bitcoin directly to our public key: <code>14eGodNbabrYr5mDVhWhPRttY1PK6fPy1g</code></p>
+          <div class="support-box">
+            <h2>Participate</h2>
+            <p>Feel free to improve this website and suggest new ideas using the <a href="https://github.com/ecogex/bitcoinsymbol-website">Github repository</a>. Images and 3D graphics are hosted on a dedicated <a href="https://github.com/ecogex/bitcoinsymbol-pack">“graphic pack” repository</a>.</p>
+          </div>
         </div>
-      </section>
+      </section>      
       <section id="faq" class="box">
         <div class="section-inner">
           <h1>FAQ</h1>
           <dl>
             <dt>Is this free?</dt>
-            <dd>Yes, all the content included in the graphic pack is free to use, copy, distribute, and transform however you see fit. Our work is under the <a href="http://artlibre.org/licence/lal/en">Free Art Licence</a> (except if stated otherwise, e.g. /fonts). We make no profit from this project and we provide all the work we do free of charge. If you like it, you can support our work via the options listed below under “<a href="#support">Choose your Weapon for Donation</a>”.</dd>
+            <dd>Yes, all the content included in the graphic pack is free to use, copy, distribute, and transform however you see fit. Our work is under the <a href="http://artlibre.org/licence/lal/en">Free Art Licence</a> (except if stated otherwise, e.g. /fonts). We make no profit from this project and we provide all the work we do free of charge. If you like it, you can support our work via the options listed below under “<a href="#goodies">Goodies and Support</a>”.</dd>
           </dl>
           <dl>
             <dt>It’s a hack! Why not ask the unicode consortium to add a brand new character?</dt>
@@ -179,12 +245,12 @@
           </dl>
           <dl>
             <dt>What font did you used for the circled Ƀ on this page?</dt>
-            <dd><i>DejaVu</i> is its name. It is a free and open souce font included in the graphic pack. For more information about DejaVu, visit its <a href="http://dejavu-fonts.org/">dedicated website</a>.
+            <dd><i>DejaVu</i> is its name. It is a free (as in free speach) font included in the <a href="#download">graphic pack</a>. For more information about DejaVu, visit its <a href="http://dejavu-fonts.org/">dedicated website</a>.
             </dd>
           </dl>
           <dl>
             <dt>Can I hotlink your images on my website?</dt>
-            <dd>Please don’t. Our server is not supposed to be a content delivery network and we cant ensure perennial URL. <a href="#goodies">Download the graphic pack</a> instead!
+            <dd>Please don’t. Our server is not supposed to be a content delivery network and we cant ensure perennial URL. <a href="#download">Download the graphic pack</a> instead!
             </dd>
           </dl>
           <p>Have a question that’s not on the list? You can open an issue on the <a href="https://github.com/ecogex/bitcoinsymbol-website/issues">dedicated GitHub page</a>.</p>
@@ -209,90 +275,10 @@
           <h2>Contact us</h2>
           <p><a href="mailto:info@ecogex.com">info@ecogex.com</a></p>
           <h2>Credits</h2>
-          <p>A project by ECOGEX<br/>
-          Graphic design: ECOGEX</br/>
+          <p>Initiated and designed by ECOGEX<br/>
           CG artist: <a href="http://www.3dminfographie.com/">3DMinfographie</a>. Blender sources available for free in the graphic pack.<br/>
           Made with free software and love. You can find the source of this website on <a href="https://github.com/ecogex/bitcoinsymbol-website">GitHub</a>, and modify the graphic pack on its own <a href="https://github.com/ecogex/bitcoinsymbol-pack">repository</a>.</p>
-        </div>
-      </section>
-      <section id="support" class="box">
-        <div class="section-inner">
-          <h1>Choose your weapon for a donation</h1>
-          <div class="support-box">
-            <h2>Donation</h2>
-            <p>We greatly appreciated each donation to this project. To show your love for Ƀ, click on the button below.</p>
-
-    <form id="makeDonation" action="https://bitpay.com/checkout" method="post" onsubmit="return bp.validateMobileCheckoutForm($('#makeDonation'));">
-        <input name="action" type="hidden" value="checkout">
-        <fieldset class="phone-form well form-horizontal" style="margin-top: 5px;">
-          <ul>
-            <li id="orderID" class="control-group">
-              <label class="control-label" style="width: 40px">Email:</label>
-              <div class="controls" style="margin-left: 60px">
-                <input name="orderID" type="email" class="input input-xlarge" placeholder="Email address (optional)" maxlength=50 autocapitalize=off autocorrect=off><br>
-              </div>
-            </li>
-            <li id="price" class="control-group">
-              <label class="control-label" style="width: 40px">Amount:</label>
-              <div class="controls" style="margin-left: 60px">
-                <input name="price" type="number" class="noscroll" value="10.00" placeholder="Amount" maxlength="10" min="0.01" step="0.01" style="width: 39%"  />
-                <select name="currency" value="" style="width: 49%" >
-                  <option value="USD" selected="selected">USD</option>
-                  <option value="BTC">BTC</option>
-                  <option value="EUR">EUR</option>
-                  <option value="GBP">GBP</option>
-                  <option value="AUD">AUD</option>
-                  <option value="BGN">BGN</option>
-                  <option value="BRL">BRL</option>
-                  <option value="CAD">CAD</option>
-                  <option value="CHF">CHF</option>
-                  <option value="CNY">CNY</option>
-                  <option value="CZK">CZK</option>
-                  <option value="DKK">DKK</option>
-                  <option value="HKD">HKD</option>
-                  <option value="HRK">HRK</option>
-                  <option value="HUF">HUF</option>
-                  <option value="IDR">IDR</option>
-                  <option value="ILS">ILS</option>
-                  <option value="INR">INR</option>
-                  <option value="JPY">JPY</option>
-                  <option value="KRW">KRW</option>
-                  <option value="LTL">LTL</option>
-                  <option value="LVL">LVL</option>
-                  <option value="MXN">MXN</option>
-                  <option value="MYR">MYR</option>
-                  <option value="NOK">NOK</option>
-                  <option value="NZD">NZD</option>
-                  <option value="PHP">PHP</option>
-                  <option value="PLN">PLN</option>
-                  <option value="RON">RON</option>
-                  <option value="RUB">RUB</option>
-                  <option value="SEK">SEK</option>
-                  <option value="SGD">SGD</option>
-                  <option value="THB">THB</option>
-                  <option value="TRY">TRY</option>
-                  <option value="ZAR">ZAR</option>
-                </select/>
-              </div>
-            </li>
-          </ul>
-          <br>
-          <input type="hidden" name="data" value="sDY4ql1FmD/Il6LQymWrMC2en+e2LWyX8bGOSRMxkiIzEJqoBzuGy3EiBXEFxNYYGEE7M9OxkTEoI14sZ3biTgrreE9V0jY8QPhuV/g3QOhSRXnGyKhx/Ox1us1BXnxGO93bJBHBhqdfqjgLVNhXhR5CLTEN2243KBALSXlhAT7W5zI9uBxt0Z7RmxiRQfX3">
-          <div style="margin: auto; width: 100%; text-align: center">
-            <input name="submit" src="/img/donate-md.png" type="image" style="width: auto" alt="BitPay, the easy way to pay with bitcoins." border="0">
-          </div>
-        </fieldset>
-      </form>            
-            <p>Or send Bitcoin directly to our public key: <code>14eGodNbabrYr5mDVhWhPRttY1PK6fPy1g</code></p>
-          </div>
-          <div class="support-box">
-            <h2>Goodies</h2>
-            <p>You can also support us by offering to help promote Ƀ yourself, or to recommend our products to your friends. To do so, refer to the <a href="#goodies">Goodies section</a>.</p>
-          </div>
-          <div class="support-box">
-            <h2>Participate</h2>
-            <p>Feel free to improve this website and suggest new ideas using the <a href="https://github.com/ecogex/bitcoinsymbol-website">Github repository</a>. Images and 3D graphics are hosted on a dedicated <a href="https://github.com/ecogex/bitcoinsymbol-pack">“graphic pack” repository</a>.</p>
-          </div>
+          <p><a href="#donate">Donations</a> will be much appreciated!</p>
         </div>
       </section>
     </main>

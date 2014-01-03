@@ -37,6 +37,7 @@ _condensed = 'dejavu_sans_condensed', arial narrow, sans-serif
 _medium = 17px
 _gray = #222222
 _lightgray = #818181
+_palegray = #eeeeee
 _text = #000000
 _margin = 40px
 
@@ -59,10 +60,25 @@ main
     text-align center
     position relative
     .bbox
+      transition(all, .1s, ease-out)
       background white
       margin - gutter 0 gutter
-      min-height 80vh
-      padding-top 15vh
+      height 100vh
+      padding-top 20vh
+      &.min
+        opacity 0
+        height 60px
+        position fixed
+        background none
+        padding-top 0px
+        z-index 9
+        top 7%
+        left 3%
+        .theb
+          font-size 35px
+          margin-bottom 0
+        &.visible
+          opacity 1
       h1
         font-family _mono
         color rgba(140,140,140, 1)
@@ -78,10 +94,10 @@ main
           color #84E56B
           font-family _sans
           position absolute
-          -webkit-animation myanim 2s
-          -moz-animation myanim 2s
-          -o-animation myanim 2s
-          animation myanim 2s
+          -webkit-animation copy 2s
+          -moz-animation copy 2s
+          -o-animation copy 2s
+          animation copy 2s
           left 0
           text-align center
           width 100%
@@ -90,38 +106,18 @@ main
         font-weight bold
         font-size 18px
         text-transform uppercase
-    .btnbox
-      position absolute
-      left 0
-      width 100%
-      clearfix()
-      button
-        width 50%
-        float left
-        height 20vh
-        padding 20px 5px
-        background white
-        border none
-        font-size _medium
-        color _text
-        &.copy
-          position relative
-          left - gutter
-          background white url(../i/copy-icon.svg) no-repeat 85px  center
-          background-size 32px 
-        &.about
-          background white url(../i/about-icon.svg) no-repeat 85px  center
-          background-size 22px 
 
 // Character 
 
 .theb
+  transition(font, 0.1s, ease-out)
   font-family _condensed
   border solid 0.06em black
   font-size 120px
   font-weight normal
   color black
   display block
+  background white
   width 1.2em
   height 1.2em
   margin 0 auto
@@ -215,15 +211,13 @@ main
     font-family _mono
     font-size .8em
     color _lightgray
-    border 1px solid #eee
+    border 1px solid _palegray
     padding 0 2px
 
 .button, .coinbase-button
-  transition(background-color, 0.1s, ease-out)
   width 100%
   display block
   padding 30px 20px
-  background #84E56B
   text-align center
   margin 0 auto
   font-size 25px
@@ -231,8 +225,15 @@ main
   border-radius 60px
   position relative
   border 0
+  -webkit-animation btns 50s infinite 
+  -moz-animation btns 50s infinite
+  -o-animation btns 50s infinite
+  animation btns 50s infinite
   &:hover
-    background #abe68c
+    -webkit-animation btns 1s infinite
+    -moz-animation btns 1s infinite
+    -o-animation btns 1s infinite
+    animation btns 1s infinite
   &:active
     background #b7d1d1
 
@@ -262,11 +263,13 @@ nav
 
 // Exceptions
 
-#goodies
+#download
   .smallimg
     width 130px
     height auto
     margin 40px auto
+.support-box
+  margin-top _margin
 
 ul.fontlist
   background #ededed
@@ -274,8 +277,16 @@ ul.fontlist
   font-size medium
 
 .pack, #makeDonation
-  border 1px solid _lightgray
+  border 1px solid _palegray
   margin-bottom 40px
+#makeDonation
+  padding _margin *.5
+  label
+    display block
+  ul
+    -moz-columns 1
+    -moz-column-count 1
+    -moz-column-width 1
 .edit
   border none
   &:before
@@ -295,8 +306,12 @@ a
     border-color lightgray
   &:active
     background hsl(0, 0%, 97.5%)
-    border-color black    
-    
+    border-color black
+
+input[type="email"],input[type="number"], select
+  font-size 15px
+  border 1px solid _palegray
+
 clearfix()
   &:after
     content ''
@@ -312,6 +327,8 @@ clearfix()
 @media only screen and (max-width: 1000px)
   main
     width 100%
+    header .bbox.min
+      top 80px
   nav
     z-index 3
     left 0
@@ -331,6 +348,9 @@ clearfix()
   body
     font-size 15px
     line-height 22px
+  main header .bbox.min
+    top 40px
+    left 45%
   nav li
     font-size .7em
     a
@@ -345,24 +365,54 @@ clearfix()
       img
         width 100%
         height auto
-    
-@-webkit-keyframes myanim {
+
+// Copy visual feedback
+@-webkit-keyframes copy {
   0%   { margin-top: 0; opacity:1;}
   90% { margin-top: -10px; }
   100% { opacity: 0; }
 }
-@-moz-keyframes myanim {
+@-moz-keyframes copy {
   0%   { margin-top: 0; opacity:1;}
   90% { margin-top: -10px; }
   100% { opacity: 0; }
 }
-@-o-keyframes myanim {
+@-o-keyframes copy {
   0%   { margin-top: 0; opacity:1;}
   90% { margin-top: -10px; }
   100% { opacity: 0; }
 }
-@keyframes myanim {
+@keyframes copy {
   0%   { margin-top: 0; opacity:1;}
   90% { margin-top: -10px; }
   100% { opacity: 0; }
 }
+
+
+
+// Buttuns
+@-webkit-keyframes btns {
+    0% { background: rgb(255, 255, 145); }
+    33% { background:  rgb(255, 220, 237); }
+    66% { background: rgb(178, 255, 231); }
+    100% { background: rgb(255, 255, 145); }
+}
+@-moz-keyframes btns {
+    0% { background: rgb(255, 255, 145); }
+    33% { background:  rgb(255, 220, 237); }
+    66% { background: rgb(178, 255, 231); }
+    100% { background: rgb(255, 255, 145); }
+}
+@-o-keyframes btns {
+    0% { background: rgb(255, 255, 145); }
+    33% { background:  rgb(255, 220, 237); }
+    66% { background: rgb(178, 255, 231); }
+    100% { background: rgb(255, 255, 145); }
+}
+@keyframes btns {
+    0% { background: rgb(255, 255, 145); }
+    33% { background:  rgb(255, 220, 237); }
+    66% { background: rgb(178, 255, 231); }
+    100% { background: rgb(255, 255, 145); }
+}
+

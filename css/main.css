@@ -149,10 +149,42 @@ main header {
   position: relative;
 }
 main header .bbox {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
   background: #fff;
   margin: -1px 0 1px;
-  min-height: 80vh;
-  padding-top: 15vh;
+  height: 100vh;
+  padding-top: 20vh;
+}
+main header .bbox.min {
+  opacity: 0;
+  height: 60px;
+  position: fixed;
+  background: none;
+  padding-top: 0px;
+  z-index: 9;
+  top: 7%;
+  left: 3%;
+}
+main header .bbox.min .theb {
+  font-size: 35px;
+  margin-bottom: 0;
+}
+main header .bbox.min.visible {
+  opacity: 1;
 }
 main header .bbox h1 {
   font-family: 'dejavu_sans_mono', consolas, courier new, monospace;
@@ -170,10 +202,10 @@ main header .bbox h1 .copied {
   color: #84e56b;
   font-family: 'source_sans_pro', arial, sans-serif;
   position: absolute;
-  -webkit-animation: myanim 2s;
-  -moz-animation: myanim 2s;
-  -o-animation: myanim 2s;
-  animation: myanim 2s;
+  -webkit-animation: copy 2s;
+  -moz-animation: copy 2s;
+  -o-animation: copy 2s;
+  animation: copy 2s;
   left: 0;
   text-align: center;
   width: 100%;
@@ -184,38 +216,29 @@ main header .bbox .description {
   font-size: 18px;
   text-transform: uppercase;
 }
-main header .btnbox {
-  position: absolute;
-  left: 0;
-  width: 100%;
-}
-main header .btnbox button {
-  width: 50%;
-  float: left;
-  height: 20vh;
-  padding: 20px 5px;
-  background: #fff;
-  border: none;
-  font-size: 17px;
-  color: #000;
-}
-main header .btnbox button.copy {
-  position: relative;
-  left: -1px;
-  background: #fff url("../i/copy-icon.svg") no-repeat 85px center;
-  background-size: 32px;
-}
-main header .btnbox button.about {
-  background: #fff url("../i/about-icon.svg") no-repeat 85px center;
-  background-size: 22px;
-}
 .theb {
+  -moz-transition-property: font;
+  -o-transition-property: font;
+  -webkit-transition-property: font;
+  -ms-transition-property: font;
+  transition-property: font;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
   font-family: 'dejavu_sans_condensed', arial narrow, sans-serif;
   border: solid 0.06em #000;
   font-size: 120px;
   font-weight: normal;
   color: #000;
   display: block;
+  background: #fff;
   width: 1.2em;
   height: 1.2em;
   margin: 0 auto;
@@ -333,25 +356,9 @@ main header .btnbox button.about {
 }
 .button,
 .coinbase-button {
-  -moz-transition-property: background-color;
-  -o-transition-property: background-color;
-  -webkit-transition-property: background-color;
-  -ms-transition-property: background-color;
-  transition-property: background-color;
-  -moz-transition-duration: 0.1s;
-  -o-transition-duration: 0.1s;
-  -webkit-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
-  transition-duration: 0.1s;
-  -moz-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
-  -webkit-transition-timing-function: ease-out;
-  -ms-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
   width: 100%;
   display: block;
   padding: 30px 20px;
-  background: #84e56b;
   text-align: center;
   margin: 0 auto;
   font-size: 25px;
@@ -359,10 +366,17 @@ main header .btnbox button.about {
   border-radius: 60px;
   position: relative;
   border: 0;
+  -webkit-animation: btns 50s infinite;
+  -moz-animation: btns 50s infinite;
+  -o-animation: btns 50s infinite;
+  animation: btns 50s infinite;
 }
 .button:hover,
 .coinbase-button:hover {
-  background: #abe68c;
+  -webkit-animation: btns 1s infinite;
+  -moz-animation: btns 1s infinite;
+  -o-animation: btns 1s infinite;
+  animation: btns 1s infinite;
 }
 .button:active,
 .coinbase-button:active {
@@ -391,10 +405,13 @@ nav li a {
   display: block;
   border: none;
 }
-#goodies .smallimg {
+#download .smallimg {
   width: 130px;
   height: auto;
   margin: 40px auto;
+}
+.support-box {
+  margin-top: 40px;
 }
 ul.fontlist {
   background: #ededed;
@@ -403,8 +420,19 @@ ul.fontlist {
 }
 .pack,
 #makeDonation {
-  border: 1px solid #818181;
+  border: 1px solid #eee;
   margin-bottom: 40px;
+}
+#makeDonation {
+  padding: 20px;
+}
+#makeDonation label {
+  display: block;
+}
+#makeDonation ul {
+  -moz-columns: 1;
+  -moz-column-count: 1;
+  -moz-column-width: 1;
 }
 .edit {
   border: none;
@@ -428,12 +456,21 @@ a:active {
   background: #f9f9f9;
   border-color: #000;
 }
+input[type="email"],
+input[type="number"],
+select {
+  font-size: 15px;
+  border: 1px solid #eee;
+}
 :-moz-any-link:focus {
   outline: none;
 }
 @media only screen and (max-width: 1000px) {
   main {
     width: 100%;
+  }
+  main header .bbox.min {
+    top: 80px;
   }
   nav {
     z-index: 3;
@@ -458,6 +495,10 @@ a:active {
     font-size: 15px;
     line-height: 22px;
   }
+  main header .bbox.min {
+    top: 40px;
+    left: 45%;
+  }
   nav li {
     font-size: 0.7em;
   }
@@ -477,7 +518,7 @@ a:active {
     height: auto;
   }
 }
-@-webkit-keyframes myanim {
+@-webkit-keyframes copy {
   0% {
     margin-top: 0;
     opacity: 1;
@@ -491,7 +532,7 @@ a:active {
     opacity: 0;
   }
 }
-@-moz-keyframes myanim {
+@-moz-keyframes copy {
   0% {
     margin-top: 0;
     opacity: 1;
@@ -505,7 +546,7 @@ a:active {
     opacity: 0;
   }
 }
-@-o-keyframes myanim {
+@-o-keyframes copy {
   0% {
     margin-top: 0;
     opacity: 1;
@@ -519,7 +560,58 @@ a:active {
     opacity: 0;
   }
 }
-@-moz-keyframes myanim {
+@-webkit-keyframes btns {
+  0% {
+    background: #ffff91;
+  }
+
+  33% {
+    background: #ffdced;
+  }
+
+  66% {
+    background: #b2ffe7;
+  }
+
+  100% {
+    background: #ffff91;
+  }
+}
+@-moz-keyframes btns {
+  0% {
+    background: #ffff91;
+  }
+
+  33% {
+    background: #ffdced;
+  }
+
+  66% {
+    background: #b2ffe7;
+  }
+
+  100% {
+    background: #ffff91;
+  }
+}
+@-o-keyframes btns {
+  0% {
+    background: #ffff91;
+  }
+
+  33% {
+    background: #ffdced;
+  }
+
+  66% {
+    background: #b2ffe7;
+  }
+
+  100% {
+    background: #ffff91;
+  }
+}
+@-moz-keyframes copy {
   0% {
     margin-top: 0;
     opacity: 1;
@@ -533,7 +625,7 @@ a:active {
     opacity: 0;
   }
 }
-@-webkit-keyframes myanim {
+@-webkit-keyframes copy {
   0% {
     margin-top: 0;
     opacity: 1;
@@ -547,7 +639,7 @@ a:active {
     opacity: 0;
   }
 }
-@-o-keyframes myanim {
+@-o-keyframes copy {
   0% {
     margin-top: 0;
     opacity: 1;
@@ -561,7 +653,7 @@ a:active {
     opacity: 0;
   }
 }
-@-ms-keyframes myanim {
+@-ms-keyframes copy {
   0% {
     margin-top: 0;
     opacity: 1;
@@ -575,7 +667,7 @@ a:active {
     opacity: 0;
   }
 }
-@keyframes myanim {
+@keyframes copy {
   0% {
     margin-top: 0;
     opacity: 1;
@@ -587,5 +679,90 @@ a:active {
 
   100% {
     opacity: 0;
+  }
+}
+@-moz-keyframes btns {
+  0% {
+    background: #ffff91;
+  }
+
+  33% {
+    background: #ffdced;
+  }
+
+  66% {
+    background: #b2ffe7;
+  }
+
+  100% {
+    background: #ffff91;
+  }
+}
+@-webkit-keyframes btns {
+  0% {
+    background: #ffff91;
+  }
+
+  33% {
+    background: #ffdced;
+  }
+
+  66% {
+    background: #b2ffe7;
+  }
+
+  100% {
+    background: #ffff91;
+  }
+}
+@-o-keyframes btns {
+  0% {
+    background: #ffff91;
+  }
+
+  33% {
+    background: #ffdced;
+  }
+
+  66% {
+    background: #b2ffe7;
+  }
+
+  100% {
+    background: #ffff91;
+  }
+}
+@-ms-keyframes btns {
+  0% {
+    background: #ffff91;
+  }
+
+  33% {
+    background: #ffdced;
+  }
+
+  66% {
+    background: #b2ffe7;
+  }
+
+  100% {
+    background: #ffff91;
+  }
+}
+@keyframes btns {
+  0% {
+    background: #ffff91;
+  }
+
+  33% {
+    background: #ffdced;
+  }
+
+  66% {
+    background: #b2ffe7;
+  }
+
+  100% {
+    background: #ffff91;
   }
 }
