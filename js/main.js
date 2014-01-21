@@ -66,6 +66,9 @@ $(function(){
     $('.zoom').magnificPopup({type:'image'});
   });
 
+  // Js mobile menu
+  $('nav ul').mobileMenu({switchWidth:600, topOptionText:'Menu', nested:false});
+
 });
 
 

@@ -198,6 +198,11 @@ main
       img
         width 170px
         height auto
+    .c4
+      img
+        width 100%
+        padding 0 20px
+        height auto
   h1
     font-family _sans
     font-size 2em
@@ -206,7 +211,7 @@ main
     line-height 1em
   h2
     font-weight bold
-    margin-bottom 5px
+    margin-bottom 10px
   code
     font-family _mono
     font-size .8em
@@ -273,11 +278,10 @@ nav
   margin-top _margin *2
 
 ul.fontlist
-  background #ededed
   padding 10px
   font-size medium
 
-.pack, #makeDonation
+.pack, #makeDonation, .fontlist
   border 1px solid _palegray
   margin-bottom 40px
 #makeDonation
@@ -288,23 +292,49 @@ ul.fontlist
     -moz-columns 1
     -moz-column-count 1
     -moz-column-width 1
+#customize
+  .column-group
+    -moz-column-count 4
+    -moz-column-gap 5px
+    -webkit-column-count 4
+    -webkit-column-gap 5px
+    column-count 4
+    column-gap 5px
+    margin-bottom 40px
+    figure
+      border 1px solid _palegray
+      display block
+      padding-bottom 20px
+      margin-bottom 20px
 .edit
-  border none
-  &:before
-    content "✎"
-    font-size 30px
-    position relative
-    top 7px
-    left -2px
+  border 1px solid _palegray
+  padding 0 3px
+  color _gray
+.box .section-inner .smallp
+  padding-bottom 7px
+  margin-bottom 7px
+  border-bottom 1px solid _palegray
 
 // Misc
 
+.mnav
+  position fixed
+  top 0
+  left 20%
+  width 80%
+  padding-top 7px
+  background white
+  border 0
+  z-index 3
+  border-bottom 1px solid black
+  option
+    padding 5px
 a
   color _text
   text-decoration none
   border-bottom 1px solid
   &:hover
-    border-color lightgray
+  border-color lightgray
   &:active
     background hsl(0, 0%, 97.5%)
     border-color black
@@ -312,6 +342,7 @@ a
 input[type="email"],input[type="number"], select
   font-size 15px
   border 1px solid _palegray
+  color _gray
 
 clearfix()
   &:after
@@ -327,34 +358,21 @@ clearfix()
 
 @media only screen and (max-width: 900px)
   main
-    width 100%
-    header .bbox.min
-      top 80px
-      left 10px
-    .box .section-inner
-      padding-top 20vh
+    width 70%
   nav
-    z-index 3
-    left 0
-    width 100%
-    li
-      font-size .8em
-      line-height 1.3em
-      text-align center
-      width 16.30vw
-      float left
-      a
-        outline 1px solid _gray
-        height 60px
-        padding 10px 0 0 0
+    width 30%
+    li a
+      padding-left 10px
 
 @media only screen and (max-width: 599px)
   body
     font-size 15px
     line-height 22px
-  main header .bbox.min
-    top 40px
-    left 45%
+  main
+    width 100%
+    header .bbox.min
+      top 2px
+      left 2%
   nav li
     font-size .7em
     a
@@ -362,14 +380,28 @@ clearfix()
       height 35px
   .box
     .section-inner
-      padding 120px 10px
+      padding 70px 10px 50px 10px
       .c3
         clear both
         width 100%
-      img
-        width 100%
-        height auto
-
+        img,.smallimg
+          width 100% !important
+          max-width 300px
+          height auto
+  #customize
+    .column-group
+      -moz-column-count 2
+      -moz-column-gap 5px
+      -webkit-column-count 2
+      -webkit-column-gap 5px
+      column-count 2
+      column-gap 5px
+      margin-bottom 40px
+      figure
+        border 1px solid _palegray
+        display block
+        padding-bottom 20px
+        margin-bottom 20px
 ::selection {background:#dedede;}
 ::-moz-selection {background:#dedede;}
 
