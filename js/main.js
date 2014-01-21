@@ -1,17 +1,5 @@
 $(function(){
 
-  var $window = $(window),
-      $fullh = $('.fullh'),
-      $navitem = $('nav li');
-      $btns = $('.btnbox button');
-
-  // With throttle
-  $window.resize($.throttle(20, function(){
-      var $window = $(window),
-          $wh = $window.height()
-      $fullh.css('minHeight', $wh);
-  })).resize();
-
   // Copy to clipboard
   var copied = '<p class="copied">✓ Copied</p>';
   $('.copy').click(function(){

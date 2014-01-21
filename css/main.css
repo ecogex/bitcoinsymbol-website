@@ -147,6 +147,7 @@ main header {
   margin: 0 auto;
   text-align: center;
   position: relative;
+  height: 100vh;
 }
 main header .bbox {
   -moz-transition-property: all;
@@ -378,11 +379,11 @@ main header .bbox .description {
 }
 .button:hover,
 .coinbase-button:hover {
-  border: 1px solid;
-  -webkit-animation: btns 1s infinite;
-  -moz-animation: btns 1s infinite;
-  -o-animation: btns 1s infinite;
-  animation: btns 1s infinite;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
+  background: none;
 }
 .button:active,
 .coinbase-button:active {
@@ -453,7 +454,7 @@ ul.fontlist {
   border: 1px solid #eee;
   display: block;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .edit {
   border: 1px solid #eee;

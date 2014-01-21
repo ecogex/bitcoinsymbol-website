@@ -59,6 +59,7 @@ main
     margin 0 auto
     text-align center
     position relative
+    height 100vh
     .bbox
       transition(all, .1s, ease-out)
       background white
@@ -235,11 +236,11 @@ main
   -o-animation btns 80s infinite
   animation btns 80s infinite
   &:hover
-    border 1px solid
-    -webkit-animation btns 1s infinite
-    -moz-animation btns 1s infinite
-    -o-animation btns 1s infinite
-    animation btns 1s infinite
+    -webkit-animation none
+    -moz-animation none
+    -o-animation none
+    animation none
+    background none
   &:active
     color _text
 
@@ -305,7 +306,7 @@ ul.fontlist
       border 1px solid _palegray
       display block
       padding-bottom 20px
-      margin-bottom 20px
+      margin-bottom 5px
 .edit
   border 1px solid _palegray
   padding 0 3px
