@@ -5,7 +5,7 @@ JS_FILES = js/jquery-1.10.2.min.js \
            js/mobilemenu.js \
            js/main.js
 
-CSS_FILES = css/f/stylesheet.css \
+CSS_FILES = css/fonts.css \
             css/main.css \
             css/magnific-popup.css
 
