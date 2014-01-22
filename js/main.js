@@ -1,5 +1,8 @@
 $(function(){
 
+  
+  var $window = $(window);
+  
   // Copy to clipboard
   var copied = '<p class="copied">✓ Copied</p>';
   $('.copy').click(function(){
@@ -12,9 +15,9 @@ $(function(){
 
   // zclip (Flash)
   function doZclip(){
-    $('.theb').zclip({
+    $('.copy').zclip({
       path:'js/ZeroClipboard.swf',
-      copy:$('.theb').text(),
+      copy:$('.copy').text(),
       afterCopy:function(){
         $(this).parent('h1').prepend(copied);
       }
@@ -55,8 +58,8 @@ $(function(){
   });
 
   // Js mobile menu
-  $('nav ul').mobileMenu({switchWidth:600, topOptionText:'Menu', nested:false});
-
+  $('nav ul').mobileMenu({switchWidth:769, topOptionText:'Menu', groupPageText:'Main', prependTo:'.mnav-sub', nested:true});
+  
 });
 
 

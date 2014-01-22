@@ -177,11 +177,11 @@ main header .bbox.min {
   background: none;
   padding-top: 0px;
   z-index: 9;
-  top: 7%;
-  left: 3%;
+  left: 1.5em;
+  top: 0.5em;
 }
 main header .bbox.min .theb {
-  font-size: 35px;
+  font-size: 45px;
   margin-bottom: 0;
 }
 main header .bbox.min.visible {
@@ -466,19 +466,30 @@ ul.fontlist {
   margin-bottom: 7px;
   border-bottom: 1px solid #eee;
 }
-.mnav {
+.mnav-sub {
+  display: none;
   position: fixed;
   top: 0;
-  left: 20%;
-  width: 80%;
-  padding-top: 7px;
-  background: #fff;
-  border: 0;
+  left: 0;
+  padding-left: 20%;
+  width: 100%;
   z-index: 3;
   border-bottom: 1px solid #000;
+  background: #fff;
 }
-.mnav option {
+.mnav-sub .mnav {
+  -webkit-appearance: none;
+  padding: 20px 0 10px 0;
+  width: 100%;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+}
+.mnav-sub .mnav option {
   padding: 5px;
+}
+.mnav-sub .mnav option:first-child {
+  display: none;
 }
 a {
   color: #000;
@@ -501,38 +512,12 @@ select {
 :-moz-any-link:focus {
   outline: none;
 }
-@media only screen and (max-width: 900px) {
-  main {
-    width: 70%;
-  }
-  nav {
-    width: 30%;
-  }
-  nav li a {
-    padding-left: 10px;
-  }
-}
-@media only screen and (max-width: 599px) {
-  body {
-    font-size: 15px;
-    line-height: 22px;
-  }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px), screen and (max-width: 768px) {
   main {
     width: 100%;
   }
-  main header .bbox.min {
-    top: 2px;
-    left: 2%;
-  }
-  nav li {
-    font-size: 0.7em;
-  }
-  nav li a {
-    width: 50vw;
-    height: 35px;
-  }
   .box .section-inner {
-    padding: 70px 10px 50px 10px;
+    padding: 90px 10px 50px 10px;
   }
   .box .section-inner .c3 {
     clear: both;
@@ -544,6 +529,12 @@ select {
     max-width: 300px;
     height: auto;
   }
+  .mnav-sub {
+    display: block;
+  }
+  .mnav-sub .mnav {
+    font-size: 1.2em;
+  }
   #customize .column-group {
     -moz-column-count: 2;
     -moz-column-gap: 5px;
@@ -553,11 +544,18 @@ select {
     column-gap: 5px;
     margin-bottom: 40px;
   }
-  #customize .column-group figure {
-    border: 1px solid #eee;
-    display: block;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .box .section-inner {
+    padding: 70px 10px 50px 10px;
+    min-height: 500px;
+  }
+  .mnav-sub {
+    padding-left: 100px;
   }
 }
 ::selection {
