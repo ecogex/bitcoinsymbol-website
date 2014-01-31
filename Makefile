@@ -5,9 +5,9 @@ JS_FILES = js/jquery-1.10.2.min.js \
            js/mobilemenu.js \
            js/main.js
 
-STYL_FILE = css/main.styl
-
 JS_FINAL = js/bitcoinsymbol.js
+
+STYL_FILE = css/main.styl
 CSS_FINAL = css/main.css
 
 all: $(JS_FINAL) $(CSS_FINAL)
