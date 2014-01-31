@@ -1,3 +1,7 @@
 # Bitcoin Symbol
 
-A web page to promote Ƀ as the Bitcoin symbol.
+A website to promote Ƀ as the Bitcoin symbol.
+
+## Contributing
+
+See the [CONTRIBUTING.md](CONTRIBUTING.md) file.
