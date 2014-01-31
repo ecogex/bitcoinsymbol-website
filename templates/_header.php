@@ -11,6 +11,6 @@
     <link rel="icon" type="image/x-icon" href="i/icons/favicon.ico" />
     <link rel="logo" type="image/svg" href="i/bitcoin-symbol.svg" />
     <meta property="og:image" content="i/icons/favicon-1024.png">
-    <link rel="stylesheet" href="css/bitcoinsymbol.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>

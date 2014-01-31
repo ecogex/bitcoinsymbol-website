@@ -8,7 +8,7 @@ JS_FILES = js/jquery-1.10.2.min.js \
 STYL_FILE = css/main.styl
 
 JS_FINAL = js/bitcoinsymbol.js
-CSS_FINAL = css/bitcoinsymbol.css
+CSS_FINAL = css/main.css
 
 all: $(JS_FINAL) $(CSS_FINAL)
 
