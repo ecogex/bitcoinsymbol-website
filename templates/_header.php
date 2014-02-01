@@ -12,12 +12,7 @@
     <link rel="logo" type="image/svg" href="i/bitcoin-symbol.svg" />
     <meta property="og:image" content="i/icons/favicon-1024.png">
     
-    <link rel="stylesheet" type="text/css" media="screen" href="css/f/stylesheet.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/magnific-popup.css" />
-    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
-    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.positioning.css" />
-    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.widescreen.css" />
     <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
   </head>
   <body>
