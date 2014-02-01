@@ -220,22 +220,6 @@ body
     border 1px solid _palegray
     padding 0 2px
 
-.button, .coinbase-button
-  width 100%
-  display block
-  padding 30px 20px
-  text-align center
-  margin 0 auto
-  font-size 1.6em
-  line-height 1.2em
-  position relative
-  border 1px solid
-  background #ffff61
-  &:hover
-    background #ffff89
-  &:active
-    background #ffff61
-
 // Navigation
 
 nav
@@ -270,17 +254,10 @@ ul.fontlist
   padding 10px
   font-size medium
 
-.pack, #makeDonation, .fontlist
+.pack, form, .fontlist
   border 1px solid _palegray
   margin-bottom 40px
-#makeDonation
-  padding _margin *.5
-  label
-    display block
-  ul
-    -moz-columns 1
-    -moz-column-count 1
-    -moz-column-width 1
+
 #customize
   .column-group
     -moz-column-count 4
@@ -322,11 +299,6 @@ a
     background hsl(0, 0%, 97.5%)
     border-color black
 
-input[type="email"],input[type="number"], select
-  font-size 15px
-  border 1px solid _palegray
-  color _gray
-
 clearfix()
   &:after
     content ''
@@ -336,6 +308,52 @@ clearfix()
 :-moz-any-link:focus
   outline none
 
+// Buttons and Forms
+
+
+.button, .coinbase-button
+  width 100%
+  display block
+  padding 30px 20px
+  text-align center
+  margin 0 auto
+  font-size 1.6em
+  line-height 1.2em
+  position relative
+  border 1px solid
+  background #ffff61
+  &:hover
+    background #ffff89
+  &:active
+    background #ffff61
+form
+  overflow hidden
+  padding _margin *.5
+  label
+    display block
+    margin-bottom 4px
+  &#makeDonation ul
+    -moz-columns 1
+    -moz-column-count 1
+    -moz-column-width 1
+  &#mc-embedded-subscribe-form
+    .button
+      font-size 1em
+      padding 15px    
+
+input[type="email"],input[type="number"], select
+  font-size 1em
+  border 1px solid _text
+  width 90%
+  color _gray
+  background white
+input[type="number"]
+  float left
+  width 50%
+  margin-right 5%
+select
+  width 45%
+  
 
 // Responsive
 
@@ -386,30 +404,3 @@ clearfix()
   90% { margin-top: -10px; }
   100% { opacity: 0; }
 }
-
-// Buttuns
-@-webkit-keyframes btns {
-    0% { color: rgb(255, 0, 59); }
-    33% { color: rgb(23, 150, 180); }
-    66% { color: rgb(18, 217, 56); }
-    100% { color: rgb(255, 0, 59); }
-}
-@-moz-keyframes btns {
-    0% { color: rgb(255, 0, 59); }
-    33% { color: rgb(23, 150, 180); }
-    66% { color: rgb(18, 217, 56); }
-    100% { color: rgb(255, 0, 59); }
-}
-@-o-keyframes btns {
-    0% { color: rgb(255, 0, 59); }
-    33% { color: rgb(23, 150, 180); }
-    66% { color: rgb(18, 217, 56); }
-    100% { color: rgb(255, 0, 59); }
-}
-@keyframes btns {
-    0% { color: rgb(255, 0, 59); }
-    33% { color: rgb(23, 150, 180); }
-    66% { color: rgb(18, 217, 56); }
-    100% { color: rgb(255, 0, 59); }
-}
-
