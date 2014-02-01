@@ -1,0 +1,62 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+}
+body, button, input {
+  font: 18px sans-serif;
+}
+body > header {
+  overflow: hidden;
+  line-height: 80px;
+}
+body > header h1 {
+  float: left;
+  margin: 0;
+}
+body > header p {
+  float: right;
+  margin: 0;
+}
+h2 {
+  margin: 60px 0 20px;
+}
+.login label {
+  display: inline-block;
+  width: 100px;
+}
+.new-product label b {
+  display: inline-block;
+  width: 150px;
+}
+.new-product button[type=submit] {
+  margin-left: 150px;
+  width: 80px;
+  height: 40px;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td, th {
+  padding: 20px;
+  border: 1px solid grey;
+}
+table div.edit {
+  display: none;
+}
+table tr.edit div.edit {
+  display: block;
+}
+table tr.edit div.normal {
+  display: none;
+}
+table input {
+  width: 200px;
+}
+table input[name=amount] {
+  width: 100px;
+}

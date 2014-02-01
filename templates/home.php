@@ -1,27 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset=utf-8 />
-    <title>Ƀ is for Bitcoin</title>
-    <link rel="apple-touch-icon" type="image/png" sizes="16x16" href="i/icons/favicon.png" />
-    <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="i/icons/favicon-512.png" />
-    <link rel="apple-touch-icon" type="image/png" sizes="128x128" href="i/icons/favicon-128.png" />
-    <link rel="apple-touch-icon" type="image/png" sizes="32x32" href="i/icons/favicon-32.png" />
-    <link rel="apple-touch-icon" type="image/png" sizes="32x32" href="i/icons/favicon-32.png" />
-    <link rel="icon" type="image/x-icon" href="i/icons/favicon.ico" />
-    <link rel="logo" type="image/svg" href="i/bitcoin-symbol.svg" />
-    <meta property="og:image" content="i/icons/favicon-1024.png">
-    
-    <link rel="stylesheet" type="text/css" media="screen" href="css/f/stylesheet.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/magnific-popup.css" />
-    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
-    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.positioning.css" />
-    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.widescreen.css" />
-    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
-  </head>
-  <body>
-    <div id="page">
       <nav id="menu">
         <ul>
           <li><a href="#why">Why Ƀ?</a></li>
@@ -375,6 +351,7 @@
           <p class="smallp"><a href="#donate">Donations</a> will be much appreciated!</p>
         </div>
       </section>
+<<<<<<< HEAD:index.html
       <div class="popup"></div>  
     </div>
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
@@ -385,3 +362,6 @@
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
+=======
+    </main>
+>>>>>>> 24e3ed6762fda26e522e5e9f32dcc89318d6b735:templates/home.php
