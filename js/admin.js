@@ -1,13 +1,15 @@
 (function(doc) {
 
   selectorEach('tr form.update', function(form) {
-    on('submit', form, function(e) {
-      var tr = closestTagName(this, 'tr');
-      var fields = form.querySelectorAll('input[type=hidden]');
-      var i = fields.length;
-      while (i--) {
-        fields[i].value = tr.querySelector('.edit [name='+fields[i].name+']').value;
-      }
+    on('submit', form, updateFormFields.bind(null, form));
+  });
+
+  selectorEach('.edit input[type=text], .edit input[type=number]', function(elt) {
+    on('keypress', elt, function(e) {
+      if (e.keyCode !== 13) return;
+      var form = closestTagName(elt, 'tr').querySelector('form.update');
+      updateFormFields(form);
+      form.submit();
     });
   });
 
@@ -16,7 +18,7 @@
       selectorEach('tr', function(tr) {
         tr.classList.remove('edit');
       });
-      closestTagName(this, 'tr').classList.add('edit');
+      closestTagName(this, 'tr').classList.add('edit')
     });
   });
 
@@ -31,6 +33,15 @@
     var elts = container.querySelectorAll(selector);
     var i = elts.length;
     while (i--) fn(elts[i]);
+  }
+
+  function updateFormFields(form) {
+    var tr = closestTagName(form, 'tr');
+    var fields = form.querySelectorAll('input[type=hidden]');
+    var i = fields.length;
+    while (i--) {
+      fields[i].value = tr.querySelector('.edit [name='+fields[i].name+']').value;
+    }
   }
 
   function on(event, elt, fn) {
