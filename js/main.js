@@ -1,18 +1,19 @@
 $(function () {
-
-
-  var $window = $(window);
-
+  var $window = $(window),
+      $thediv = $('.fullh')
+    $window.resize(function() {
+      $height = $window.height()
+      $thediv.css('height', $height);
+      $('nav li a').css('paddingTop', $height/15,5)
+    }).resize();
+  
+  
   // Copy to clipboard
   var copied = '<p class="copied">✓ Copied</p>';
   $('.copy').click(function () {
     copyToClipboard('Ƀ');
   })
 
-  function copyToClipboard(text) {
-    window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
-    $('.theb').parent('h1').prepend(copied);
-  }
 
   // Scroll animation
   function scrolltop(time, href){

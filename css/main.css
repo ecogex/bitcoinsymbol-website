@@ -145,7 +145,6 @@ body {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  height: 100vh;
 }
 #page header .bbox {
   -moz-transition-property: all;
@@ -165,7 +164,6 @@ body {
   transition-timing-function: ease-out;
   background: #fff;
   margin: -1px 0 1px;
-  height: 100vh;
   padding-top: 20%;
 }
 #page header .bbox.min {
@@ -198,7 +196,7 @@ body {
 }
 #page header .bbox h1 .copied {
   opacity: 0;
-  font-size: 15px;
+  font-size: 1.5em;
   color: #84e56b;
   font-family: 'source_sans_pro', arial, sans-serif;
   position: absolute;
@@ -374,7 +372,7 @@ nav li {
 nav li a {
   padding-left: 100px;
   height: 100%;
-  padding-top: 6.5vh;
+  padding-top: 6.5%;
   witdh: 100%;
   display: block;
   border: none;
@@ -517,11 +515,20 @@ select {
     display: none !important;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   body {
     font-size: 15px;
     line-height: 22px;
   }
+  .box .section-inner .c3 {
+    float: none;
+    width: 100%;
+  }
+  nav li a {
+    padding-left: 30px;
+  }
+}
+@media only screen and (max-width: 899px) {
   #page header .bbox.min {
     display: block;
   }

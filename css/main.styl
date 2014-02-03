@@ -58,12 +58,10 @@ body
     margin 0 auto
     text-align center
     position relative
-    height 100vh
     .bbox
       transition(all, .1s, ease-out)
       background white
       margin - gutter 0 gutter
-      height 100vh
       padding-top 20%
       &.min
         display none
@@ -91,7 +89,7 @@ body
         position relative
         .copied
           opacity 0
-          font-size 15px
+          font-size 1.5em
           color #84E56B
           font-family _sans
           position absolute
@@ -235,7 +233,7 @@ nav
     a
       padding-left 100px
       height 100%
-      padding-top 6.5vh
+      padding-top 6.5%
       witdh 100%
       display block
       border none
@@ -369,11 +367,17 @@ select
   #mmenu-blocker
     display none !important
 
-
-@media only screen and (max-width: 500px)
+@media only screen and (max-width: 600px)
   body
     font-size 15px
     line-height 22px
+  .box .section-inner .c3
+    float none
+    width 100%
+  nav li a
+    padding-left 30px
+    
+@media only screen and (max-width: 899px)
   #page header .bbox.min
     display block
   .box
