@@ -38,7 +38,7 @@ $app->route('POST', '/shop', function($app) use($shop_data) {
   if (empty($products)) {
     $app->redirect('/shop');
   }
-  var_dump($products);
+  // var_dump($products);
 });
 
 // Admin auth
@@ -87,8 +87,10 @@ $app->route('GET', '/admin/products', function($app) use($shop_data) {
   check_admin_auth();
   $data = array('logged' => TRUE);
   $data['products'] = $shop_data->get_all_products();
-  foreach ($data['products'] as $product) {
-    $product->amount_btc = $shop_data->satoshi_to_btc($product->amount);
+  if ($data['products']) {
+    foreach ($data['products'] as $product) {
+      $product->amount_btc = $shop_data->satoshi_to_btc($product->amount);
+    }
   }
   $app->render('products', $data, array(
     'templates' => __DIR__ . '/templates/admin'

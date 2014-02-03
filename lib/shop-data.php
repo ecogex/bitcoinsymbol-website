@@ -88,19 +88,9 @@ class ShopData {
   }
 
   function get_pdo($dsn) {
-      try {
-        $pdo = new PDO($dsn, NULL, NULL, array(
-          PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-          PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        ));
-        // $this->setEncoding();
-        // $this->pdo->setAttribute( PDO::ATTR_STRINGIFY_FETCHES, TRUE );
-      } catch (PDOException $exception) {
-        $matches = array();
-        $dbname = (preg_match( '/dbname=(\w+)/', $dsn, $matches))? $matches[1] : '?';
-        throw new PDOException("Could not connect to database ($dbname).",
-                               $exception->getCode());
-      }
-      return $pdo;
+    return new PDO($dsn, NULL, NULL, array(
+      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+      PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    ));
   }
 }
