@@ -10,7 +10,7 @@ class ShopData {
   }
 
   function get_all_products() {
-    $st = $this->pdo->prepare("SELECT id, name, image, amount, stock FROM products");
+    $st = $this->pdo->prepare("SELECT id, name, image, amount, stock, description FROM products");
     $st->execute();
     return $st->fetchAll();
   }
@@ -31,7 +31,7 @@ class ShopData {
 
   function update_product($product) {
     $sql = 'UPDATE products SET '.
-           'name=:name, image=:image, amount=:amount, stock=:stock '.
+           'name=:name, image=:image, amount=:amount, stock=:stock, description=:description '.
            'WHERE id=:id';
     $st = $this->pdo->prepare($sql);
     return $st->execute(array(
@@ -40,18 +40,20 @@ class ShopData {
       ':image' => $product['image'],
       ':amount' => $product['amount'],
       ':stock' => $product['stock'],
+      ':description' => $product['description'],
     ));
   }
 
   function add_product($product) {
-    $sql = 'INSERT INTO products (name, image, amount, stock) '.
-           'VALUES (:name, :image, :amount, :stock)';
+    $sql = 'INSERT INTO products (name, image, amount, stock, description) '.
+           'VALUES (:name, :image, :amount, :stock, :description)';
     $st = $this->pdo->prepare($sql);
     return $st->execute(array(
       ':name' => $product['name'],
       ':image' => $product['image'],
       ':amount' => $product['amount'],
       ':stock' => $product['stock'],
+      ':description' => $product['description'],
     ));
   }
 
@@ -77,7 +79,8 @@ class ShopData {
       name TEXT,
       image TEXT,
       amount INTEGER,
-      stock INTEGER
+      stock INTEGER,
+      description TEXT
     )");
     $this->pdo->exec("CREATE TABLE orders (
       id INTEGER PRIMARY KEY AUTOINCREMENT,

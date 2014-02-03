@@ -4,8 +4,10 @@ function validate_admin_product_post() {
   $results = array();
   if (empty($_POST['name'])) return NULL;
   if (empty($_POST['image'])) return NULL;
+  if (empty($_POST['description'])) return NULL;
   $results['name'] = $_POST['name'];
   $results['image'] = $_POST['image'];
+  $results['description'] = $_POST['description'];
   if (filter_input(INPUT_POST, 'amount', FILTER_VALIDATE_FLOAT) === FALSE) {
     return NULL;
   }

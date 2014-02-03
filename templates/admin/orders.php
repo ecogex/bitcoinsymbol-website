@@ -8,6 +8,7 @@
     <th>Date</th>
     <th>Products</th>
     <th>Amount</th>
+    <th>Description</th>
   </tr>
   <?php foreach($orders as $order): ?>
   <tr>

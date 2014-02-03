@@ -9,6 +9,7 @@
     <th>Image</th>
     <th>Amount</th>
     <th>Stock</th>
+    <th>Description</th>
     <th>Actions</th>
   </tr>
   <?php foreach($products as $product): ?>
@@ -50,6 +51,14 @@
     </td>
     <td>
       <div class="normal">
+        <?= $product->description ?>
+      </div>
+      <div class="edit">
+        <input type="text" name="description" value="<?= $product->description ?>">
+      </div>
+    </td>
+    <td>
+      <div class="normal">
         <form method="post"
           action="<?= $base_url ?>admin/products/<?= $product->id ?>/delete"
           onsubmit="return confirm('Are you sure?')">
@@ -66,6 +75,7 @@
           <input name="image" type="hidden">
           <input name="amount" type="hidden">
           <input name="stock" type="hidden">
+          <input name="description" type="hidden">
           <button type="submit" class="save">Save</button>
           <button type="button" class="cancel">Cancel</button>
         </form>
@@ -84,5 +94,6 @@
   <p><label><b>Image (relative):</b><input name="image" type="text" placeholder="i/my-image.jpg"></label></p>
   <p><label><b>Amount:</b><input name="amount" type="text" placeholder="0.345"> BTC</label></p>
   <p><label><b>Stock:</b><input name="stock" type="number" min="0" placeholder="1"></label></p>
+  <p><label><b>Description:</b><textarea name="description" type="text"></textarea></label></p>
   <p><button type="submit">Add</button></p>
 </form>
