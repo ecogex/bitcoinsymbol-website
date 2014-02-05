@@ -11,7 +11,7 @@ define('DATA_DIR', __DIR__ . '/data');
 $shop_data = new ShopData(DATA_DIR.'/shop.db');
 
 $app = new App(array(
-  'base_url' =>  'http://localhost/bitcoinsymbol/',
+  'base_url' => 'http://localhost/bitcoinsymbol/',
   'templates' =>  __DIR__ . '/templates',
 ));
 
