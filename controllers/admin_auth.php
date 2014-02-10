@@ -6,7 +6,7 @@ function controller_admin_auth($app) {
     $auth = get_auth();
     $data = ['admin_csrf' => $auth->csrf()];
     $this->render('login', $data, [
-      'templates' => __DIR__ . '/templates/admin'
+      'templates' => $this->get_setting('templates') . '/admin'
     ]);
   });
 
@@ -19,7 +19,7 @@ function controller_admin_auth($app) {
       'admin_csrf' => $auth->csrf(),
     ];
     $this->render('login', $data, [
-      'templates' => __DIR__ . '/templates/admin'
+      'templates' => $this->get_setting('templates') . '/admin'
     ]);
   });
 
