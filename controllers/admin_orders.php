@@ -5,7 +5,7 @@ function controller_admin_orders($app) {
   $app->route('GET', '/admin/orders', function() {
     check_auth();
     $data = ['logged' => TRUE];
-    $data['orders'] = R::findAll('orders');
+    $data['orders'] = R::findAll('order', 'ORDER BY created DESC');
     $this->render('orders', $data, [
       'templates' => $this->get_setting('templates').'/admin'
     ]);

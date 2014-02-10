@@ -7,6 +7,7 @@ require_once __DIR__ . '/lib/blockchain.php';
 require_once __DIR__ . '/lib/app.php';
 require_once __DIR__ . '/lib/auth.php';
 require_once __DIR__ . '/lib/product.php';
+require_once __DIR__ . '/lib/order.php';
 
 R::setup('sqlite:'.DATA_DIR.'/shop.db');
 R::useWriterCache(true);
