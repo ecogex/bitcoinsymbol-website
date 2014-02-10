@@ -22,16 +22,12 @@ class App {
   }
 
   function route($method, $path, $callback) {
-    $route_callback = function() use($callback) {
-      $args = func_get_args();
-      array_unshift($args, $this);
-      call_user_func_array($callback, $args);
-    };
-    if ($method === 'POST') {
-      Macaw::post($path, $route_callback);
-    } else {
-      Macaw::get($path, $route_callback);
-    }
+    $macaw_method = ($method === 'POST')? 'post' : 'get';
+    call_user_func("Macaw::$macaw_method", $path, $callback->bindTo($this));
+  }
+
+  function get_routes() {
+    return Macaw::$routes;
   }
 
   function redirect($location) {
@@ -55,6 +51,8 @@ class App {
   }
 
   function render($name, $data=array(), $settings=array()) {
+    $layout = !isset($settings['layout']) || $settings['layout'] === TRUE;
+
     if (isset($settings['templates'])) {
       $tpl_dir = $settings['templates'];
     } else {
@@ -65,8 +63,9 @@ class App {
 
     extract($data);
     $app = $this;
-    include "$tpl_dir/_header.php";
+
+    if ($layout) include "$tpl_dir/_header.php";
     include "$tpl_dir/$name.php";
-    include "$tpl_dir/_footer.php";
+    if ($layout) include "$tpl_dir/_footer.php";
   }
 }

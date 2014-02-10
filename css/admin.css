@@ -1,5 +1,5 @@
 body {
-  max-width: 800px;
+  max-width: 990px;
   margin: 0 auto;
 }
 button {
@@ -27,11 +27,21 @@ h2 {
   display: inline-block;
   width: 100px;
 }
-.new-product label b {
+.single-product {
+  margin: 60px 0;
+}
+.single-product form {
+  padding: 20px;
+  border: 1px solid grey;
+}
+.single-product h1 {
+  margin: 0 0 20px;
+}
+.single-product label b {
   display: inline-block;
   width: 150px;
 }
-.new-product button[type=submit] {
+.single-product button[type=submit] {
   margin-left: 150px;
   width: 80px;
   height: 40px;
@@ -45,18 +55,9 @@ td, th {
   padding: 20px;
   border: 1px solid grey;
 }
-table div.edit {
-  display: none;
-}
-table tr.edit div.edit {
-  display: block;
-}
-table tr.edit div.normal {
-  display: none;
-}
 table input {
   width: 200px;
 }
-table input[name=amount] {
-  width: 100px;
+table input.mini {
+  width: 70px;
 }

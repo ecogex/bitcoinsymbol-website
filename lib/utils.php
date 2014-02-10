@@ -1,40 +1,57 @@
 <?php
 
-function validate_admin_product_post() {
-  $results = array();
-  if (empty($_POST['name'])) return NULL;
-  if (empty($_POST['image'])) return NULL;
-  if (empty($_POST['description'])) return NULL;
-  $results['name'] = $_POST['name'];
-  $results['image'] = $_POST['image'];
-  $results['description'] = $_POST['description'];
-  if (filter_input(INPUT_POST, 'amount', FILTER_VALIDATE_FLOAT) === FALSE) {
-    return NULL;
-  }
-  $results['amount'] = filter_input(INPUT_POST, 'amount',
-                                    FILTER_SANITIZE_NUMBER_FLOAT,
-                                    FILTER_FLAG_ALLOW_FRACTION);
-  $results['stock'] = filter_input(INPUT_POST, 'stock', FILTER_VALIDATE_INT,
-                                   array('min_range' => 0));
-  if ($results['stock'] === FALSE) $results['stock'] = 0;
-  if ($results['amount'] < 0) $results['amount'] = 0;
-  return $results;
+function error_generic($message, $status=500,
+                       $status_message='Internal Server Error') {
+  header("HTTP/1.0 $status $status_message");
+  echo "<h1>$message</h1>";
+  exit;
 }
 
-function filter_post_products($all_products) {
-  $prd_quantities_filtered = array();
-  $prd_quantities = filter_input(INPUT_POST, 'products', FILTER_VALIDATE_INT,
-                                 FILTER_REQUIRE_ARRAY);
-  $prd_quantities = array_slice($prd_quantities, 0, count($all_products));
-  foreach($prd_quantities as $quantity) {
-    if (!isset($all_products[$product_id])) break;
-    if ($quantity === FALSE) continue;
-    if ($quantity < 1) continue;
-    if ($quantity > $all_products[$product_id]->stock) continue;
-    $prd_quantities_filtered[] = (object)array(
-      'id' => $product_id,
-      'quantity' => $quantity,
-    );
+function error_404() {
+  header('HTTP/1.0 404 Not Found');
+  echo '<h1>404 Not Found</h1>';
+  exit;
+}
+
+function random_hash($seed) {
+  return sha1(uniqid($seed . mt_rand(), TRUE));
+}
+
+function btc_to_satoshi($amount) {
+  return (int)(round($amount * 1e8));
+}
+
+function satoshi_to_btc($amount) {
+  return ((float)$amount) / 1e8;
+}
+
+function validate_fields_exist($container, $fields) {
+  foreach ($fields as $field) {
+    if (!isset($container[$field]) || empty($container[$field])) {
+      return FALSE;
+    }
   }
-  return $prd_quantities_filtered;
+  return TRUE;
+}
+
+function validate_admin_product_post() {
+  $fields = [ 'name', 'image', 'description', 'amount', 'stock' ];
+  if(!validate_fields_exist($_POST, $fields)) return NULL;
+
+  $product = [];
+  $product['name'] = $_POST['name'];
+  $product['image'] = $_POST['image'];
+  $product['description'] = $_POST['description'];
+
+  $product['amount'] = filter_input(
+    INPUT_POST, 'amount', FILTER_SANITIZE_NUMBER_FLOAT,
+    FILTER_FLAG_ALLOW_FRACTION);
+
+  $product['stock'] = filter_input(
+    INPUT_POST, 'stock', FILTER_VALIDATE_INT, ['min_range' => 0]);
+
+  if ($product['stock'] === FALSE) $product['stock'] = 0;
+  if ($product['amount'] < 0) $product['amount'] = 0;
+
+  return (object)$product;
 }
