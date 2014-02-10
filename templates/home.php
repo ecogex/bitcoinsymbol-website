@@ -351,17 +351,3 @@
           <p class="smallp"><a href="#donate">Donations</a> will be much appreciated!</p>
         </div>
       </section>
-<<<<<<< HEAD:index.html
-      <div class="popup"></div>  
-    </div>
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="js/zclip.js"></script>
-    <script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
-    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
-</html>
-=======
-    </main>
->>>>>>> 24e3ed6762fda26e522e5e9f32dcc89318d6b735:templates/home.php

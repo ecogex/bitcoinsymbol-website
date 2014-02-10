@@ -9,6 +9,14 @@ class ShopData {
     $this->create_structure_if_not_exists();
   }
 
+  function btc_to_satoshi($amount) {
+    return (int)(round($amount * 1e8));
+  }
+
+  function satoshi_to_btc($amount) {
+    return ((float)$amount) / 1e8;
+  }
+
   function get_all_products() {
     $st = $this->pdo->prepare("SELECT id, name, image, amount, stock, description FROM products");
     $st->execute();
@@ -19,14 +27,6 @@ class ShopData {
     $st = $this->pdo->prepare("SELECT id, products, date, amount FROM orders");
     $st->execute();
     return $st->fetchAll();
-  }
-
-  function btc_to_satoshi($amount) {
-    return (int)(round($amount * 1e8));
-  }
-
-  function satoshi_to_btc($amount) {
-    return ((float)$amount) / 1e8;
   }
 
   function update_product($product) {
@@ -86,7 +86,8 @@ class ShopData {
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       products TEXT,
       date TEXT,
-      amount INTEGER
+      amount INTEGER,
+      status TEXT
     )");
   }
 

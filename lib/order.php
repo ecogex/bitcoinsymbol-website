@@ -1,9 +1,10 @@
 <?php
 
-class Order {
-  function __construct() {
-  }
+class Model_Order extends RedBean_SimpleModel {
 
-  static function all() {
+  function amount_btc($amount=NULL) {
+    if ($amount === NULL) return ((float)$this->amount) / 1e8;
+    $this->amount = (int)(round($amount * 1e8));
+    return $this->amount;
   }
 }

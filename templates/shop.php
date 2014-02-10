@@ -1,8 +1,18 @@
-    <nav>
-      <ul>
-        <li><a href="http://bitcoinsymbol.org">Back to the main page</a></li>
-      </ul>
-    </nav>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+    <header id="top">
+      <div class="bbox">
+        <h1><span class="theb copy">Ƀ</span></h1>
+        <p class="description">Bitcoin deserves the right symbol.</p>
+      </div>
+      <div class="bbox min">
+        <div class="theb">Ƀ</div>
+      </div>
+    </header>
     <main>
       <h1>Shop</h1>
       <form method="post" action="<?= $_SERVER['REQUEST_URI'] ?>" novalidate>
@@ -14,13 +24,13 @@
               <th>Name</th>
               <th>Description</th>
             </tr>
-            <?php foreach($products as $product): ?>
+            <?php foreach($products as $i => $product): ?>
             <tr>
-              <td><img src="<?= $product->image ?>"></td>
+              <td><img src="<?= $base_url . $product->image ?>"></td>
               <td>
                 <input type="number"
                   style="width:60px;padding:10px;"
-                  name="products[<?= $product->id ?>]"
+                  name="products[<?= $i ?>]"
                   value="0"
                   min="0"
                   max="<?= $product->stock ?>">
@@ -34,3 +44,5 @@
         </div>
       </form>
     </main>
+</body>
+</html>
