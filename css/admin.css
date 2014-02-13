@@ -6,7 +6,7 @@ button {
   cursor: pointer;
 }
 body, button, input {
-  font: 18px sans-serif;
+  font: 18px 'source_sans_pro', arial, sans-serif;
 }
 body > header {
   overflow: hidden;
@@ -32,7 +32,7 @@ h2 {
 }
 .single-product form {
   padding: 20px;
-  border: 1px solid grey;
+  border: 1px solid black;
 }
 .single-product h1 {
   margin: 0 0 20px;
@@ -46,6 +46,10 @@ h2 {
   width: 80px;
   height: 40px;
 }
+input[type=text], input[type=number], input[type=email], textarea{
+  border:1px solid black;
+  padding:2px;
+}
 table {
   width: 100%;
   border-spacing: 0;
@@ -53,11 +57,14 @@ table {
 }
 td, th {
   padding: 20px;
-  border: 1px solid grey;
+  border: 1px solid black;
 }
-table input {
+table input, table textarea {
   width: 200px;
 }
 table input.mini {
   width: 70px;
+}
+a{
+  color:black;
 }
