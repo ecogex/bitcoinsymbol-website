@@ -1,14 +1,72 @@
+body
+  font 18px 'source_sans_pro', arial, sans-serif
+  -webkit-animation rainbow 20s infinite
+  -moz-animation rainbow 20s infinite
+  -o-animation rainbow 20s infinite
+  animation rainbow 20s infinite
+main
+  max-width 1400px
+  width 100%
+  margin 0 auto
 .shop-items
   table
     width 100%
-    img
+    border-spacing 0
+    border-collapse collapse
+  img
       display block
       margin 0 auto
   td, th
     vertical-align middle
     text-align center
+    border 1px solid
+    padding 20px
   .submit
     text-align right
     button
       font-size 24px
       cursor pointer
+      background white
+      color inherit
+      border 10px solid
+      width 39%
+      padding 30px 10px
+      &:hover
+        color black
+  input.number
+    text-align center
+    font-size 1em
+
+// Form
+
+input[type=text], input[type=number], input[type=email], textarea
+  color inherit
+  border 1px solid
+  padding 2px
+
+// Borders animation
+
+@-webkit-keyframes rainbow {
+    0% { color: rgb(255, 0, 59); }
+    33% { color: rgb(23, 150, 180); }
+    66% { color: rgb(18, 217, 56); }
+    100% { color: rgb(255, 0, 59); }
+}
+@-moz-keyframes rainbow {
+    0% { color: rgb(255, 0, 59); }
+    33% { color: rgb(23, 150, 180); }
+    66% { color: rgb(18, 217, 56); }
+    100% { color: rgb(255, 0, 59); }
+}
+@-o-keyframes rainbow {
+    0% { color: rgb(255, 0, 59); }
+    33% { color: rgb(23, 150, 180); }
+    66% { color: rgb(18, 217, 56); }
+    100% { color: rgb(255, 0, 59); }
+}
+@keyframes rainbow {
+    0% { color: rgb(255, 0, 59); }
+    33% { color: rgb(23, 150, 180); }
+    66% { color: rgb(18, 217, 56); }
+    100% { color: rgb(255, 0, 59); }
+}

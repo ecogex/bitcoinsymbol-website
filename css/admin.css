@@ -58,6 +58,7 @@ table {
 td, th {
   padding: 20px;
   border: 1px solid black;
+  text-align:center;
 }
 table input, table textarea {
   width: 200px;

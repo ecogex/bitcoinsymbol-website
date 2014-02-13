@@ -2,17 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
+<!--tempoprary links-->
+<link rel="stylesheet" href="<?= $base_url ?>css/shop.css">
+<link rel="stylesheet" href="<?= $base_url ?>css/fonts.css">
 </head>
 <body>
-    <header id="top">
-      <div class="bbox">
-        <h1><span class="theb copy">Ƀ</span></h1>
-        <p class="description">Bitcoin deserves the right symbol.</p>
-      </div>
-      <div class="bbox min">
-        <div class="theb">Ƀ</div>
-      </div>
-    </header>
     <main>
       <h1>Delivery</h1>
       <form method="post" action="<?= $_SERVER['REQUEST_URI'] ?>">

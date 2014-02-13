@@ -13,7 +13,7 @@
     </p>
     <p>
       <label>
-        <b>Amount:</b><input name="amount" type="text" placeholder="0.345" value="<?= $product->amount_btc() ?>"> BTC
+        <b>Price:</b><input name="amount" type="text" placeholder="0.345" value="<?= $product->amount_btc() ?>"> BTC
       </label>
     </p>
     <p>
