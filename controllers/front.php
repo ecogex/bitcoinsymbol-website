@@ -39,35 +39,39 @@ function controller_front($app) {
 
   // Home
   $app->route('GET', '/', function() {
-    $this->render('home');
+    echo $this->render('home');
   });
 
   // Shop
   $app->route('GET', '/shop', function() {
-    $this->render('shop',
+    echo $this->render('products',
       ['products' => R::findAll('product')],
-      ['layout' => FALSE]);
+      ['templates' => $this->get_setting('templates').'/shop']);
   });
 
   // Shop: submit a selection of products
   $app->route('POST', '/shop', function() {
     $order = get_order();
-    if ($order === NULL) $this->redirect('/shop');
-    $_SESSION['order'] = R::store($order);
+    if ($order === NULL) $this->redirect('/shop?error=noproducts');
+    $_SESSION['order'] = $order;
     $this->redirect('/shop/delivery');
   });
 
   // Shop
   function check_order_process() {
     if (!isset($_SESSION['order'])) $this->redirect('/shop');
-    $order = R::load('order', $_SESSION['order']);
-    if (!$order->id) $this->redirect('/shop');
-    return $order;
+    return $_SESSION['order'];
   }
 
   $app->route('GET', '/shop/delivery', function() {
-    check_order_process();
-    $this->render('shop/delivery', [], ['layout' => FALSE]);
+    $order = check_order_process();
+    echo $this->render('delivery', [
+        'order' => $order,
+        'email' => '',
+        'name' => '',
+        'address' => '',
+      ],
+      ['templates' => $this->get_setting('templates').'/shop']);
   });
 
   $app->route('POST', '/shop/delivery', function() {
@@ -77,8 +81,22 @@ function controller_front($app) {
     $name = isset($_POST['name'])? trim($_POST['name']) : NULL;
     $address = isset($_POST['address'])? trim($_POST['address']) : NULL;
 
-    if (!$email || !$name || !$address) {
-      $this->redirect('/shop/delivery?error');
+    $errors = [];
+    if (!$email) $errors['email'] = 'You need to provide a valid email address.';
+    if (!$name) $errors['name'] = 'You need to provide a name.';
+    if (!$address) $errors['address'] = 'You need to provide a postal address.';
+
+    if (!empty($errors)) {
+      // $this->redirect('/shop/delivery?error');
+      echo $this->render('delivery', [
+          'order' => $order,
+          'email' => htmlspecialchars($email),
+          'name' => htmlspecialchars($name),
+          'address' => htmlspecialchars($address),
+          'errors' => $errors,
+        ],
+        ['templates' => $this->get_setting('templates').'/shop']);
+      return;
     }
 
     $order->email = $email;
