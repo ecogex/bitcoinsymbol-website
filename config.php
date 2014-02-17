@@ -3,7 +3,15 @@
 define('BASE_URL', 'http://localhost/bitcoinsymbol/');
 define('ADMIN_USER', 'pierre');
 define('ADMIN_PASSWORD', 'abc');
-define('BITCOIN_ADDRESS', 'replace me with a bitcoin address');
+
+// Email where emails are sent to the admin
+define('ADMIN_EMAIL', '<email@email.email>');
+// Sender address
+define('ADMIN_FROM_EMAIL', '<email@email.email>');
+// Sender name
+define('ADMIN_FROM_NAME', '<Admin name>');
+// Bitcoin address
+define('BITCOIN_ADDRESS', '<Bitcoin address>');
 
 define('DATA_DIR', __DIR__ . '/data');
 define('CONTROLLERS_DIR', __DIR__ . '/controllers');
