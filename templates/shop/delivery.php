@@ -1,5 +1,5 @@
 <main>
-  <div style="float:left">
+  <div class="left delivery">
     <h1>Delivery</h1>
     <?php if (isset($errors)): ?>
     <div class="errors">
@@ -33,17 +33,17 @@
       <p class="submit"><button type="submit">Confirm</button></p>
     </form>
   </div>
-  <section id="order" style="float:right">
+  <section class="right order">
     <h1>Order</h1>
     <ul>
     <?php foreach($order->sharedProduct as $product): ?>
     <li>
-      <img src="<?= $base_url.$product->image ?>" alt="" width="50"><br>
+      <img src="<?= $base_url.$product->image ?>" alt="" width="100"><br>
       <?= $product->name ?>
       (<?= $order->get_quantity($product->id) ?>)
     </li>
     <?php endforeach ?>
     </ul>
-    <p>Total: <?= $order->amount_btc() ?> BTC</p>
+    <p class="total">Total: <?= $order->amount_btc() ?> BTC</p>
   </section>
 </main>
