@@ -11,7 +11,7 @@ function controller_admin_products($app) {
   $app->route('GET', '/admin/products', function() {
     check_auth();
     $data = [ 'logged' => TRUE, 'products' => R::findAll('product') ];
-    $this->render('products', $data, [
+    echo $this->render('products', $data, [
       'templates' => $this->get_setting('templates').'/admin'
     ]);
   });
@@ -37,7 +37,7 @@ function controller_admin_products($app) {
     if (!$product->id) $this->redirect('/admin/products');
 
     $data = [ 'logged' => TRUE, 'product' => $product ];
-    $this->render('product', $data, [
+    echo $this->render('product', $data, [
       'templates' => $this->get_setting('templates').'/admin'
     ]);
   });

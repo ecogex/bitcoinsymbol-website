@@ -5,7 +5,7 @@ function controller_admin_auth($app) {
   $app->route('GET', '/admin/login', function() {
     $auth = get_auth();
     $data = ['admin_csrf' => $auth->csrf()];
-    $this->render('login', $data, [
+    echo $this->render('login', $data, [
       'templates' => $this->get_setting('templates') . '/admin'
     ]);
   });
@@ -18,7 +18,7 @@ function controller_admin_auth($app) {
       'error' => 'Authentification problem, please try again.',
       'admin_csrf' => $auth->csrf(),
     ];
-    $this->render('login', $data, [
+    echo $this->render('login', $data, [
       'templates' => $this->get_setting('templates') . '/admin'
     ]);
   });

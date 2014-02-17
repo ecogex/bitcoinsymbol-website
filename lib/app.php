@@ -50,7 +50,7 @@ class App {
     });
   }
 
-  function render($name, $data=array(), $settings=array()) {
+  function render($tpl_name, $data=array(), $settings=array()) {
     $layout = !isset($settings['layout']) || $settings['layout'] === TRUE;
 
     if (isset($settings['templates'])) {
@@ -64,8 +64,14 @@ class App {
     extract($data);
     $app = $this;
 
+    ob_start();
+
     if ($layout) include "$tpl_dir/_header.php";
-    include "$tpl_dir/$name.php";
+    include "$tpl_dir/$tpl_name.php";
     if ($layout) include "$tpl_dir/_footer.php";
+
+    $output = ob_get_contents();
+    ob_end_clean();
+    return $output;
   }
 }

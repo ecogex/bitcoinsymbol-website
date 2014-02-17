@@ -95,14 +95,14 @@ function controller_front($app) {
 
     $order->input_address = $input_address;
     R::store($order);
+
     $this->redirect('/shop/payment');
   });
 
   $app->route('GET', '/shop/payment', function() {
     $order = check_order_process();
-
-    $this->render('shop/payment', [
-      'order' => $order
-    ], ['layout' => FALSE]);
+    echo $this->render('payment',
+      ['order' => $order],
+      ['templates' => $this->get_setting('templates').'/shop']);
   });
 }
