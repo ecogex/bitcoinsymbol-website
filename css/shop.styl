@@ -1,4 +1,23 @@
 @import 'reset.css'
+@import 'nib/vendor'
+
+transition(properties, durations, timings)
+    -moz-transition-property properties
+    -o-transition-property properties
+    -webkit-transition-property properties
+    -ms-transition-property properties
+    transition-property properties
+    -moz-transition-duration durations
+    -o-transition-duration durations
+    -webkit-transition-duration durations
+    -ms-transition-duration durations
+    transition-duration durations
+    -moz-transition-timing-function timings
+    -o-transition-timing-function timings
+    -webkit-transition-timing-function timings
+    -ms-transition-timing-function timings
+    transition-timing-function timings
+    
 
 body
   font 18px 'source_sans_pro', arial, sans-serif
@@ -36,6 +55,7 @@ main
   img
       display block
       margin 0 auto
+      max-width 300px
   td, th
     vertical-align middle
     text-align center
@@ -44,6 +64,7 @@ main
   .submit
     text-align right
   input.number
+    transition(all, 0.2s, ease-out)
     text-align center
     font-size 1em
   button
@@ -67,8 +88,6 @@ main
     width 100%
     max-width 300px
   
-    
-    
 // Form
 
 input[type=text], input[type=number], input[type=email], textarea
@@ -90,8 +109,13 @@ button
   border 10px solid
   padding 30px 10px
   width 100%
-  &:hover
-    color black
+  &:hover, &:focus
+    color blue
+
+.r1
+  transform rotate(-10deg) scale(1.1)
+.r2
+  transform rotate(10deg) scale(1.1)
 
 // Borders animation
 
@@ -119,3 +143,4 @@ button
     66% { color: rgb(18, 217, 56); }
     100% { color: rgb(255, 0, 59); }
 }
+

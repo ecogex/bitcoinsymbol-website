@@ -4,6 +4,10 @@ body {
   -webkit-animation: rainbow 20s infinite;
   -moz-animation: rainbow 20s infinite;
   -o-animation: rainbow 20s infinite;
+  -webkit-animation: rainbow 20s infinite;
+  -moz-animation: rainbow 20s infinite;
+  -o-animation: rainbow 20s infinite;
+  -ms-animation: rainbow 20s infinite;
   animation: rainbow 20s infinite;
 }
 main {
@@ -39,6 +43,7 @@ main h2 {
 .shop-items img {
   display: block;
   margin: 0 auto;
+  max-width: 300px;
 }
 .shop-items td,
 .shop-items th {
@@ -51,6 +56,33 @@ main h2 {
   text-align: right;
 }
 .shop-items input.number {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  -ms-transition-property: all;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
   text-align: center;
   font-size: 1em;
 }
@@ -102,8 +134,23 @@ button {
   padding: 30px 10px;
   width: 100%;
 }
-button:hover {
-  color: #000;
+button:hover,
+button:focus {
+  color: #00f;
+}
+.r1 {
+  -webkit-transform: rotate(-10deg) scale(1.1);
+  -moz-transform: rotate(-10deg) scale(1.1);
+  -o-transform: rotate(-10deg) scale(1.1);
+  -ms-transform: rotate(-10deg) scale(1.1);
+  transform: rotate(-10deg) scale(1.1);
+}
+.r2 {
+  -webkit-transform: rotate(10deg) scale(1.1);
+  -moz-transform: rotate(10deg) scale(1.1);
+  -o-transform: rotate(10deg) scale(1.1);
+  -ms-transform: rotate(10deg) scale(1.1);
+  transform: rotate(10deg) scale(1.1);
 }
 @-webkit-keyframes rainbow {
   0% {
