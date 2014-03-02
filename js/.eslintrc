@@ -1,0 +1,11 @@
+{
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "quotes": [1, "single"],
+    "strict": false,
+    "no-use-before-define": false,
+    "no-alert": false
+  }
+}

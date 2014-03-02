@@ -1,51 +1,47 @@
-var el = $('.number'),
-    time = 100;
-function rotate1(){
-  el.removeClass('r2');
-  el.addClass('r1');
-}
-function rotate2(){
-  el.removeClass('r1');
-  el.addClass('r2');
-}
-function rotate3(){
-  el.removeClass('r2');
-}
+/*global $*/
+function initShop() {
+  var el = $('.number');
+  var time = 100;
 
-var animate = true;
-
-function animation(){
-    console.log(animate)
-  if (animate){
-    setTimeout( rotate1, time);
-    setTimeout( rotate2, time*2);
-    setTimeout( rotate1, time*3);
-    setTimeout( rotate2, time*4);
-    setTimeout( rotate3, time*5);
+  function rotate1() {
+    el.removeClass('r2');
+    el.addClass('r1');
   }
-  setTimeout( animation, time*50);
-}
 
-animation()
+  function rotate2() {
+    el.removeClass('r1');
+    el.addClass('r2');
+  }
 
-$(document).keyup(function(e){
-  checkfocus();
-});
-el.click(function(){
-  checkfocus();
-})
+  function rotate3() {
+    el.removeClass('r2');
+  }
 
-function checkfocus(){
-  notzero = false;
-  el.each(function(){
-    var value = $(this).val();
-    if (value !== '0' && value !== '' ){
-      notzero = true;
+  var animate = true;
+
+  function animation() {
+    if (animate) {
+      setTimeout(rotate1, time);
+      setTimeout(rotate2, time * 2);
+      setTimeout(rotate1, time * 3);
+      setTimeout(rotate2, time * 4);
+      setTimeout(rotate3, time * 5);
     }
-  })
-  if(el.is(':focus') || notzero ) {
-    animate = false;
-  }else{
-    animate = true;
+    setTimeout(animation, time * 50);
+  }
+  animation();
+
+  $(document).keyup(checkfocus);
+  el.click(checkfocus);
+
+  function checkfocus() {
+    var notzero = false;
+    el.each(function() {
+      var value = $(this).val();
+      if (value !== '0' && value !== '') {
+        notzero = true;
+      }
+    });
+    animate = !(el.is(':focus') || notzero);
   }
 }
