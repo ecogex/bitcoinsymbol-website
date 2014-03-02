@@ -3,12 +3,12 @@
     <h1>Delivery</h1>
     <?php if (isset($errors)): ?>
     <div class="errors">
-    <p><strong>There are some errors that you need to fix:</strong></p>
-    <ul>
-    <?php foreach($errors as $error): ?>
-    <li><?= $error ?></li>
-    <?php endforeach ?>
-    </ul>
+      <p><strong>There are some errors that you need to fix:</strong></p>
+      <ul>
+        <?php foreach($errors as $error): ?>
+        <li><?= $error ?></li>
+        <?php endforeach ?>
+      </ul>
     </div>
     <?php endif ?>
     <form method="post" action="<?= $_SERVER['REQUEST_URI'] ?>">

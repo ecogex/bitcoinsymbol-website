@@ -9,10 +9,8 @@ ESLINT_FILES := js/shop.js \
 
 JS_FINAL := js/bitcoinsymbol.js
 
-STYL_FILE := css/main.styl
-CSS_FINAL := css/main.css
-CSS_DEPS := $(wildcard css/*.css css/*.styl)
-CSS_DEPS := $(filter-out $(CSS_FINAL), $(CSS_DEPS))
+CSS_FINAL := css/main.css \
+             css/shop.css
 
 all: lint $(JS_FINAL) $(CSS_FINAL)
 	@echo ""
@@ -25,13 +23,15 @@ $(JS_FINAL): $(JS_FILES)
 	@echo "\nConcatenating files into $(JS_FINAL)…"
 	cat $^ > $@
 
-$(CSS_FINAL): $(CSS_DEPS) $(STYL_FILE)
-	@echo "\nGenerating CSS file…"
+css: $(CSS_FINAL)
+
+%.css: %.styl
+	@echo "\nGenerating $@…"
 	node_modules/.bin/stylus \
 		--compress \
 		--include node_modules/nib/lib \
 		--include css/ \
-		< $(STYL_FILE) > $@
+		< $< > $@
 
 clean:
 	rm $(JS_FINAL)
