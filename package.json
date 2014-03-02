@@ -1,0 +1,10 @@
+{
+  "name": "bitcoinsymbol",
+  "description": "",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "nib": "^1.0.2",
+    "stylus": "^0.42.2"
+  }
+}
