@@ -9,6 +9,8 @@ require_once __DIR__ . '/lib/auth.php';
 require_once __DIR__ . '/lib/product.php';
 require_once __DIR__ . '/lib/order.php';
 
+if (!defined('DEBUG')) define('DEBUG', FALSE);
+
 R::setup('sqlite:'.DATA_DIR.'/shop.db');
 R::useWriterCache(true);
 // R::freeze(TRUE);

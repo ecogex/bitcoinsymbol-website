@@ -11,7 +11,7 @@ function controller_front($app) {
     $order->amount = 0;
     $order->created = R::isoDateTime();
     $order->input_address = NULL;
-    $order->paid = NULL;
+    $order->confirmations = NULL;
 
     $order->name = NULL;
     $order->address = NULL;
@@ -24,9 +24,10 @@ function controller_front($app) {
       if ($quantity === FALSE || $quantity < 1) continue;
       $product = R::load('product', $id);
       if (!$product->id) continue;
+      if ($quantity > (int)$product->stock) $quantity = (int)$product->stock;
       $order->sharedProduct[] = $product;
       $quantities[$id] = $quantity;
-      $order->amount += $product->amount;
+      $order->amount += ($product->amount * $quantity);
     }
 
     $order->quantities = json_encode($quantities);
@@ -59,7 +60,17 @@ function controller_front($app) {
 
   // Shop
   function check_order_process() {
-    if (!isset($_SESSION['order'])) $this->redirect('/shop');
+    global $app;
+
+    if (!isset($_SESSION['order'])) $app->redirect('/shop');
+
+    // Order limit
+    $session_limit = 60 * 60; // 1 hour
+    $elapsed_time = time() - strtotime($_SESSION['order']->created);
+    if ($elapsed_time > $session_limit) {
+      unset($_SESSION['order']);
+      $app->redirect('/shop');
+    }
     return $_SESSION['order'];
   }
 
@@ -71,7 +82,8 @@ function controller_front($app) {
         'name' => '',
         'address' => '',
       ],
-      ['templates' => $this->get_setting('templates').'/shop']);
+      ['templates' => $this->get_setting('templates').'/shop']
+    );
   });
 
   $app->route('POST', '/shop/delivery', function() {
@@ -87,7 +99,6 @@ function controller_front($app) {
     if (!$address) $errors['address'] = 'You need to provide a postal address.';
 
     if (!empty($errors)) {
-      // $this->redirect('/shop/delivery?error');
       echo $this->render('delivery', [
           'order' => $order,
           'email' => htmlspecialchars($email),
@@ -103,9 +114,32 @@ function controller_front($app) {
     $order->name = $name;
     $order->address = $address;
     $order->callback_secret = random_hash(CALLBACK_HASH_SEED);
-    R::store($order);
 
-    $input_address = Blockchain::receive_address($order->callback_secret);
+    $quantities = json_decode($order->quantities);
+
+    // Check if each product quantity can be satisfied
+    foreach($order->sharedProduct as $product) {
+      $product_id = $product->id;
+      $order_quantity = $quantities->$product_id;
+      $current_quantity = (int)$product->stock;
+      if ($order_quantity > $current_quantity) { // Quantities updated
+        unset($_SESSION['order']);
+        die('<h1>An error occured during your order, '.
+            '<a href="'.$this->get_setting('base_url').'shop">'.
+            'please try again</a>.</h1>');
+      }
+      $product->stock = $product->stock - $order_quantity;
+    }
+
+    // Everything went fine, update the products quantities
+    R::storeAll($order->sharedProduct);
+
+    if (!defined('DEBUG') || DEBUG === FALSE) {
+      $input_address = Blockchain::receive_address($order->callback_secret);
+    } else {
+      $input_address = 'FAKE_API_ADDRESS';
+    }
+
     if ($input_address === NULL) {
       echo '<h1>There is an error with the Blockchain API, please try again.</h1>';
       return;
@@ -122,5 +156,32 @@ function controller_front($app) {
     echo $this->render('payment',
       ['order' => $order],
       ['templates' => $this->get_setting('templates').'/shop']);
+  });
+
+  $app->route('GET', '/shop/pay/(:any)', function($secret) {
+    $order = R::findOne('order', 'callback_secret = ?', [$secret]);
+    if (!$order->id) error_404();
+
+    $url = parse_url($_SERVER['REQUEST_URI']);
+    if (!isset($url['query']) || !$url['query']) error_404();
+    parse_str($url['query'], $params);
+
+    if (!isset($params['confirmations'])) error_404();
+    $confirmations = filter_var($params['confirmations'], FILTER_VALIDATE_INT);
+    if ($confirmations === FALSE) error_404();
+
+    $order->confirmations = $confirmations;
+    R::store($order);
+
+    if ($confirmations >= 6) {
+      die('*ok*'); // Stop API notifications
+
+    } elseif ($confirmations === 0) {
+      // Send emails
+
+    } elseif ($confirmations === 1) {
+      // Trust transaction
+
+    }
   });
 }
