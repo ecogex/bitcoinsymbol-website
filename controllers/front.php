@@ -168,7 +168,9 @@ function controller_front($app) {
     if ($confirmations === FALSE) error_404();
 
     // Prevents multiple calls with same confirmations count
-    if ($confirmations === (int)$order->confirmations) return;
+    if ($order->confirmations !== NULL && $confirmations === (int)$order->confirmations) {
+      return;
+    }
 
     $order->confirmations = $confirmations;
     R::store($order);
@@ -176,19 +178,26 @@ function controller_front($app) {
     $mailer = get_mailer();
 
     if ($confirmations >= 6) {
+      // Admin email
+      $admin_subject = 'An order on bitcoinsymbol.org has 6 validations';
+      $mailer->send($admin_subject, ADMIN_EMAIL, 'emails/order-trusted', [
+        'order' => $order,
+      ]);
       die('*ok*'); // Stop API notifications
 
     } elseif ($confirmations === 0) {
-      // Send emails
-      $subject = 'Your order on bitcoinsymbol.org has been confirmed!';
-      $mailer->send($subject, $order->email, 'emails/order-confirmed', [
+
+      // Customer email
+      $customer_subject = 'Your order on bitcoinsymbol.org has been confirmed';
+      $mailer->send($customer_subject, $order->email, 'emails/order-confirmed', [
         'order' => $order,
-        'quantities' => json_decode($order->quantities),
       ]);
 
-    } elseif ($confirmations === 1) {
-      // Trust transaction
-
+      // Admin email
+      $admin_subject = 'New order on bitcoinsymbol.org';
+      $mailer->send($admin_subject, ADMIN_EMAIL, 'emails/new-order', [
+        'order' => $order,
+      ]);
     }
   });
 }

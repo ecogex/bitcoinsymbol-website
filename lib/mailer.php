@@ -17,7 +17,6 @@ class Mailer {
     $message->setBody($output);
 
     if (DEBUG) {
-
       $message->setFrom([ADMIN_FROM_EMAIL => ADMIN_FROM_NAME]);
       $message->setTo(is_array($to_emails)? $to_emails : [$to_emails]);
 
@@ -26,7 +25,8 @@ class Mailer {
       $debug_content .= "\nFrom: ".ADMIN_FROM_EMAIL;
       $debug_content .= "\nTo: $to_emails";
       $debug_content .= "\nBody:\n\n\n$output";
-      $filename = __DIR__ . '/../' . date('Ymd-H.i.s') . '.txt';
+      $filename = __DIR__ . '/../' . uniqid() .'-'. date('Ymd-H.i.s') . '.txt';
+
       file_put_contents($filename, $debug_content);
       return;
     }
