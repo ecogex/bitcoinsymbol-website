@@ -1,3 +1,4 @@
-    <script src="js/bitcoinsymbol.js"></script>
+    <script src="<?= $base_url ?>js/bitcoinsymbol.js"></script>
+    <script>$(initMain)</script>
   </body>
 </html>

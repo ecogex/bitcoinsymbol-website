@@ -4,6 +4,8 @@ define('BASE_URL', 'http://localhost/bitcoinsymbol/');
 define('ADMIN_USER', 'pierre');
 define('ADMIN_PASSWORD', 'abc');
 
+define('DEBUG', TRUE);
+
 // Email where emails are sent to the admin
 define('ADMIN_EMAIL', '<email@email.email>');
 // Sender address

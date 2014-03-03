@@ -4,9 +4,6 @@ body {
   -webkit-animation: rainbow 20s infinite;
   -moz-animation: rainbow 20s infinite;
   -o-animation: rainbow 20s infinite;
-  -webkit-animation: rainbow 20s infinite;
-  -moz-animation: rainbow 20s infinite;
-  -o-animation: rainbow 20s infinite;
   -ms-animation: rainbow 20s infinite;
   animation: rainbow 20s infinite;
 }
@@ -34,6 +31,9 @@ main h2 {
   font-weight: bold;
   margin-bottom: 10px;
 }
+.errors {
+  margin-bottom: 20px;
+}
 .shop-items table {
   width: 100%;
   border-spacing: 0;
@@ -56,33 +56,11 @@ main h2 {
   text-align: right;
 }
 .shop-items input.number {
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  -ms-transition-property: all;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -ms-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
-  -webkit-transition-timing-function: ease-out;
-  -ms-transition-timing-function: ease-out;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
-  -ms-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   text-align: center;
   font-size: 1em;
 }

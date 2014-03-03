@@ -1,25 +1,37 @@
-JS_FILES = js/jquery-1.10.2.min.js \
-           js/jquery.ba-throttle-debounce.min.js \
+JS_FILES := js/jquery-1.10.2.min.js \
            js/jquery.magnific-popup.min.js \
            js/zclip.js \
-           js/mobilemenu.js \
+           js/shop.js \
            js/main.js
 
-JS_FINAL = js/bitcoinsymbol.js
+ESLINT_FILES := js/shop.js \
+               js/main.js
 
-STYL_FILE = css/main.styl
-CSS_FINAL = css/main.css
+JS_FINAL := js/bitcoinsymbol.js
 
-all: $(JS_FINAL) $(CSS_FINAL)
+CSS_FINAL := css/main.css \
+             css/shop.css
+
+all: lint $(JS_FINAL) $(CSS_FINAL)
+	@echo ""
+
+lint:
+	@echo "\nChecking files with ESLint…"
+	node_modules/.bin/eslint $(ESLINT_FILES)
 
 $(JS_FINAL): $(JS_FILES)
+	@echo "\nConcatenating files into $(JS_FINAL)…"
 	cat $^ > $@
 
-$(CSS_FINAL): $(STYL_FILE)
-	stylus \
+css: $(CSS_FINAL)
+
+%.css: %.styl
+	@echo "\nGenerating $@…"
+	node_modules/.bin/stylus \
 		--compress \
+		--include node_modules/nib/lib \
 		--include css/ \
-		< $^ > $@
+		< $< > $@
 
 clean:
-	rm ${JS_FINAL}
+	rm $(JS_FINAL)

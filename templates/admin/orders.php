@@ -4,7 +4,7 @@
   'created',
   'amount',
   'input_address',
-  'paid',
+  'confirmations',
   'email',
   'name',
   'address',
@@ -22,7 +22,7 @@
   <tr>
     <?php foreach($fields as $field): ?>
     <?php if ($field === 'amount'): ?>
-    <td title="<?= $order->amount ?>"><?= $order->amount_btc() ?> BTC</td>
+    <td title="<?= $order->amount ?> Satoshis"><?= $order->amount_btc() ?> BTC</td>
     <?php elseif ($field === 'quantities'): ?>
     <td>
     <?php
@@ -37,6 +37,8 @@
       </a>
     <?php $i++; endforeach ?>
     </td>
+    <?php elseif ($field === 'confirmations'): ?>
+    <td title="<?= Blockchain::callback_url($order->callback_secret) ?>"><?= $order->confirmations === NULL? 'nil' : $order->confirmations ?></td>
     <?php else: ?>
     <td><?= $order->$field ?></td>
     <?php endif ?>
