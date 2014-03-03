@@ -115,12 +115,9 @@ function controller_front($app) {
     $order->address = $address;
     $order->callback_secret = random_hash(CALLBACK_HASH_SEED);
 
-    $quantities = json_decode($order->quantities);
-
     // Check if each product quantity can be satisfied
     foreach($order->sharedProduct as $product) {
-      $product_id = $product->id;
-      $order_quantity = $quantities->$product_id;
+      $order_quantity = $order->get_quantity($product->id);
       $current_quantity = (int)$product->stock;
       if ($order_quantity > $current_quantity) { // Quantities updated
         unset($_SESSION['order']);
@@ -170,14 +167,24 @@ function controller_front($app) {
     $confirmations = filter_var($params['confirmations'], FILTER_VALIDATE_INT);
     if ($confirmations === FALSE) error_404();
 
+    // Prevents multiple calls with same confirmations count
+    if ($confirmations === (int)$order->confirmations) return;
+
     $order->confirmations = $confirmations;
     R::store($order);
+
+    $mailer = get_mailer();
 
     if ($confirmations >= 6) {
       die('*ok*'); // Stop API notifications
 
     } elseif ($confirmations === 0) {
       // Send emails
+      $subject = 'Your order on bitcoinsymbol.org has been confirmed!';
+      $mailer->send($subject, $order->email, 'emails/order-confirmed', [
+        'order' => $order,
+        'quantities' => json_decode($order->quantities),
+      ]);
 
     } elseif ($confirmations === 1) {
       // Trust transaction
