@@ -1,29 +1,31 @@
-Your order on bitcoinsymbol.org has been confirmed!
+Dear <?= $order->name ?>,
 
-You will receive another email to inform you that your pack has been sent.
+Guess what: Your order has been confirmed!
+Thank you for your support.
 
-# Order details:
+Now we will prepare your parcel here in Paris and send it to your place soon.
+You will receive an email from us when the parcel is shipped.
+
+Quick reminder of your order details:
+
 <?php foreach($order->sharedProduct as $product): ?>
-
-## <?= $product->name ?>
+# <?= $product->name ?>
 
 - Quantity: <?= $order->get_quantity($product->id) ?>
 
 - Amount: <?= $product->amount_btc() ?> BTC
 
 <?php endforeach ?>
+# Total: <?= $order->amount_btc() ?> BTC
 
-## Total: <?= $order->amount_btc() ?> BTC
+Your delivery details:
 
+<?= $order->name ?>
 
-# Delivery details:
-
-Name: <?= $order->name ?>
-
-
-Address:
 <?= $order->address ?>
 
 
+Cheers,
 -- 
-bitcoinsymbol.org
+Nat from Bitcoinsymbol.org
+http://bitcoinsymbol.org
