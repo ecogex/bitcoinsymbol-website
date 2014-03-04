@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/vendor/redbean.php';
-
+require_once __DIR__ . '/vendor/swiftmailer/swift_required.php';
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/lib/utils.php';
 require_once __DIR__ . '/lib/blockchain.php';
@@ -8,9 +8,11 @@ require_once __DIR__ . '/lib/app.php';
 require_once __DIR__ . '/lib/auth.php';
 require_once __DIR__ . '/lib/product.php';
 require_once __DIR__ . '/lib/order.php';
+require_once __DIR__ . '/lib/mailer.php';
 
 if (!defined('DEBUG')) define('DEBUG', FALSE);
 
+// Database
 R::setup('sqlite:'.DATA_DIR.'/shop.db');
 R::useWriterCache(true);
 // R::freeze(TRUE);
@@ -36,6 +38,19 @@ $app = new App([
   'base_url' =>  BASE_URL,
   'templates' =>  TEMPLATES_DIR,
 ]);
+
+// Email
+$mailer = NULL;
+function get_mailer() {
+  global $mailer, $app;
+  if ($mailer !== NULL) return $mailer;
+  $email_transport = Swift_MailTransport::newInstance();
+  $render_email = function($template, $data) use($app) {
+    return $app->render($template, $data, ['layout' => FALSE]);
+  };
+  $mailer = new Mailer($email_transport, $render_email);
+  return $mailer;
+}
 
 // Include and init controllers
 foreach (glob(CONTROLLERS_DIR . '/*.php') as $filename) {

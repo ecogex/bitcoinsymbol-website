@@ -40,11 +40,11 @@
         <?php foreach($order->sharedProduct as $product): ?>
         <li>
           <img src="<?= $base_url.$product->image ?>" alt="" width="100"><br>
-          <?= $product->name ?>
-          (<?= $order->get_quantity($product->id) ?>)
+          <?= $product->name ?><br>
+          (<?= $order->get_quantity($product->id) ?> × <?= $product->amount_btc() ?> BTC)
         </li>
         <?php endforeach ?>
         </ul>
-        <p class="total">Total: <?= $order->amount_btc() ?> BTC</p>
+        <p class="total">Total: <?= $order->amount_btc() ?> BTC</p>
       </section>
     </main>
