@@ -1,20 +1,20 @@
-New order on bitcoinsymbol.org!
+Hey, a bunch of stuff has been ordered from Bitcoinsymbol.org.
 
-# Order details:
+DON’T SEND IT YET! You will receive another email when the order will reach 6 confirmations.
+
+Order details:
+
 <?php foreach($order->sharedProduct as $product): ?>
-
-## <?= $product->name ?>
+# <?= $product->name ?>
 
 - Quantity: <?= $order->get_quantity($product->id) ?>
 
 - Amount: <?= $product->amount_btc() ?> BTC
 
 <?php endforeach ?>
+# Total: <?= $order->amount_btc() ?> BTC
 
-## Total: <?= $order->amount_btc() ?> BTC
-
-
-# Customer details:
+Delivery details:
 
 Email: <?= $order->email ?>
 
@@ -27,4 +27,5 @@ Address:
 
 
 -- 
-bitcoinsymbol.org
+Bitcoinsymbol.org
+http://bitcoinsymbol.org

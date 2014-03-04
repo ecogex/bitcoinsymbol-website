@@ -12,6 +12,7 @@ function controller_front($app) {
     $order->created = R::isoDateTime();
     $order->input_address = NULL;
     $order->confirmations = NULL;
+    $order->sent = FALSE;
 
     $order->name = NULL;
     $order->address = NULL;
@@ -188,13 +189,13 @@ function controller_front($app) {
     } elseif ($confirmations === 0) {
 
       // Customer email
-      $customer_subject = 'Your order on bitcoinsymbol.org has been confirmed';
+      $customer_subject = 'Order confirmation from Bitcoinsymbol.org';
       $mailer->send($customer_subject, $order->email, 'emails/order-confirmed', [
         'order' => $order,
       ]);
 
       // Admin email
-      $admin_subject = 'New order on bitcoinsymbol.org';
+      $admin_subject = 'New order on Bitcoinsymbol.org';
       $mailer->send($admin_subject, ADMIN_EMAIL, 'emails/new-order', [
         'order' => $order,
       ]);
