@@ -65,6 +65,7 @@ function initShop() {
     animate = !(el.is(':focus') || notzero);
   }
 }
+
 /*global $*/
 function initMain() {
 

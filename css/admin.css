@@ -63,8 +63,21 @@ td, th {
 table input, table textarea {
   width: 200px;
 }
+table img{
+  max-width: 300px;
+}
 table input.mini {
   width: 70px;
+}
+.edit{
+  margin-bottom:10px;
+  display:block;
+}
+.delete{
+  background:none;
+  border:none;
+  color:red;
+  padding:2px;
 }
 a{
   color:black;

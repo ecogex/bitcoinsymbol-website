@@ -37,8 +37,8 @@
         action="<?= $base_url ?>admin/products/<?= $product->id ?>/delete"
         onsubmit="return confirm('Are you sure?')">
         <div>
-          <a href="<?= $base_url ?>admin/products/<?= $product->id ?>">Edit</a><br>
-          <button type="submit">Delete</button>
+          <a class="edit" href="<?= $base_url ?>admin/products/<?= $product->id ?>">Edit</a><br>
+          <button class="delete" type="submit">Delete</button>
         </div>
       </form>
     </td>

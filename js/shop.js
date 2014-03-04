@@ -45,3 +45,4 @@ function initShop() {
     animate = !(el.is(':focus') || notzero);
   }
 }
+

@@ -1,6 +1,7 @@
+    <header><a href="./">Back to Bitcoin Symbol</a></header>
     <main>
       <h1>Shop</h1>
-      <p>Welcome to the shop of the Ƀ project! It accepts Bitcoin payment only.
+      <p>Welcome to the shop of the Ƀ project! Here you can pay only with Bitcoin.
       <form method="post" action="<?= $_SERVER['REQUEST_URI'] ?>">
         <div class="shop-items">
           <table>

@@ -345,7 +345,7 @@
           <h2>Credits</h2>
           <p class="smallp">Initiated and designed by ECOGEX (<a href="mailto:info@ecogex.com">contact</a>)</p>
           <p class="smallp">CG artist: <a href="http://www.3dminfographie.com/">3DMinfographie</a>.<br/> Blender sources available for free in the graphic pack.</p>
-          <p class="smallp">Photography: <a href="http://atinyr.tumblr.com/">GGGG</a> and ECOGEX.
+          <p class="smallp">Photography: <a href="http://atinyr.tumblr.com/">GGGG</a> and <a href="http://carolinelollo.fr/">Caroline Lollo</a> and ECOGEX.
           <p class="smallp">Online SVG editor: <a href="http://svg-edit.googlecode.com/">SVG-edit</a> (used on <a href="#customize">Customize</a>).</p>
           <p class="smallp">Made with free software and love. You can find the source of this website on <a href="https://github.com/ecogex/bitcoinsymbol-website">GitHub</a>, and modify the graphic pack on its own <a href="https://github.com/ecogex/bitcoinsymbol-pack">repository</a>.</p>
           <p class="smallp"><a href="#donate">Donations</a> will be much appreciated!</p>

@@ -4,13 +4,22 @@
 body
   font 18px 'source_sans_pro', arial, sans-serif
   animation rainbow 20s infinite
-main
+main, header
   max-width 1200px
   width 100%
-  padding 5%
-  margin 0 auto 40px auto
+  margin 0 auto
   border-left 1px solid
   border-right 1px solid
+header, footer
+  font-size 12px
+  padding 2px 5px
+  a
+    color inherit
+    text-decoration none
+    border-bottom 1px solid
+main
+  margin 0 auto 0 auto  
+  padding 40px 5%
   border-bottom 1px solid
   overflow hidden
   p
@@ -24,7 +33,17 @@ main
   h2
     font-weight bold
     margin-bottom 10px
-
+  code
+    font-family monospace
+    font-size 1em
+    border 1px solid
+    padding 2px
+    margin 20px 0 0 0
+footer
+  max-width 1200px
+  width 100%
+  margin 0 auto 40px auto
+  padding-left 0
 .errors
   margin-bottom 20px
 
@@ -88,16 +107,16 @@ button
   cursor pointer
   background white
   color inherit
-  border 10px solid
+  border 6px solid
   padding 30px 10px
   width 100%
   &:hover, &:focus
-    color blue
+    text-decoration underline
 
 .r1
-  transform rotate(-10deg) scale(1.1)
+  transform rotate(-10deg) scale(2)
 .r2
-  transform rotate(10deg) scale(1.1)
+  transform rotate(10deg) scale(2)
 
 // Borders animation
 
