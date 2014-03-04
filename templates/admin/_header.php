@@ -9,9 +9,6 @@
   <body>
     <header>
       <h1>Administration</h1>
-      <?php if (isset($logged) && $logged): ?>
-      <p><a href="<?= $base_url ?>admin/logout">logout</a></p>
-      <?php endif ?>
     </header>
     <?php if (isset($logged) && $logged): ?>
     <nav>
@@ -23,5 +20,8 @@
           <a href="<?= $base_url ?>admin/orders">Orders</a>
         </li>
       </ul>
+      <?php if (isset($logged) && $logged): ?>
+      <p class="logout"><a href="<?= $base_url ?>admin/logout">logout</a></p>
+      <?php endif ?>
     </nav>
     <?php endif ?>

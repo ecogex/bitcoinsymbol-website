@@ -1,6 +1,6 @@
 body {
-  max-width: 990px;
-  margin: 0 auto;
+  max-width: 95%;
+  margin: 40px auto;
 }
 button {
   cursor: pointer;
@@ -8,20 +8,33 @@ button {
 body, button, input {
   font: 18px 'source_sans_pro', arial, sans-serif;
 }
-body > header {
-  overflow: hidden;
-  line-height: 80px;
-}
 body > header h1 {
-  float: left;
-  margin: 0;
-}
-body > header p {
-  float: right;
   margin: 0;
 }
 h2 {
   margin: 60px 0 20px;
+}
+nav{
+  position:absolute;
+  top:56px;
+  left:2.5%;
+  width:95%;
+  text-align:center;
+}
+nav ul{
+  padding:0;
+  margin:0;
+}
+nav ul li{
+  list-style-type:none;
+  display:inline;
+  padding:0 10px;
+}
+.logout {
+  position:absolute;
+  top:0;
+  right:0;
+  margin:0;
 }
 .login label {
   display: inline-block;
@@ -56,9 +69,10 @@ table {
   border-collapse: collapse;
 }
 td, th {
-  padding: 20px;
+  padding: 20px 10px;
   border: 1px solid black;
   text-align:center;
+  font-size: .8em;
 }
 table input, table textarea {
   width: 200px;
@@ -78,6 +92,14 @@ table input.mini {
   border:none;
   color:red;
   padding:2px;
+}
+form.login{
+  border:1px solid black;
+  padding:40px;
+  margin:0 auto;
+}
+.table-btn{
+  margin-top:10px;
 }
 a{
   color:black;
