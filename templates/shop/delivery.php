@@ -37,11 +37,12 @@
       <section class="right order">
         <h1>Order</h1>
         <ul>
-        <?php foreach($order->sharedProduct as $product): ?>
+        <?php $products = $order->products();
+              foreach($products as $product): ?>
         <li>
           <img src="<?= $base_url.$product->image ?>" alt="" width="100"><br>
           <?= $product->name ?><br>
-          (<?= $order->get_quantity($product->id) ?> × <?= $product->amount_btc() ?> BTC)
+          (<?= $order->get_quantity($product->id) ?> × <?= $product->amount_btc ?> BTC)
         </li>
         <?php endforeach ?>
         </ul>

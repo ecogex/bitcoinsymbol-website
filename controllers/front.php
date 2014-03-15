@@ -18,6 +18,7 @@ function controller_front($app) {
     $order->address = NULL;
     $order->email = NULL;
 
+    $products = [];
     $quantities = [];
 
     foreach ($_POST['products'] as $id => $quantity) {
@@ -26,15 +27,18 @@ function controller_front($app) {
       $product = R::load('product', $id);
       if (!$product->id) continue;
       if ($quantity > (int)$product->stock) $quantity = (int)$product->stock;
-      $order->sharedProduct[] = $product;
+      $static_product = $product->export();
+      $static_product['amount_btc'] = (string)$product->amount_btc();
+      $products[] = $static_product;
       $quantities[$id] = $quantity;
       $order->amount += ($product->amount * $quantity);
     }
 
-    $order->quantities = json_encode($quantities);
-
     // No products added
-    if (!$order->sharedProduct) return NULL;
+    if (empty($products)) return NULL;
+
+    $order->quantities = json_encode($quantities);
+    $order->products_json = json_encode($products);
 
     return $order;
   }
@@ -117,7 +121,11 @@ function controller_front($app) {
     $order->callback_secret = random_hash(CALLBACK_HASH_SEED);
 
     // Check if each product quantity can be satisfied
-    foreach($order->sharedProduct as $product) {
+    $products = [];
+    $static_products = $order->products();
+    foreach($static_products as $static_product) {
+      $product = R::load('product', $static_product->id);
+      $products[] = $product;
       $order_quantity = $order->get_quantity($product->id);
       $current_quantity = (int)$product->stock;
       if ($order_quantity > $current_quantity) { // Quantities updated
@@ -130,7 +138,7 @@ function controller_front($app) {
     }
 
     // Everything went fine, update the products quantities
-    R::storeAll($order->sharedProduct);
+    R::storeAll($products);
 
     if (!defined('DEBUG') || DEBUG === FALSE) {
       $input_address = Blockchain::receive_address($order->callback_secret);

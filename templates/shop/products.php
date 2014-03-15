@@ -6,7 +6,7 @@
         <div class="shop-items">
           <table>
             <?php foreach($products as $i => $product): ?>
-            <tr>
+            <tr<?php if ($product->stock == 0) echo ' class="no-stock"' ?>>
               <td><img src="<?= $base_url . $product->image ?>"></td>
               <td><?= $product->name ?><br>Ƀ <?= $product->amount_btc() ?></td>
               <td>

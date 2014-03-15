@@ -27,7 +27,7 @@ function satoshi_to_btc($amount) {
 
 function validate_fields_exist($container, $fields) {
   foreach ($fields as $field) {
-    if (!isset($container[$field]) || empty($container[$field])) {
+    if (!isset($container[$field]) || $container[$field] === '') {
       return FALSE;
     }
   }
