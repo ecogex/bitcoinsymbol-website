@@ -29,6 +29,7 @@ css: $(CSS_FINAL)
 	@echo "\nGenerating $@…"
 	node_modules/.bin/stylus \
 		--compress \
+		--include-css \
 		--include node_modules/nib/lib \
 		--include css/ \
 		< $< > $@
