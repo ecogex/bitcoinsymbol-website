@@ -25,8 +25,8 @@ lint:
 	node_modules/.bin/eslint $(ESLINT_FILES)
 
 $(JS_FINAL): $(JS_FILES)
-	@echo "\nConcatenating files into $(JS_FINAL)…"
-	cat $^ > $@
+	@echo "\nConcatenating and compressing files into $(JS_FINAL)…"
+	cat $^ | node_modules/.bin/uglifyjs - > $@
 	@echo ""
 
 %.css: %.styl
