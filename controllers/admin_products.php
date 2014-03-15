@@ -20,7 +20,10 @@ function controller_admin_products($app) {
   $app->route('POST', '/admin/products', function() {
     check_auth();
     $product_filtered = validate_admin_product_post();
-    if ($product_filtered === NULL) return error_404();
+    if ($product_filtered === NULL) {
+      echo 'There is an error in the product fields. Try to go back and submit again.';
+      return;
+    }
 
     // DB saving
     $product = R::dispense('product');
