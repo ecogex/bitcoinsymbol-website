@@ -1,5 +1,18 @@
+<<<<<<< HEAD
 /*global $*/
 function initMain() {
+
+  // vh support is too uncommon
+  (function resizeHeight() {
+    var $window = $(window);
+    var $thediv = $('.fullh');
+    var $items = $('nav li a');
+    $window.resize(function() {
+      var height = $window.height();
+      $thediv.css('height', height);
+      $items.css('paddingTop', height/15);
+    }).resize();
+  }());
 
   // Copy to clipboard
   var copied = '<p class="copied">✓ Copied</p>';

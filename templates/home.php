@@ -9,7 +9,7 @@
         </ul>
       </nav>
       <header id="top">
-        <div class="bbox">
+        <div class="bbox fullh">
           <h1><span class="theb copy">Ƀ</span></h1>
           <p class="description">Bitcoin deserves the right symbol.</p>
         </div>
@@ -174,6 +174,12 @@
               <figcaption>Ƀ compatible fonts</figcaption>
             </figure>
             <figure class="c3">
+              <a class="zoom" href="i/icon-posters.svg">
+                <img class="smallimg" alt="Bitcoin icons set" src="i/icon-posters.svg" height="300px" with="300px"/>
+              </a>
+              <figcaption>Posters</figcaption>
+            </figure>
+            <figure class="c3">
               <a class="zoom" href="bitcoinsymbol-pack/3D/gold-coin-front-HD.png">
                 <img alt="3D gold coin face" src="bitcoinsymbol-pack/3D/gold-coin-front.png" height="300px" with="300px"/>
               </a>
@@ -237,11 +243,11 @@
               <fieldset>
                 <ul>
                   <li id="orderID" class="c2">
-                    <label>Email:</label>
-                    <input name="orderID" type="email" class="input input-xlarge" placeholder="Email address (optional)" maxlength=50 autocapitalize=off autocorrect=off><br>
+                    <label>Email (optional)</label>
+                    <input name="orderID" type="email" class="input input-xlarge" placeholder="Email address" maxlength=50 autocapitalize=off autocorrect=off><br>
                   </li>
                   <li id="price" class="c2">
-                    <label>Amount:</label>
+                    <label>Donation amount</label>
                     <input name="price" type="number" class="noscroll" value="10.00" placeholder="Amount" maxlength="10" min="0.01" step="0.01"  />
                     <select name="currency" value="" >
                       <option value="USD" selected="selected">USD</option>
@@ -329,6 +335,24 @@
       <section id="about" class="box">
         <div class="section-inner">
           <h1>About this project</h1>
+          <h2>Get notified when the project evolve!</h2>
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+          <form action="http://ecogex.us3.list-manage.com/subscribe/post?u=b5212a7ad976c431eb2d0e67f&amp;id=9d1726053a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              
+          <div class="c2">
+              <label for="mce-EMAIL">Email Address</label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+              <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_b5212a7ad976c431eb2d0e67f_9d1726053a" value=""></div>
+              <div class="c2"><input class="button" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"></div>
+          </form>
+          </div>
+
           <h2>Groups that already use Ƀ</h2>
           <ul>
             <li><a href="https://lamassu.is/">Lamassu</a></li>
@@ -341,10 +365,11 @@
           <h2>Groups that talk about Ƀ</h2>
           <ul>
             <li><a href="http://bitcoinmagazine.com/product/issue03/">Bitcoin Magazine #3</a></li>
-          </ul>
+          </ul>          
+          
           <h2>Credits</h2>
           <p class="smallp">Initiated and designed by ECOGEX (<a href="mailto:info@ecogex.com">contact</a>)</p>
-          <p class="smallp">CG artist: <a href="http://www.3dminfographie.com/">3DMinfographie</a>.<br/> Blender sources available for free in the graphic pack.</p>
+          <p class="smallp">CG artist: <a href="http://www.3dminfographie.com/">3DMinfographie</a>. Blender sources available for free in the graphic pack.</p>
           <p class="smallp">Photography: <a href="http://atinyr.tumblr.com/">GGGG</a> and <a href="http://carolinelollo.fr/">Caroline Lollo</a> and ECOGEX.
           <p class="smallp">Online SVG editor: <a href="http://svg-edit.googlecode.com/">SVG-edit</a> (used on <a href="#customize">Customize</a>).</p>
           <p class="smallp">Made with free software and love. You can find the source of this website on <a href="https://github.com/ecogex/bitcoinsymbol-website">GitHub</a>, and modify the graphic pack on its own <a href="https://github.com/ecogex/bitcoinsymbol-pack">repository</a>.</p>
