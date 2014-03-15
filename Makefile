@@ -14,7 +14,7 @@ JS_FINAL := js/bitcoinsymbol.js
 CSS_FINAL := css/main.css \
              css/shop.css
 
-all: lint $(JS_FINAL) $(CSS_FINAL)
+all: js css
 	@echo ""
 
 css: $(CSS_FINAL)
@@ -26,7 +26,7 @@ lint:
 
 $(JS_FINAL): $(JS_FILES)
 	@echo "\nConcatenating and compressing files into $(JS_FINAL)…"
-	cat $^ | node_modules/.bin/uglifyjs - > $@
+	cat $^ | node_modules/.bin/uglifyjs -m -c - > $@
 	@echo ""
 
 %.css: %.styl
