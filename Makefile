@@ -1,5 +1,7 @@
-JS_FILES := js/jquery-1.10.2.min.js \
+JS_FILES := js/jquery-1.11.0.js \
            js/jquery.magnific-popup.min.js \
+           js/jquery.cycle2.js \
+           js/jquery.mmenu.min.js \
            js/zclip.js \
            js/shop.js \
            js/main.js
@@ -15,6 +17,9 @@ CSS_FINAL := css/main.css \
 all: lint $(JS_FINAL) $(CSS_FINAL)
 	@echo ""
 
+css: $(CSS_FINAL)
+js: $(JS_FINAL)
+
 lint:
 	@echo "\nChecking files with ESLint…"
 	node_modules/.bin/eslint $(ESLINT_FILES)
@@ -22,8 +27,7 @@ lint:
 $(JS_FINAL): $(JS_FILES)
 	@echo "\nConcatenating files into $(JS_FINAL)…"
 	cat $^ > $@
-
-css: $(CSS_FINAL)
+	@echo ""
 
 %.css: %.styl
 	@echo "\nGenerating $@…"
