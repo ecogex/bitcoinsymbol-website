@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*global $*/
 function initMain() {
 
