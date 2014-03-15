@@ -4,12 +4,12 @@ DON’T SEND IT YET! You will receive another email when the order will reach 6 
 
 Order details:
 
-<?php foreach($order->sharedProduct as $product): ?>
+<?php foreach($order->products() as $product): ?>
 # <?= $product->name ?>
 
 - Quantity: <?= $order->get_quantity($product->id) ?>
 
-- Amount: <?= $product->amount_btc() ?> BTC
+- Amount: <?= $product->amount_btc ?> BTC
 
 <?php endforeach ?>
 # Total: <?= $order->amount_btc() ?> BTC

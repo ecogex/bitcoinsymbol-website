@@ -15,4 +15,9 @@ class Model_Order extends RedBean_SimpleModel {
     }
     return NULL;
   }
+
+  function products() {
+    $products = json_decode($this->products_json);
+    return $products;
+  }
 }
