@@ -20,7 +20,6 @@ function initMain() {
   });
 
   function copyToClipboard(text) {
-    window.prompt('Copy to clipboard: Ctrl+C, Enter', text);
     $('.theb').parent('h1').prepend(copied);
   }
 
@@ -49,14 +48,6 @@ function initMain() {
     });
   }
   doZclip();
-
-  // Popup
-  $(document).ready(function() {
-    $('.zoom').magnificPopup({
-      type: 'image',
-      prependTo: '.popup'
-    });
-  });
 
   // Related to mmenu
   var $menu = $('#menu');
