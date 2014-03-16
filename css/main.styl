@@ -141,9 +141,9 @@ body
       &.highlight
         position relative
         line-height 1.4em
-        color _lightgray 
+        color #222
         display block
-        border 1px solid _lightgray
+        border 1px solid _text
         padding 20px        
         font-size 23px
         font-weight bold
@@ -251,18 +251,21 @@ ul.fontlist
 
 #customize
   .column-group
-    -moz-column-count 4
+    -moz-column-count 3
     -moz-column-gap 5px
-    -webkit-column-count 4
+    -webkit-column-count 3
     -webkit-column-gap 5px
-    column-count 4
+    column-count 3
     column-gap 5px
     margin-bottom 40px
     figure
       border 1px solid _palegray
       display block
-      padding-bottom 20px
+      padding 20px
       margin-bottom 5px
+      img
+        width 100%
+        height auto
 .edit
   border 1px solid _palegray
   padding 0 3px
@@ -312,14 +315,15 @@ clearfix()
   line-height 1.2em
   position relative
   border 1px solid
-  background #ffff61
+  background #ffff89
   &:hover
-    background #ffff89
+    background #ffff61
   &:active
     background #ffff61
 form
   overflow hidden
   padding _margin *.5
+  background _palegray
   label
     display block
     margin-bottom 4px
@@ -369,7 +373,12 @@ select
     width 100%
   nav li a
     padding-left 30px
-    
+  #customize .column-group
+    -moz-column-count 2
+    -moz-column-gap 5px
+    -webkit-column-count 2
+    -webkit-column-gap 5px
+    column-count 2
 @media only screen and (max-width: 899px)
   #page header .bbox.min
     display block

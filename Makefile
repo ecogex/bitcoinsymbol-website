@@ -1,5 +1,4 @@
 JS_FILES := js/jquery-1.11.0.js \
-           js/jquery.magnific-popup.min.js \
            js/jquery.cycle2.js \
            js/jquery.mmenu.min.js \
            js/zclip.js \
