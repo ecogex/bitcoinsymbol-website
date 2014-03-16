@@ -358,4 +358,3 @@
           <p class="smallp"><a href="#donate">Donations</a> will be much appreciated!</p>
         </div>
       </section>
-      <div class="popup"></div>
