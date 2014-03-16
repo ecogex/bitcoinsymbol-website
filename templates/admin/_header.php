@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Administration</title>
+    <link rel="icon" type="image/x-icon" href="<?= $base_url ?>i/admin.ico" />
     <link rel="stylesheet" href="<?= $base_url ?>css/admin.css">
     <link rel="stylesheet" href="<?= $base_url ?>css/fonts.css">
   </head>
@@ -19,7 +20,9 @@
         <li>
           <a href="<?= $base_url ?>admin/orders">Orders</a>
         </li>
-      </ul>
+        <li>
+          <a href="<?= $base_url ?>shop">Shop</a>
+        </li>      </ul>
       <?php if (isset($logged) && $logged): ?>
       <p class="logout"><a href="<?= $base_url ?>admin/logout">logout</a></p>
       <?php endif ?>

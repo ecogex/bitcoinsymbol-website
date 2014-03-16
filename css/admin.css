@@ -101,6 +101,10 @@ form.login{
 .table-btn{
   margin-top:10px;
 }
+textarea{
+  width:233px;
+  height:200px;
+}
 a{
   color:black;
 }

@@ -13,6 +13,7 @@ main, header
 header, footer
   font-size 12px
   padding 2px 5px
+  letter-spacing 1px
   a
     color inherit
     text-decoration none
@@ -62,6 +63,23 @@ footer
     text-align center
     border 1px solid
     padding 20px
+    line-height 1.3em
+  tr
+    &.no-stock
+      position relative
+      display block
+      td.quantity:before
+        content "×"
+        font-size 4em
+      input.number
+        display none
+      &:before
+        content "OUT OF STOCK!"
+        font-size 4em
+        position absolute
+        top 120px
+        left 20px
+        transform rotate(-10deg)
   .submit
     text-align right
   input.number
@@ -70,6 +88,10 @@ footer
     font-size 1em
   button
     width 39%
+  small
+    font-size .7em
+  b
+    font-weight bold
 
 .right
   width 30%
@@ -117,6 +139,9 @@ button
   transform rotate(-10deg) scale(2)
 .r2
   transform rotate(10deg) scale(2)
+
+::selection {background:#eee;}
+::-moz-selection {background:#eee;}
 
 // Borders animation
 

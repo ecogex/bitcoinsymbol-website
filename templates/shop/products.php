@@ -9,11 +9,11 @@
             <tr<?php if ($product->stock == 0) echo ' class="no-stock"' ?>>
               <td><img src="<?= $base_url . $product->image ?>"></td>
               <td><?= $product->name ?><br>Ƀ <?= $product->amount_btc() ?></td>
-              <td>
+              <td class="description">
                 <?= $product->description ?><br>
                 <small>(<?= $product->stock ?> in stock)</small>
               </td>
-              <td>
+              <td class="quantity">
                 <input type="number"
                   class="number"
                   style="width:60px;padding:10px;"
