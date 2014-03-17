@@ -12,7 +12,9 @@
       </label>
     </p>
     <p>
-      <label><b>Extra image (optional):</b><input name="image2" type="text" placeholder="i/my-image.jpg"><?= $product->image2 ?></label>
+      <label>
+        <b>Extra image (optional):</b><input name="image2" type="text" placeholder="i/my-image.jpg" value="<?= $product->image2 ?>">
+      </label>
     </p>
     <p>
       <label>
