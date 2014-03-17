@@ -35,12 +35,13 @@ function validate_fields_exist($container, $fields) {
 }
 
 function validate_admin_product_post() {
-  $fields = [ 'name', 'image', 'description', 'amount', 'stock' ];
+  $fields = [ 'name', 'image', 'image2', 'description', 'amount', 'stock' ];
   if(!validate_fields_exist($_POST, $fields)) return NULL;
 
   $product = [];
   $product['name'] = $_POST['name'];
   $product['image'] = $_POST['image'];
+  $product['image2'] = $_POST['image2'];
   $product['description'] = $_POST['description'];
 
   $product['amount'] = filter_input(

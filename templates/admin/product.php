@@ -12,6 +12,9 @@
       </label>
     </p>
     <p>
+      <label><b>Extra image (optional):</b><input name="image2" type="text" placeholder="i/my-image.jpg"><?= $product->image2 ?></label>
+    </p>
+    <p>
       <label>
         <b>Price:</b><input name="amount" type="text" placeholder="0.345" value="<?= $product->amount_btc() ?>"> BTC
       </label>

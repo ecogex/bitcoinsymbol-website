@@ -18,7 +18,7 @@ class ShopData {
   }
 
   function get_all_products() {
-    $st = $this->pdo->prepare("SELECT id, name, image, amount, stock, description FROM products");
+    $st = $this->pdo->prepare("SELECT id, name, image, image2, amount, stock, description FROM products");
     $st->execute();
     return $st->fetchAll();
   }
@@ -31,13 +31,14 @@ class ShopData {
 
   function update_product($product) {
     $sql = 'UPDATE products SET '.
-           'name=:name, image=:image, amount=:amount, stock=:stock, description=:description '.
+           'name=:name, image=:image, image2=:image2, amount=:amount, stock=:stock, description=:description '.
            'WHERE id=:id';
     $st = $this->pdo->prepare($sql);
     return $st->execute(array(
       ':id' => $product['id'],
       ':name' => $product['name'],
       ':image' => $product['image'],
+      ':image2' => $product['image2'],
       ':amount' => $product['amount'],
       ':stock' => $product['stock'],
       ':description' => $product['description'],
@@ -45,12 +46,13 @@ class ShopData {
   }
 
   function add_product($product) {
-    $sql = 'INSERT INTO products (name, image, amount, stock, description) '.
-           'VALUES (:name, :image, :amount, :stock, :description)';
+    $sql = 'INSERT INTO products (name, image, image2, amount, stock, description) '.
+           'VALUES (:name, :image, :image2, :amount, :stock, :description)';
     $st = $this->pdo->prepare($sql);
     return $st->execute(array(
       ':name' => $product['name'],
       ':image' => $product['image'],
+      ':image2' => $product['image2'],
       ':amount' => $product['amount'],
       ':stock' => $product['stock'],
       ':description' => $product['description'],
@@ -78,6 +80,7 @@ class ShopData {
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT,
       image TEXT,
+      image2 TEXT,
       amount INTEGER,
       stock INTEGER,
       description TEXT

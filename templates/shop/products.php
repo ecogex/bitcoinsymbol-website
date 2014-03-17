@@ -1,13 +1,18 @@
     <header><a href="./">Back to Bitcoin Symbol</a></header>
     <main>
       <h1>Shop</h1>
-      <p>Welcome to the shop of the Ƀ project! Here you can pay only with Bitcoin.
+      <p>Welcome to the shop of the Ƀ project! Here you can only pay with Bitcoin.
       <form method="post" action="<?= $_SERVER['REQUEST_URI'] ?>">
         <div class="shop-items">
           <table>
             <?php foreach($products as $i => $product): ?>
             <tr<?php if ($product->stock == 0) echo ' class="no-stock"' ?>>
-              <td><img src="<?= $base_url . $product->image ?>"></td>
+              <td>
+                <div class="slide">
+                  <img class="cycle-next" src="<?= $base_url . $product->image ?>">
+                  <img class="cycle-next" src="<?= $base_url . $product->image2 ?>">
+                </div>
+              </td>
               <td><?= $product->name ?><br>Ƀ <?= $product->amount_btc() ?></td>
               <td class="description">
                 <?= $product->description ?><br>

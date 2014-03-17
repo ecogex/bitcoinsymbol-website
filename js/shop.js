@@ -44,5 +44,14 @@ function initShop() {
     });
     animate = !(el.is(':focus') || notzero);
   }
+  
+  // Cycle slideshow
+  $('.slide').cycle({
+    easing: 'linear',
+    timeout: 6000,
+    pauseOnHover: true,
+    speed: 100
+  });
+  
 }
 

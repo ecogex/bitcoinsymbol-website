@@ -12,6 +12,7 @@ class Model_Product extends RedBean_SimpleModel {
   function fill_with_filtered_product($product_filtered) {
     $this->name = $product_filtered->name;
     $this->image = $product_filtered->image;
+    $this->image2 = $product_filtered->image2;
     $this->stock = $product_filtered->stock;
     $this->description = $product_filtered->description;
     $this->amount_btc($product_filtered->amount);

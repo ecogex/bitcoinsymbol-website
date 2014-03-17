@@ -54,6 +54,7 @@
   <form action="<?= $base_url ?>admin/products" method="post">
     <p><label><b>Name:</b><input name="name" type="text" placeholder="Name"></label></p>
     <p><label><b>Image (relative):</b><input name="image" type="text" placeholder="i/my-image.jpg"></label></p>
+    <p><label><b>Extra image (optional):</b><input name="image2" type="text" placeholder="i/my-image.jpg"></label></p>
     <p><label><b>Price:</b><input name="amount" type="text" placeholder="0.345"> BTC</label></p>
     <p><label><b>Stock:</b><input name="stock" type="number" min="0" placeholder="1"></label></p>
     <p><label><b>Description:</b><textarea name="description" type="text"></textarea></label></p>
