@@ -48,7 +48,7 @@ function initShop() {
   // Cycle slideshow
   $('.slide').cycle({
     easing: 'linear',
-    timeout: 6000,
+    timeout: 5000,
     pauseOnHover: true,
     speed: 100
   });

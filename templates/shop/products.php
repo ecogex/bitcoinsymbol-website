@@ -13,7 +13,7 @@
                   <img class="cycle-next" src="<?= $base_url . $product->image2 ?>">
                 </div>
               </td>
-              <td><?= $product->name ?><br>Ƀ <?= $product->amount_btc() ?></td>
+              <td class="price"><?= $product->name ?><br>Ƀ <?= $product->amount_btc() ?></td>
               <td class="description">
                 <?= $product->description ?><br>
                 <small>(<?= $product->stock ?> in stock)</small>
