@@ -303,7 +303,7 @@
           </dl>
           <dl>
             <dt>What font did you used for the circled Ƀ on this page?</dt>
-            <dd><i>DejaVu</i> is its name. It is a free (as in free speach) font included in the <a href="#download">graphic pack</a>. For more information about DejaVu, visit its <a href="http://dejavu-fonts.org/">dedicated website</a>.
+            <dd><i>DejaVu</i> is its name. It is a free (as in free speech) font included in the <a href="#download">graphic pack</a>. For more information about DejaVu, visit its <a href="http://dejavu-fonts.org/">dedicated website</a>.
             </dd>
           </dl>
           <dl>
