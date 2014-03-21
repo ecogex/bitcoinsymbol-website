@@ -166,7 +166,7 @@ function controller_front($app) {
 
   $app->route('GET', '/shop/pay/(:any)', function($secret) {
     $order = R::findOne('order', 'callback_secret = ?', [$secret]);
-    if (!$order->id) error_404();
+    if (!$order || !$order->id) error_404();
 
     $url = parse_url($_SERVER['REQUEST_URI']);
     if (!isset($url['query']) || !$url['query']) error_404();
