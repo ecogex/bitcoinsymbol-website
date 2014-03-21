@@ -198,7 +198,7 @@ function controller_front($app) {
 
       // Customer email
       $customer_subject = 'Order confirmation from Bitcoinsymbol.org';
-      $mailer->send($customer_subject, $order->email, 'emails/order-confirmed', [
+      $mailer->send($customer_subject, [$order->email => $order->name], 'emails/order-confirmed', [
         'order' => $order,
       ]);
 

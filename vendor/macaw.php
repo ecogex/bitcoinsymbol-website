@@ -25,6 +25,9 @@ class Macaw
         $uri = dirname($_SERVER['PHP_SELF']).$params[0];
         $callback = $params[1];
 
+        // Quick fix
+        $uri = preg_replace('/^\/\//', '/', $uri);
+
         array_push(self::$routes, $uri);
         array_push(self::$methods, strtoupper($method));
         array_push(self::$callbacks, $callback);
