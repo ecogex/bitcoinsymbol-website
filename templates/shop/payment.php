@@ -8,5 +8,4 @@
               data-bc-message="<?= $order->amount_btc() ?>Ƀ payment"
               data-bc-address="<?= $order->input_address ?>"><?= $order->input_address ?>
         </code>
-      </p>
     </main>
