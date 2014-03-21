@@ -6,8 +6,6 @@
         <code class="bitcoin-address"
               data-bc-amount="<?= $order->amount_btc() ?>"
               data-bc-message="<?= $order->amount_btc() ?>Ƀ payment"
-              data-bc-address="<?= $order->input_address ?>">
-              <?= $order->input_address ?>
-        </code>
+              data-bc-address="<?= $order->input_address ?>"><?= $order->input_address ?></code>
       </p>
     </main>
