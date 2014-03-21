@@ -69,88 +69,88 @@
           <p>All the images below are included in the graphic pack that you can <a href="#download">download</a> for free. You can also modify those images the way you want with your favorite vector editor such as the online tool <a href="http://mondrian.io">mondrian.io</a>, <a href="http://www.inkscape.org">Inkscape</a> or Illustrator.</p>    
           <div class="column-group">
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/bitcoin-symbol.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/bitcoin-symbol.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/bitcoin-symbol.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/bitcoin-symbol.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/bitcoin-symbol.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-circular-accepted.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-circular-accepted.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-circular-accepted.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-circular-accepted.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-circular-accepted.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-circular-plain-accepted.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-circular-plain-accepted.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-circular-plain-accepted.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-circular-plain-accepted.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-circular-plain-accepted.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-circular-gold-accepted.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-circular-gold-accepted.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-circular-gold-accepted.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-circular-gold-accepted.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-circular-gold-accepted.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-circular-silver-accepted.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-circular-silver-accepted.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-circular-silver-accepted.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-circular-silver-accepted.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-circular-silver-accepted.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-love-heartonly.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-love-heartonly.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-love-heartonly.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-love-heartonly.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-love-heartonly.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-smart-paywith.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-smart-paywith.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-smart-paywith.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-smart-paywith.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-smart-paywith.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-doorsticker-accepted.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-doorsticker-accepted.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-doorsticker-accepted.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-doorsticker-accepted.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-doorsticker-accepted.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-doorsticker-accepted-horizontal.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-doorsticker-accepted-horizontal.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-doorsticker-accepted-horizontal.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-doorsticker-accepted-horizontal.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-doorsticker-accepted-horizontal.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-flag-support.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-flag-support.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-flag-support.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-flag-support.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-flag-support.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-rounded-accepted.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-rounded-accepted.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-rounded-accepted.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-rounded-accepted.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-rounded-accepted.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-fun-paywith.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-fun-paywith.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-fun-paywith.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-fun-paywith.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-fun-paywith.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-ribbon-love.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-ribbon-love.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-ribbon-love.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-ribbon-love.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-ribbon-love.svg">edit</a></figcaption>
             </figure>
             <figure>
-              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-pirate-support.svg">
+              <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-pirate-support.svg">
                 <img class="smallimg" alt="Bitcoin SVG Label" src="bitcoinsymbol-pack/2D/label-pirate-support.svg" height="300px" with="300px"/>
               </a>
-              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://ecogex.com/bitcoin/bitcoinsymbol-pack/2D/label-pirate-support.svg">edit</a></figcaption>
+              <figcaption><a class="edit" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/label-pirate-support.svg">edit</a></figcaption>
             </figure>
           </div>
         </div>
