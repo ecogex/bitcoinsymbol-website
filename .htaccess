@@ -1,5 +1,7 @@
 Options -indexes
 
+Header set Access-Control-Allow-Origin "http://ecogex.com"
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
