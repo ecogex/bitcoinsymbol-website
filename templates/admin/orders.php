@@ -5,7 +5,7 @@
   'amount',
   'input_address',
   'confirmations',
-  'sent',
+  'shipped',
   'email',
   'name',
   'address',
@@ -24,7 +24,7 @@
     <?php foreach($fields as $field): ?>
     <?php if ($field === 'amount'): ?>
     <td title="<?= $order->amount ?> Satoshis"><?= $order->amount_btc() ?>Ƀ</td>
-    <?php elseif ($field === 'sent'): ?>
+    <?php elseif ($field === 'shipped'): ?>
     <td>
       <?php if ($order->sent): ?>
       Yes
@@ -32,7 +32,7 @@
       $order_id = $order->id;
       ?>
       <form action="<?= "${base_url}admin/orders/${order_id}/send" ?>" method="post">
-      No <button class="table-btn" type="submit" onclick="return confirm('Sure? (<?= $order->confirmations ?> confirmations)')">Sent?</button>
+      No <button class="table-btn" type="submit" onclick="return confirm('Sure? (<?= $order->confirmations ?> confirmations)')">Shipped?</button>
       </form>
       <?php endif ?>
     </td>
