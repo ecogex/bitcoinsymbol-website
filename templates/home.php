@@ -340,7 +340,7 @@
             <li><a href="https://lamassu.is/">Lamassu</a></li>
             <li><a href="http://preev.com">preev.com</a></li>
             <li><a href="https://a-ads.com/">a-ads.com</a></li>
-            <li><a href="http://www.zeroblock.com/">ZeroBlock</a></li>
+            <li><a href="http://bitcoinfees.com/">Bitcoin Fees</a></li>
             <li><a href="http://www.reddit.com/r/Bitcoin/comments/1gagle/lol_new_bitcoin_billboard_in_san_jose_honey_badger/">Honey Badger!</a></li>
             <li><a href="http://tip4commit.com/">Tip4Commit</a></li>
           </ul>
