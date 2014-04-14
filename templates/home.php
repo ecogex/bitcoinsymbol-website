@@ -29,14 +29,14 @@
             <img alt="Bitcoin symbol" src="bitcoinsymbol-pack/2D/bitcoin-symbol.svg" height="50px" with="50px"/>
             <figcaption>Bitcoin symbol: the Ƀ character</figcaption>
           </figure>
-          <p>The problem is that the image on the left is a  logo! It’s a unique image file, just like it could be used by a company to sell or promote a product. Currencies are represented by symbols like $, € or ¥, aiming to be used everywhere by everybody. The Thai Baht (<a href="https://en.wikipedia.org/wiki/Thai_baht">฿</a>) is sometimes used to represent Bitcoin, but this certainly raises a problem of differenciation between the Thai Baht and Bitcoin.</p>
+          <p>The problem is that the image on the left is a logo! It’s a unique image file, just like it could be used by a company to sell or promote a product. Currencies are represented by symbols like $, € or ¥, aiming to be used everywhere by everybody. The Thai Baht (<a href="https://en.wikipedia.org/wiki/Thai_baht">฿</a>) is sometimes used to represent Bitcoin, but this certainly raises a problem of differenciation between the Thai Baht and Bitcoin.</p>
           <p class="highlight">Ƀ is not a logo but a symbol: Unicode Character <a href="http://www.fileformat.info/info/unicode/char/0243/index.htm">U+0243</a> can be used any Unicode text editor.</p>
           <p>This unicode character was originally used as a phonetic symbol to represent or transcribe the sound [β]. Thus the context of this use does not allow any confusion with the Bitcoin currency.</p>
 
           <p>The idea to use Ƀ as a symbol for Bitcoin is not new ; this character was one of the original candidates to represent Bitcoin, but most of the comunity’s proposals were more fancy logos than a manifesto for the usage of a symbol. A logo is defined as a centralized graphic identity composed of colors, fonts, and shapes chosen by a small group of individuals. Bitcoin, however, is a decentralized currency – it’s neither a brand nor a product or company, and what we need for representing Bitcoin is a symbol rather than a logo.</p>
           <figure>
             <img alt="Exemples of Unicode Character U+0243" src="i/blist.svg" height="40px" with="400px"/>
-            <figcaption>Exemples of Unicode Character U+0243 in different typefaces</figcaption>
+            <figcaption>Examples of Unicode Character U+0243 in different typefaces</figcaption>
           </figure>
           <p>The Ƀ symbol can be displayed in many fonts, some of which may already be installed on your computer. Here is a list of freely downloadable libre fonts that support the Ƀ symbol:</p>
           <ul class="fontlist">
@@ -59,7 +59,7 @@
           </ul>
           <p>Arial and Times New Roman both support the Ƀ symbol as well. They are not libre fonts but they can be found on almost every systems.</p>
           <p class="highlight">Help us popularize Ƀ!<br>Create images, and use Ƀ in Bitcoin-related apps, websites and paper.</p>
-          <p>As a widely distributed, peer-to-peer digital currency, Bitcoin needs an open-source graphic identity, designed with open soucre sofware by and for the community. It has to be as minimal as possible to allow further adaptations. Because Ƀ is simple, extendable and perennial, it fulfills all those requirements.</p>
+          <p>As a widely distributed, peer-to-peer digital currency, Bitcoin needs an open-source graphic identity, designed with open source sofware by and for the community. It has to be as minimal as possible to allow further adaptations. Because Ƀ is simple, extendable and perennial, it fulfills all those requirements.</p>
         </div>
       </section>
       <section id="customize" class="box">
@@ -219,7 +219,7 @@
           </div>
           <div class="support-box" id="donate">
             <h2>Donation</h2>
-            <p>Donations to this project are much appreciated. To show your excitation for Ƀ and be part of the adventure, use the form below.</p>
+            <p>Donations to this project are much appreciated. To show your excitement for Ƀ and be part of the adventure, use the form below.</p>
             <form id="makeDonation" action="https://bitpay.com/checkout" method="post" onsubmit="return bp.validateMobileCheckoutForm($('#makeDonation'));">
               <input name="action" type="hidden" value="checkout">
               <fieldset>
@@ -275,7 +275,7 @@
               </fieldset>
             </form>
           </div>
-          <p>Or send Bitcoin directly to our public key: <code>14eGodNbabrYr5mDVhWhPRttY1PK6fPy1g</code></p>
+          <p>Or send Bitcoins directly to our public key: <code>14eGodNbabrYr5mDVhWhPRttY1PK6fPy1g</code></p>
           <div class="support-box">
             <h2>Participate</h2>
             <p>Feel free to improve this website and suggest new ideas on the <a href="https://github.com/ecogex/bitcoinsymbol-website">Github repository</a>. Images and 3D graphics are hosted on a dedicated <a href="https://github.com/ecogex/bitcoinsymbol-pack">“graphic pack” repository</a>.</p>
@@ -287,7 +287,7 @@
           <h1>FAQ</h1>
           <dl>
             <dt>Is this free?</dt>
-            <dd>Yes, all the content included in the graphic pack is free to use, copy, distribute, and transform just like you want. Our work is under the <a href="http://artlibre.org/licence/lal/en">Free Art Licence</a> (except if stated otherwise, e.g. /fonts). We make no profit from this project and all the work we provide it free of charge. If you like it, you can support our work via the options listed above under the “<a href="#donate">Donate</a>” chapter.</dd>
+            <dd>Yes, all the content included in the graphic pack is free to use, copy, distribute, and transform just like you want. Our work is under the <a href="http://artlibre.org/licence/lal/en">Free Art Licence</a> (except if stated otherwise, e.g. /fonts). We make no profit from this project and all the work we provide is free of charge. If you like it, you can support our work via the options listed above under the “<a href="#donate">Donate</a>” chapter.</dd>
           </dl>
           <dl>
             <dt>It’s a hack! Why not ask the unicode consortium to add a brand new character?</dt>
@@ -343,6 +343,7 @@
             <li><a href="http://bitcoinfees.com/">Bitcoin Fees</a></li>
             <li><a href="http://www.reddit.com/r/Bitcoin/comments/1gagle/lol_new_bitcoin_billboard_in_san_jose_honey_badger/">Honey Badger!</a></li>
             <li><a href="http://tip4commit.com/">Tip4Commit</a></li>
+            <li><a href="https://www.bitpremier.com/">BitPremier</a></li>
           </ul>
           <h2>Publications and articles about Ƀ</h2>
           <ul>
