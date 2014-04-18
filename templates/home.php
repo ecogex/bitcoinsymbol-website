@@ -346,6 +346,7 @@
           </ul>
           <h2>Publications and articles about Ƀ</h2>
           <ul>
+            <li><a href="http://www.coindesk.com/industry-website-advocate-bitcoins-unicode-symbol/">Coindesk</a></li>
             <li><a href="http://bitcoinmagazine.com/product/issue03/">Bitcoin Magazine #3</a></li>
           </ul>          
           
