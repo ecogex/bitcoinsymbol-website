@@ -337,6 +337,7 @@
 
           <h2>Groups that already use Ƀ</h2>
           <ul>
+            <li><a href="http://bitcoin.com/">Bitcoin.com</a></li>
             <li><a href="https://lamassu.is/">Lamassu</a></li>
             <li><a href="http://preev.com">preev.com</a></li>
             <li><a href="https://a-ads.com/">a-ads.com</a></li>
@@ -348,9 +349,10 @@
           <h2>Publications and articles about Ƀ</h2>
           <ul>
             <li><a href="http://www.coindesk.com/industry-website-advocate-bitcoins-unicode-symbol/">Coindesk</a></li>
+            <li><a href="http://www.cryptocoinsnews.com/news/bitcoin-com-gets-revamp-blockchain-info/2014/04/17">Cryptocoins News</a></li>
             <li><a href="http://bitcoinmagazine.com/product/issue03/">Bitcoin Magazine #3</a></li>
-          </ul>          
-          
+            <li><a href="http://www.dailydot.com/business/bitcoin-logo-new-unicode/">Dailydot</a></li>
+          </ul>
           <h2>Credits</h2>
           <p class="smallp">Initiated and designed by ECOGEX (<a href="mailto:info@ecogex.com">contact</a>)</p>
           <p class="smallp">CG artist: <a href="http://www.3dminfographie.com/">3DMinfographie</a>. Blender sources available for free in the graphic pack.</p>
