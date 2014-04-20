@@ -354,6 +354,8 @@
             <li><a href="http://www.bitcoinx.com/french-design-company-ecogex-proposes-unicode-%C9%83-new-bitcoin-symbol/">Bitcoinx</a></li>
             <li><a href="http://bitcoinmagazine.com/product/issue03/">Bitcoin Magazine #3</a></li>
             <li><a href="http://www.dailydot.com/business/bitcoin-logo-new-unicode/">Dailydot</a></li>
+            <li><a href=" http://www.dcmagnates.com/new-bitcoin-symbol-suggested-by-industry-players/">DC Magnates</a></li>
+            <li><a href="http://bitbitecoin.com/archives/949">BitBiteCoin</a></li>
           </ul>
           <h2>Credits</h2>
           <p class="smallp">Initiated and designed by ECOGEX (<a href="mailto:info@ecogex.com">contact</a>)</p>
