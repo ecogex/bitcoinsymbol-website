@@ -291,7 +291,7 @@
           </dl>
           <dl>
             <dt>It’s a hack! Why not ask the unicode consortium to add a brand new character?</dt>
-            <dd>We believe that there’s no better way to represent Bitcoin than a hack. Bitcoin creators and users are hackers, and our hack is part of the project’s DNA. As there is no Bitcoin consortium, agreeing on a new character to use may be difficult. Thus, this must rely on community support and adoption in the long term.</dd>
+            <dd>We believe that there’s no better way to represent Bitcoin than a hack. Bitcoin creators and users are hackers, and our hack is part of the project’s DNA. As there is no Bitcoin consortium, agreeing on a new character to use may be difficult. Thus, this must rely on community support and adoption in the long term. As the attempts to add the double vertical dashes B to Unicode <a href="http://www.unicode.org/L2/L2011/11116.htm#127-A57">has failed</a>, we believe that this is a really long and complicated process. This is without taking into account the fact that popular fonts have to be updated to support this symbol. As you can understand, it can take ages.</dd>
           </dl>
           <dl>
             <dt>Did you also do this <a href="https://web.archive.org/web/20131031203409/http://www.ecogex.com/bitcoin/">similar project about Ƀ</a>? </dt>
