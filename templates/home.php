@@ -355,6 +355,8 @@
             <li><a href="http://www.coindesk.com/industry-website-advocate-bitcoins-unicode-symbol/">Coindesk</a></li>
             <li><a href="http://www.cryptocoinsnews.com/news/bitcoin-com-gets-revamp-blockchain-info/2014/04/17">Cryptocoins News</a></li>
             <li><a href="http://www.bitcoinx.com/french-design-company-ecogex-proposes-unicode-%C9%83-new-bitcoin-symbol/">Bitcoinx</a></li>
+            <li><a href="http://cointelegraph.com/post/does_bitcoin_deserve_a_better_symbol">CoinTelegraph</a></li>
+            <li><a href="http://moneyandtech.com/apr11-news-update/">Money & Tech</a></li>
             <li><a href="http://bitcoinmagazine.com/product/issue03/">Bitcoin Magazine #3</a></li>
             <li><a href="http://bangkok.coconuts.co/2014/04/22/bh-or-not-b-bitcoin-movement-debates-stealing-thai-bahts-identity">Coconuts Bangkok</a></li>
             <li><a href="http://www.dailydot.com/business/bitcoin-logo-new-unicode/">Dailydot</a></li>
