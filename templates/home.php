@@ -302,13 +302,13 @@
             <dd>We are ECOGEX, a graphic design studio based in Paris. We have been working with Bitcoin since 2011. We design global branding solutions for our clients, including everything from logos to web design. For further information, refer to the <a href="#about">About</a> section.</dd>
           </dl>
           <dl>
-            <dt>What font did you used for the circled Ƀ on this page?</dt>
+            <dt>What font did you use for the circled Ƀ on this page?</dt>
             <dd><i>DejaVu</i> is its name. It is a free (as in free speech) font included in the <a href="#download">graphic pack</a>. For more information about DejaVu, visit its <a href="http://dejavu-fonts.org/">dedicated website</a>.
             </dd>
           </dl>
           <dl>
             <dt>Can I hotlink your images on my website?</dt>
-            <dd>Please don’t. Our server is not supposed to be a content delivery network and we cant ensure perennial URL. <a href="#download">Download the graphic pack</a> instead!
+            <dd>Please don’t. Our server is not supposed to be a content delivery network and we can't ensure perennial URL. <a href="#download">Download the graphic pack</a> instead!
             </dd>
           </dl>
           <p>One of your question is not on the list? You can open an issue on the <a href="https://github.com/ecogex/bitcoinsymbol-website/issues">dedicated GitHub page</a>.</p>
@@ -348,6 +348,7 @@
             <li><a href="http://tip4commit.com/">Tip4Commit</a></li>
             <li><a href="http://realtimebitcoin.info/">Realtimebitcoin</a></li>
             <li><a href="https://www.bitpremier.com/">BitPremier</a></li>
+            <li><a href="http://www.world-bitcoin-forum.com/">World Bitcoin Forum</a></li>
           </ul>
           <h2>Publications and articles about Ƀ</h2>
           <ul>
