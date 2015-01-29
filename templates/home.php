@@ -3,7 +3,7 @@
           <li><a href="#why">Why Ƀ?</a></li>
           <li><a href="#customize">Customize</a></li>
           <li><a href="#download">Download</a></li>
-          <li><a href="#goodies">Goodies and Support</a></li>
+          <li><a href="#goodies">Support</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#about">About</a></li>
         </ul>
@@ -66,7 +66,7 @@
         <div class="section-inner">
           <h1>Customize</h1>
           <p>Hacking time! The following tool will help you to design custom banners and buttons using the Ƀ symbol. It generates vector images (SVG) or PNG, ready to be embedded on your website. This logo is yours – customize it as you like with gradients, cat faces and unicorns to adapt it to your own personal designs!</p>
-          <p>All the images below are included in the graphic pack that you can <a href="#download">download</a> for free. You can also modify those images the way you want with your favorite vector editor such as the online tool <a href="http://mondrian.io">mondrian.io</a>, <a href="http://www.inkscape.org">Inkscape</a> or Illustrator.</p>    
+          <p>All the images below are included in the graphic pack that you can <a href="#download">download</a> for free. You can also modify those images the way you want with your favorite vector editor such as the online tool <a href="http://mondrian.io">mondrian.io</a>, <a href="http://www.inkscape.org">Inkscape</a> or Illustrator.</p>
           <div class="column-group">
             <figure>
               <a target="_blank" href="http://ecogex.com/svg-edit/svg-editor.html?url=http://bitcoinsymbol.org/bitcoinsymbol-pack/2D/bitcoin-symbol.svg">
@@ -202,86 +202,18 @@
       </section>
       <section id="goodies" class="box">
         <div class="section-inner">
-          <h1>Choose your way to contribute</h1>
-          <p>Buy our silkscreen printed T-shirt, the high quality stickers or make a <a href="#donate">donation</a> below to support the project.</p>
-          <div class="column-group tee">
-            <h2>Goodies</h2>
-            <a class="button" href="shop">Enter the Shop
-              <div class="slide">
-                <img alt="T-shirt preview" src="i/t-shirt-preview.jpg" width="800px" height="600px"/>
-                <img alt="Stickers preview" src="i/stickers-bitcoinsymbol.jpg" width="800px" height="600px"/>
-                <img alt="T-shirt preview" src="i/t-shirt-preview2.jpg" width="800px" height="600px"/>
-                <img alt="T-shirt preview" src="i/t-shirt-preview3.jpg" width="800px" height="600px"/>
-                <img alt="Stickers preview" src="i/stickers-bitcoinsymbol2.jpg" width="800px" height="600px"/>
-                <img alt="T-shirt preview" src="i/t-shirt-preview4.jpg" width="800px" height="600px"/>
-              </div>
-            </a>
-          </div>
+          <h1>Support</h1>
           <div class="support-box" id="donate">
             <h2>Donation</h2>
-            <p>Donations to this project are much appreciated. To show your excitement for Ƀ and be part of the adventure, use the form below.</p>
-            <form id="makeDonation" action="https://bitpay.com/checkout" method="post" onsubmit="return bp.validateMobileCheckoutForm($('#makeDonation'));">
-              <input name="action" type="hidden" value="checkout">
-              <fieldset>
-                <ul>
-                  <li id="orderID" class="c2">
-                    <label>Email (optional)</label>
-                    <input name="orderID" type="email" class="input input-xlarge" placeholder="Email address" maxlength=50 autocapitalize=off autocorrect=off><br>
-                  </li>
-                  <li id="price" class="c2">
-                    <label>Donation amount</label>
-                    <input name="price" type="number" class="noscroll" value="10.00" placeholder="Amount" maxlength="10" min="0.01" step="0.01"  />
-                    <select name="currency" value="" >
-                      <option value="USD" selected="selected">USD</option>
-                      <option value="BTC">BTC</option>
-                      <option value="EUR">EUR</option>
-                      <option value="GBP">GBP</option>
-                      <option value="AUD">AUD</option>
-                      <option value="BGN">BGN</option>
-                      <option value="BRL">BRL</option>
-                      <option value="CAD">CAD</option>
-                      <option value="CHF">CHF</option>
-                      <option value="CNY">CNY</option>
-                      <option value="CZK">CZK</option>
-                      <option value="DKK">DKK</option>
-                      <option value="HKD">HKD</option>
-                      <option value="HRK">HRK</option>
-                      <option value="HUF">HUF</option>
-                      <option value="IDR">IDR</option>
-                      <option value="ILS">ILS</option>
-                      <option value="INR">INR</option>
-                      <option value="JPY">JPY</option>
-                      <option value="KRW">KRW</option>
-                      <option value="LTL">LTL</option>
-                      <option value="LVL">LVL</option>
-                      <option value="MXN">MXN</option>
-                      <option value="MYR">MYR</option>
-                      <option value="NOK">NOK</option>
-                      <option value="NZD">NZD</option>
-                      <option value="PHP">PHP</option>
-                      <option value="PLN">PLN</option>
-                      <option value="RON">RON</option>
-                      <option value="RUB">RUB</option>
-                      <option value="SEK">SEK</option>
-                      <option value="SGD">SGD</option>
-                      <option value="THB">THB</option>
-                      <option value="TRY">TRY</option>
-                      <option value="ZAR">ZAR</option>
-                    </select/>
-                    </li>
-                  </ul>
-                <input type="hidden" name="data" value="sDY4ql1FmD/Il6LQymWrMC2en+e2LWyX8bGOSRMxkiIzEJqoBzuGy3EiBXEFxNYYGEE7M9OxkTEoI14sZ3biTgrreE9V0jY8QPhuV/g3QOhSRXnGyKhx/Ox1us1BXnxGO93bJBHBhqdfqjgLVNhXhR5CLTEN2243KBALSXlhAT7W5zI9uBxt0Z7RmxiRQfX3">
-                <button class="button" name="submit">Donate</button>
-              </fieldset>
-            </form>
+            <p>Donations to this project are much appreciated:</p>
           </div>
-          <p>Or send Bitcoins directly to our public key: <code>14eGodNbabrYr5mDVhWhPRttY1PK6fPy1g</code></p>
+          <p>You can send Bitcoins directly to our public key: <code>14eGodNbabrYr5mDVhWhPRttY1PK6fPy1g</code></p>
           <div class="support-box">
             <h2>Participate</h2>
             <p>Feel free to improve this website and suggest new ideas on the <a href="https://github.com/ecogex/bitcoinsymbol-website">Github repository</a>. Images and 3D graphics are hosted on a dedicated <a href="https://github.com/ecogex/bitcoinsymbol-pack">“graphic pack” repository</a>.</p>
           </div>
         </div>
-      </section>      
+      </section>
       <section id="faq" class="box">
         <div class="section-inner">
           <h1>FAQ</h1>
@@ -321,7 +253,7 @@
           <!-- Begin MailChimp Signup Form -->
           <div id="mc_embed_signup">
           <form action="http://ecogex.us3.list-manage.com/subscribe/post?u=b5212a7ad976c431eb2d0e67f&amp;id=9d1726053a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              
+
           <div class="c2">
               <label for="mce-EMAIL">Email Address</label>
               <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
