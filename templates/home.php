@@ -219,7 +219,7 @@
           <h1>FAQ</h1>
           <dl>
             <dt>Is this free?</dt>
-            <dd>Yes, all the content included in the graphic pack is free to use, copy, distribute, and transform just like you want. Our work is under the <a href="http://artlibre.org/licence/lal/en">Free Art Licence</a> (except if stated otherwise, e.g. /fonts). We make no profit from this project and all the work we provide is free of charge. If you like it, you can support our work via the options listed above under the “<a href="#donate">Donate</a>” chapter.</dd>
+            <dd>Yes, and this is a non-profit project. All the content included in the graphic pack is free to use, copy, distribute, and transform just like you want. Our work is under the <a href="http://artlibre.org/licence/lal/en">Free Art Licence</a> (except if stated otherwise, e.g. /fonts). We make no profit from this project and all the work we provide is free of charge. If you like it, you can support our work via the options listed above under the “<a href="#donate">Donate</a>” chapter.</dd>
           </dl>
           <dl>
             <dt>It’s a hack! Why not ask the unicode consortium to add a brand new character?</dt>
@@ -269,12 +269,12 @@
 
           <h2>Groups that already use Ƀ</h2>
           <ul>
-            <li><a href="http://blockchain.com/">Blockchain</a></li>
             <li><a href="https://lamassu.is/">Lamassu</a></li>
             <li><a href="http://theriseandriseofbitcoin.com/">The Rise and Rise of Bitcoin</a></li>
             <li><a href="http://preev.com">preev.com</a></li>
             <li><a href="https://www.coinfloor.co.uk/">Coinfloor</a></li>
-            <li><a href="https://a-ads.com/">a-ads.com</a></li>
+            <li><a href="https://www.zapchain.com"></a></li>
+            <li><a href="https://palarin.com/">Palarin</a></li>
             <li><a href="http://bitcoinfees.com/">Bitcoin Fees</a></li>
             <li><a href="http://www.reddit.com/r/Bitcoin/comments/1gagle/lol_new_bitcoin_billboard_in_san_jose_honey_badger/">Honey Badger!</a></li>
             <li><a href="http://tip4commit.com/">Tip4Commit</a></li>
@@ -284,6 +284,7 @@
           </ul>
           <h2>Publications and articles about Ƀ</h2>
           <ul>
+            <li><a href="https://medium.com/down-the-hashrabbit-hole/to-or-not-to-4e952961f41">To Ƀ or not to ฿.</a></li>
             <li><a href="http://www.coindesk.com/industry-website-advocate-bitcoins-unicode-symbol/">Coindesk</a></li>
             <li><a href="http://www.cryptocoinsnews.com/news/bitcoin-com-gets-revamp-blockchain-info/2014/04/17">Cryptocoins News</a></li>
             <li><a href="http://www.bitcoinx.com/french-design-company-ecogex-proposes-unicode-%C9%83-new-bitcoin-symbol/">Bitcoinx</a></li>
@@ -299,7 +300,6 @@
           <h2>Credits</h2>
           <p class="smallp">Initiated and designed by ECOGEX (<a href="mailto:info@ecogex.com">contact</a>)</p>
           <p class="smallp">CG artist: <a href="http://www.3dminfographie.com/">3DMinfographie</a>. Blender sources available for free in the graphic pack.</p>
-          <p class="smallp">Photography: <a href="http://atinyr.tumblr.com/">GGGG</a> and <a href="http://carolinelollo.fr/">Caroline Lollo</a> and ECOGEX.
           <p class="smallp">Online SVG editor: <a href="http://svg-edit.googlecode.com/">SVG-edit</a> (used on <a href="#customize">Customize</a>).</p>
           <p class="smallp">Made with free software and love. You can find the source of this website on <a href="https://github.com/ecogex/bitcoinsymbol-website">GitHub</a>, and modify the graphic pack on its own <a href="https://github.com/ecogex/bitcoinsymbol-pack">repository</a>.</p>
           <p class="smallp"><a href="#donate">Donations</a> will be much appreciated!</p>
