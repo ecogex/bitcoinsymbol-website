@@ -6,7 +6,7 @@ Install the development tools:
 npm install
 ```
 
-The JavaScript files are concatenated and compressed by [UglyfyJS](https://github.com/mishoo/UglifyJS2).
+The JavaScript files are concatenated and compressed by [UglifyJS](https://github.com/mishoo/UglifyJS2).
 
 ```
 $ make js
