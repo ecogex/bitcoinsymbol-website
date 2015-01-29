@@ -269,11 +269,10 @@
 
           <h2>Groups that already use Ƀ</h2>
           <ul>
-            <li><a href="http://bitcoin.com/">Bitcoin.com</a></li>
+            <li><a href="http://blockchain.com/">Blockchain</a></li>
             <li><a href="https://lamassu.is/">Lamassu</a></li>
             <li><a href="http://theriseandriseofbitcoin.com/">The Rise and Rise of Bitcoin</a></li>
             <li><a href="http://preev.com">preev.com</a></li>
-            <li><a href="http://tip4commit.com/">TIP4COMMIT</a></li>
             <li><a href="https://www.coinfloor.co.uk/">Coinfloor</a></li>
             <li><a href="https://a-ads.com/">a-ads.com</a></li>
             <li><a href="http://bitcoinfees.com/">Bitcoin Fees</a></li>
