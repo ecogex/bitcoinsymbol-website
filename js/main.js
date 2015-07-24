@@ -13,16 +13,6 @@ function initMain() {
     }).resize();
   }());
 
-  // Copy to clipboard
-  var copied = '<p class="copied">✓ Copied</p>';
-  $('.copy').click(function() {
-    copyToClipboard('Ƀ');
-  });
-
-  function copyToClipboard(text) {
-    $('.theb').parent('h1').prepend(copied);
-  }
-
   // Scroll animation
   function scrolltop(time, href) {
     $('html, body').animate({
@@ -37,22 +27,10 @@ function initMain() {
     scrolltop(200, href);
   });
 
-  // zclip (Flash)
-  function doZclip() {
-    $('.copy').zclip({
-      path: 'js/ZeroClipboard.swf',
-      copy: $('.copy').text(),
-      afterCopy: function() {
-        $(this).parent('h1').prepend(copied);
-      }
-    });
-  }
-  doZclip();
-
   // Related to mmenu
   var $menu = $('#menu');
 
-  // Toggle menu 
+  // Toggle menu
   $('.min .theb').click(function(e) {
     e.stopImmediatePropagation();
     e.preventDefault();

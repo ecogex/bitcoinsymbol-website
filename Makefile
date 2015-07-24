@@ -1,7 +1,6 @@
 JS_FILES := js/jquery-1.11.0.js \
            js/jquery.cycle2.js \
            js/jquery.mmenu.min.js \
-           js/zclip.js \
            js/shop.js \
            js/main.js
 
@@ -25,7 +24,7 @@ lint:
 
 $(JS_FINAL): $(JS_FILES)
 	@echo "\nConcatenating and compressing files into $(JS_FINAL)…"
-	cat $^ | node_modules/.bin/uglifyjs -m -c - > $@
+	cat $^ | node_modules/.bin/uglifyjs -m -c > $@
 	@echo ""
 
 %.css: %.styl
