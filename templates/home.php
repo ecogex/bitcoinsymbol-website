@@ -20,7 +20,7 @@
       <section id="why" class="box">
         <div class="section-inner">
           <h1>Why Ƀ?</h1>
-          <p>Why should the Bitcoin community adopt this symbol?<br> Since the birth of Bitcoin, a large number of logos and symbols have been introduced. The most popular is a bold falling serif B, intersected by two vertical dashes à la the U.S. dollar.</p>
+          <p>Why should the Bitcoin community adopt this symbol?<br> Since the birth of Bitcoin, a large number of logos and symbols have been introduced. The most popular is a bold falling serif B, intersected by two vertical dashes à la U.S. dollar.</p>
           <figure class="c2">
             <img alt="old Bitcoin Logo" src="i/old-bitcoin-logo.svg" height="50px" with="50px"/>
             <figcaption>The current Bitcoin logo</figcaption>
@@ -33,7 +33,7 @@
           <p class="highlight">Ƀ is not a logo but a symbol: Unicode Character <a href="http://www.fileformat.info/info/unicode/char/0243/index.htm">U+0243</a> can be used any Unicode text editor.</p>
           <p>This unicode character was originally used as a phonetic symbol to represent or transcribe the sound [β]. Thus the context of this use does not allow any confusion with the Bitcoin currency.</p>
 
-          <p>The idea to use Ƀ as a symbol for Bitcoin is not new ; this character was one of the original candidates to represent Bitcoin, but most of the comunity’s proposals were more fancy logos than a manifesto for the usage of a symbol. A logo is defined as a centralized graphic identity composed of colors, fonts, and shapes chosen by a small group of individuals. Bitcoin, however, is a decentralized currency – it’s neither a brand nor a product or company, and what we need for representing Bitcoin is a symbol rather than a logo.</p>
+          <p>The idea to use Ƀ as a symbol for Bitcoin is not new ; this character was one of the original candidates to represent Bitcoin, but most of the community’s proposals were more fancy logos than a manifesto for the usage of a symbol. A logo is defined as a centralized graphic identity composed of colors, fonts, and shapes chosen by a small group of individuals. Bitcoin, however, is a decentralized currency – it’s neither a brand nor a product or company, and what we need for representing Bitcoin is a symbol rather than a logo.</p>
           <figure>
             <img alt="Exemples of Unicode Character U+0243" src="i/blist.svg" height="40px" with="400px"/>
             <figcaption>Examples of Unicode Character U+0243 in different typefaces</figcaption>
@@ -59,7 +59,7 @@
           </ul>
           <p>Arial and Times New Roman both support the Ƀ symbol as well. They are not libre fonts but they can be found on almost every systems.</p>
           <p class="highlight">Help us popularize Ƀ!<br>Create images, and use Ƀ in Bitcoin-related apps, websites and paper.</p>
-          <p>As a widely distributed, peer-to-peer digital currency, Bitcoin needs an open-source graphic identity, designed with open source sofware by and for the community. It has to be as minimal as possible to allow further adaptations. Because Ƀ is simple, extendable and perennial, it fulfills all those requirements.</p>
+          <p>As a widely distributed, peer-to-peer digital currency, Bitcoin needs an open-source graphic identity, designed with open source software by and for the community. It has to be as minimal as possible to allow further adaptations. Because Ƀ is simple, extendable and perennial, it fulfills all those requirements.</p>
         </div>
       </section>
       <section id="customize" class="box">
