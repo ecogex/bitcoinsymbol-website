@@ -207,7 +207,7 @@
             <h2>Donation</h2>
             <p>Donations to this project are much appreciated:</p>
           </div>
-          <p>You can send Bitcoins directly to our public key: <code>14eGodNbabrYr5mDVhWhPRttY1PK6fPy1g</code></p>
+          <p>You can send Bitcoins directly to our public key: <code>1JExeDAVZEzSoNRxeKEwYfWqR5eFgJBe8V</code></p>
           <div class="support-box">
             <h2>Participate</h2>
             <p>Feel free to improve this website and suggest new ideas on the <a href="https://github.com/ecogex/bitcoinsymbol-website">Github repository</a>. Images and 3D graphics are hosted on a dedicated <a href="https://github.com/ecogex/bitcoinsymbol-pack">“graphic pack” repository</a>.</p>
