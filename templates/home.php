@@ -207,7 +207,7 @@
             <h2>Donation</h2>
             <p>Donations to this project are much appreciated:</p>
           </div>
-          <p>You can send Bitcoins directly to our public key: <code>1JExeDAVZEzSoNRxeKEwYfWqR5eFgJBe8V</code></p>
+          <p>You can send Bitcoins directly to our public key: <code>33syD2nmGYCHE9x3pzWREwprroGpRGKd3n</code></p>
           <div class="support-box">
             <h2>Participate</h2>
             <p>Feel free to improve this website and suggest new ideas on the <a href="https://github.com/ecogex/bitcoinsymbol-website">Github repository</a>. Images and 3D graphics are hosted on a dedicated <a href="https://github.com/ecogex/bitcoinsymbol-pack">“graphic pack” repository</a>.</p>
@@ -269,6 +269,7 @@
 
           <h2>Groups that already use Ƀ</h2>
           <ul>
+            <li><a href="https://bitnation.co/">Bitnation</a></li>
             <li><a href="https://lamassu.is/">Lamassu</a></li>
             <li><a href="http://theriseandriseofbitcoin.com/">The Rise and Rise of Bitcoin</a></li>
             <li><a href="http://preev.com">preev.com</a></li>
@@ -284,6 +285,8 @@
           </ul>
           <h2>Publications and articles about Ƀ</h2>
           <ul>
+            <li><a href="http://www.itsnicethat.com/articles/currency-design">It’s Nice That, Our round-up of interesting currency redesigns</a></li>
+            <li><a href="https://www.coingecko.com/buzz/great-bitcoin-logo-debate">Coingecko, The Great Bitcoin Logo Debate</a></li>
             <li><a href="https://medium.com/down-the-hashrabbit-hole/to-or-not-to-4e952961f41">To Ƀ or not to ฿.</a></li>
             <li><a href="http://www.coindesk.com/industry-website-advocate-bitcoins-unicode-symbol/">Coindesk</a></li>
             <li><a href="http://www.cryptocoinsnews.com/news/bitcoin-com-gets-revamp-blockchain-info/2014/04/17">Cryptocoins News</a></li>
